@@ -62,3 +62,12 @@ header {
     background-color: red;
     margin-right: 15%;
 }
+
+.container {
+	width: 1000px;
+    margin: 0 auto;
+}
+
+.search-container{
+	float: right;
+}
