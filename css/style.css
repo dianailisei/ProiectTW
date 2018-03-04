@@ -91,6 +91,13 @@ header {
 	padding-top: 20px;
 
 }
+.search-container form input{
+border-radius: 50px;
+}
+
+.search-container form button{
+	border-radius: 25px;
+	}
 
 .navigation {
 	position: absolute;
