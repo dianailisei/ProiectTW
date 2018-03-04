@@ -52,17 +52,22 @@ The real css
 */
 
 body {
-	background-color: #A3A3A3;	
+	background-color: #092856;	
 }
 
 header {
 	display: block;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+	border-top-color: white;
 	width:80%;
 	height: 150px;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	background-color: black;
+	/*background-color: black;*/
+	background-image: url("../images/header-background.jpg");
+	background-size:cover;
 	margin:0 auto;
 }
 
@@ -70,9 +75,9 @@ header {
 	position: relative;
 	top: 10px;
 	left: 10px;
-	bottom: 10px;
-	height: 100px;
-	width: 150px;
+	top: -10px;
+	height: 170px;
+	width: 200px;
 }
 
 .logo img{
@@ -89,7 +94,7 @@ header {
 
 }
 .search-container form input{
-border-radius: 50px;
+	border-radius: 50px;
 }
 
 .search-container form button{
@@ -120,8 +125,9 @@ border-radius: 50px;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 40px;
+	color: white;
 	background-color: #323234;
-	
+	opacity: 0.5;
 }
 
 .navigation ul li a:hover {

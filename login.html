@@ -1,55 +1,59 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Login</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="icon" href="images/logo.png" type="image/x-icon"/>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
 </head>
 
 <body>
-<header>
-	<div class="logo">
-		<a href="index.html"><img src="images/logo.png" alt="Sofy logo" title="Sofy"></a>
-  </div>
-            <nav class="navigation">
-                <ul>
-                    <li>
-                        <a href="index.html" class="noborder">HOME</a>
-                    </li>
-                    <li>
-                        <a href="login.html">CATEGORIES</a>
-                    </li>
-                    <li>
-                        <a>TOPS</a>
-                    </li>
-                    <li>
-                        <a>LOGIN</a>
-                    </li>
-                    <li>
-                        <a>CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sofy logo" title="Sofy">
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html" class="noborder">HOME</a>
+                </li>
+                <li>
+                    <a href="login.html">CATEGORIES</a>
+                </li>
+                <li>
+                    <a>TOPS</a>
+                </li>
+                <li>
+                    <a>ACCOUNT</a>
+                </li>
+                <li>
+                    <a>CONTACT</a>
+                </li>
+            </ul>
+        </nav>
 
-            <span class="search-container">
-                <form action="/search.php">
-                    <input type="text" placeholder="Search app.." name="search">
-                    <button type="submit">&#128269;</button>
-                </form>
+        <span class="search-container">
+            <form action="/search.php">
+                <input type="text" placeholder="Search app.." name="search">
+                <button type="submit">&#128269;</button>
+            </form>
+        </span>
+    </header>
+
+    <section id="login-window">
+        <form action="login.php" method="post">
+            <span>
+                <input type="text" placeholder="Enter Username" name="username">
+                <br>
+                <input type="password" placeholder="Enter Password" name="password">
+                <br>
+                <input type="submit" name="submit">
             </span>
-</header>
-
-<section id="login-window">
-  	<form action="login.php" method="post">
-  		<span>
-		<input type="text" placeholder="Enter Username" name="username">
-		<br>
-		<input type="password" placeholder="Enter Password" name="password">
-		<br>
-		<input type="submit" name="submit">
-		</span>
-  </form>
-</section>
+        </form>
+    </section>
 </body>
+
 </html>
