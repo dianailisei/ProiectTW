@@ -55,17 +55,11 @@ The real css
 	position: relative;
 	width: 70%;
 	height: 75px;
-    margin: 0 auto;
+	margin: 0 auto;
+	background-color: darkgrey;
 }
 
-header {
-	position: absolute;
-    background-color: grey;
-    height: 100%;
-    width: 100%;
-}
-
-header .logo {
+.container .logo {
 	position: absolute;
 	left: 10px;
 	top: 10%;
@@ -75,12 +69,12 @@ header .logo {
 }
 
 
-.container header .logo img{
+.container .logo img{
     height: 100%;
     width: 100%;
 }
 
-header .search-container{
+.container .search-container{
 	position: absolute;
 	width: 200px;
 	height: 30px;
