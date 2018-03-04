@@ -51,21 +51,28 @@ table {
 The real css
 */
 
+.container {
+	width: 70%;
+	height: 75px;
+    margin: 0 auto;
+}
 
 header {
     background-color: grey;
-    height: 10%;
+    height: 100%;
     width: 100%;
 }
 
-#logo {
-    background-color: red;
-    margin-right: 15%;
+.container header #logo {
+    height: 75%;
+	width: 100px;
+    background-color: powderblue;
 }
 
-.container {
-	width: 1000px;
-    margin: 0 auto;
+
+.container header #logo img{
+    height: 100%;
+    width: 100%;
 }
 
 .search-container{
