@@ -1,32 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="images/logo.png" type="image/x-icon"/>
-    <title>Sofy</title>
+<meta charset="utf-8">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="icon" href="images/logo.png" type="image/x-icon"/>
 </head>
 
 <body>
-	
-    <header>
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Sofy logo" title="Sofy"></a>
-            </div>
+<header>
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png" alt="Sofy logo" title="Sofy"></a>
+  </div>
             <nav class="navigation">
                 <ul>
                     <li>
                         <a href="index.html" class="noborder">HOME</a>
                     </li>
                     <li>
-                        <a>CATEGORIES</a>
+                        <a href="login.html">CATEGORIES</a>
                     </li>
                     <li>
                         <a>TOPS</a>
                     </li>
                     <li>
-                        <a href="login.html">LOGIN</a>
+                        <a>LOGIN</a>
                     </li>
                     <li>
                         <a>CONTACT</a>
@@ -40,16 +38,18 @@
                     <button type="submit">&#128269;</button>
                 </form>
             </span>
-    </header>
+</header>
 
-    <section id="main">
-
-    </section>
-
-    <footer>
-		<p id="footer-text">Tehnologii Web 2018</p>
-    </footer>
+<section id="login-window">
+  	<form action="login.php" method="post">
+  		<span>
+		<input type="text" placeholder="Enter Username" name="username">
+		<br>
+		<input type="password" placeholder="Enter Password" name="password">
+		<br>
+		<input type="submit" name="submit">
+		</span>
+  </form>
+</section>
 </body>
-
-
 </html>

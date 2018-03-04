@@ -155,3 +155,23 @@ footer {
 #footer-text {
 	color: #FFF;
 }
+
+#login-window {
+	display:block;
+	width: 30%;
+	height: 200px;
+	background-color: black;
+	position: absolute;
+  	top: 50%;
+	margin-left: 35%;
+	border-color: black;
+	border-style: dotted;
+	border-radius: 30px;
+}
+
+body section form span {
+	display: inline-block;
+	width: inherit;
+	text-align: center;
+	
+}
