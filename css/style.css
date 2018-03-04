@@ -170,6 +170,10 @@ footer {
 }
 
 body section form span {
+	position: relative;
+	top: 65px;
+	left: 50%;
+	margin-left: -75px;
 	display: inline-block;
 	width: inherit;
 	text-align: center;
