@@ -107,7 +107,7 @@ header {
 	text-align: center;
 	width: 100%;
 	height: 40px;
-	top:110px;
+	top: 110px;
 }
 
 .navigation ul li {
@@ -115,7 +115,7 @@ header {
 	width: 20%;
 	text-align: center;
 	list-style-type: none;
-	color: #FFF;
+	color: #FFF;	
 }
 
 .navigation ul li a {
@@ -126,12 +126,12 @@ header {
 	vertical-align: middle;
 	line-height: 40px;
 	color: white;
-	background-color: #323234;
-	opacity: 0.5;
+	background-color:rgba(75,37,232,0.5);
+
 }
 
 .navigation ul li a:hover {
-	background-color: #999;
+	background-color: #092856;
 	color: #FFF;
 }
 
@@ -141,7 +141,7 @@ header {
 	height: 700px;
 	margin: 30px 10%;
 	padding-top:30px 15%;
-	background-color: black;
+	background-color:rgba(75,37,232,0.3);
 }
 
 footer {
@@ -150,12 +150,13 @@ footer {
 	height: 50px;
 	margin-bottom:10px;
 	margin-left: 10%;
-	background-color: black;
+	background-color:rgba(75,37,232,0.3);
 	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
 	font-size-adjust: auto;
 	font-size:10px;
 	vertical-align: middle;
 	text-align: center;
+	
 }
 
 #footer-text {
@@ -164,24 +165,41 @@ footer {
 
 #login-window {
 	display:block;
-	width: 30%;
-	height: 200px;
-	background-color: black;
+	width: 40%;
+	height: 400px;
+	background-color:rgba(75,37,232,0.3);
 	position: absolute;
-  	top: 50%;
-	margin-left: 35%;
-	border-color: black;
-	border-style: dotted;
+  	top: 30%;
+	margin-left: 30%;
 	border-radius: 30px;
 }
 
-body section form span {
+body section form div {
 	position: relative;
-	top: 65px;
-	left: 50%;
-	margin-left: -75px;
+	top: 20px;
+	left: 30%;
 	display: inline-block;
 	width: inherit;
 	text-align: center;
-	
+}
+
+body section form p{
+	color:white;
+	font-size: 30px;
+}
+
+.left-article {
+	width:45%;
+	margin-left:10px;
+	float:left;
+	margin-top:10%;
+	margin-bottom: 10px;
+}
+
+.right-article {
+	width:45%;
+	float:right;
+	margin-right:10px;
+	margin-bottom: 10px;
+	margin-top:10%;
 }
