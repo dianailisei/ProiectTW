@@ -51,39 +51,34 @@ table {
 The real css
 */
 
-.container {
-	position: relative;
-	width: 70%;
-	height: 75px;
-    margin: 0 auto;
-}
+
 
 header {
-	position: absolute;
-    background-color: grey;
-    height: 100%;
-    width: 100%;
+	position: relative;
+	background-color: grey;
+	height: 100px;
+	width: 1048px;
+	margin-left: 20%;
+	
 }
 
 header .logo {
 	position: absolute;
-	left: 10px;
-	top: 10%;
-    height: 75%;
-	width: 100px;
-    background-color: powderblue;
+	height: 100%;
+	width: 15%;
+	background-color: powderblue;
 }
 
 
-.container header .logo img{
+header .logo img{
     height: 100%;
     width: 100%;
 }
 
 header .search-container{
 	position: absolute;
-	width: 200px;
+	width: 234px;
 	height: 30px;
-	right:10px;
-	top: 30%;
+	right: 27px;
+	top: 42px;
 }
