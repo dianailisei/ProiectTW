@@ -24,7 +24,7 @@
                     <a href="login.html">CATEGORIES</a>
                 </li>
                 <li>
-                    <a>TOPS</a>
+                    <a href="tops.html">TOPS</a>
                 </li>
                 <li>
                     <a>ACCOUNT</a>
@@ -44,16 +44,31 @@
     </header>
 
     <section id="login-window">
-        <form action="login.php" method="post">
-            <span>
-                <input type="text" placeholder="Enter Username" name="username">
-                <br>
-                <input type="password" placeholder="Enter Password" name="password">
-                <br>
+       <form action="login.php" method="post">
+            <div>
+               <p>Login</p><br>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <br><br>
+                <input type="password" placeholder="Enter Password" name="password" required>
+                <br><br>
                 <input type="submit" name="submit">
-            </span>
+            </div>
+            
+        <form action="create_account.php" method="post">
+            <div>
+                <p>Create an account</p><br>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <br><br>
+                <input type="email" placeholder="Enter Email Address" required><br><br>
+                <input type="password" placeholder="Enter Password" name="password" required>
+                <br><br>
+                <input type="password" placeholder="Re-enter Password" name="password" required>
+                <br><br>
+                <input type="submit" name="submit">
+            </div>
         </form>
     </section>
+    
 </body>
 
 </html>
