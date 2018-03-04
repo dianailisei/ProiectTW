@@ -63,18 +63,21 @@ header {
     width: 100%;
 }
 
-.container header #logo {
+.container header .logo {
     height: 75%;
 	width: 100px;
     background-color: powderblue;
 }
 
 
-.container header #logo img{
+.container header .logo img{
     height: 100%;
     width: 100%;
 }
 
-.search-container{
+.container header .search-container{
+	width: 200px;
+	height: 100px;
 	float: right;
+	margin-top: -30px;
 }
