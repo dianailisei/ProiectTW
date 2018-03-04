@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,7 +52,6 @@ table {
 The real css
 */
 
-<<<<<<< HEAD
 
 
 header {
@@ -59,39 +59,24 @@ header {
 	background-color: grey;
 	height: 100px;
 	width: 1048px;
-	margin-left: 20%;
+	margin: 0 auto;
 	
 }
 
 header .logo {
-=======
-.container {
-	position: relative;
-	width: 70%;
-	height: 75px;
-	margin: 0 auto;
-	background-color: darkgrey;
-}
-
-.container .logo {
->>>>>>> 78ca8169a109e2c2ed6795bad5a0ef1b70cb6e72
 	position: absolute;
 	height: 100%;
 	width: 15%;
-	background-color: powderblue;
+    background-color: powderblue;
 }
 
 
-<<<<<<< HEAD
 header .logo img{
-=======
-.container .logo img{
->>>>>>> 78ca8169a109e2c2ed6795bad5a0ef1b70cb6e72
     height: 100%;
     width: 100%;
 }
 
-.container .search-container{
+header .search-container{
 	position: absolute;
 	width: 234px;
 	height: 30px;
