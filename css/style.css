@@ -59,7 +59,6 @@ header {
 	display: block;
 	border-top-left-radius: 10%;
 	border-top-right-radius: 10%;
-	border-top-color: white;
 	width:80%;
 	height: 150px;
 	margin: 0;
@@ -126,8 +125,7 @@ header {
 	vertical-align: middle;
 	line-height: 40px;
 	color: white;
-	background-color: #323234;
-	opacity: 0.5;
+	background-color:rgba(200, 200, 200, 0.3);
 }
 
 .navigation ul li a:hover {
