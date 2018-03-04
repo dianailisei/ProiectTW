@@ -61,13 +61,21 @@ header {
 	background-color: #6E6868;
 }
 
+.header-container{
+	position: relative;
+	width:80%;
+	height: 100%;
+	background-color: black;
+	margin:0 auto;
+}
+
 .logo {
-	position: absolute;
-	top: 30px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
 	height: 100px;
 	width: 150px;
-	left: 30px;
- 
 }
 
 .logo img{
@@ -76,35 +84,36 @@ header {
 }
 
 .search-container{
+	position: absolute;
+	right: 30px;
+	top: 30px;
 	float:right;
 	padding-top: 20px;
 
 }
 
 .navigation {
-	display: block;
+	position: absolute;
+	list-style:none;
+	text-align: center;
 	width: 100%;
-	clear: both;
-	border-top-color: #D6D6D6;
-	border-right-color: #D6D6D6;
-	border-bottom-color: #D6D6D6;
-	border-left-color: #D6D6D6;
-	padding-top: 65px;
-	position:relative;
-	padding-left: 15%;
+	height: 40px;
+	top:110px;
 }
 
 .navigation ul li {
 	float: left;
+	width: 20%;
+	text-align: center;
 	list-style-type: none;
 	color: #FFF;
 	background-color: #333;
-	text-align: center;
 }
+
 .navigation ul li a {
 	text-decoration: none;
 	display: block;
-	width: 150px;
+	width: 20%;
 	height: 40px;
 	text-align: center;
 	vertical-align: middle;
@@ -114,9 +123,6 @@ header {
 	border-left-color: #999;
 }
 
-.navigation {
-	border-left-style: none !important;
-}
 .navigation ul li a:hover {
 	background-color: #999;
 	color: #FFF;
