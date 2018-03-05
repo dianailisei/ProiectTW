@@ -125,12 +125,8 @@ header {
 	vertical-align: middle;
 	line-height: 40px;
 	color: white;
-<<<<<<< HEAD
-	background-color:rgba(200, 200, 200, 0.3);
-=======
 	background-color:rgba(75,37,232,0.5);
 
->>>>>>> 295c7d88dbf4253ffbcb3e03ba254daccf01b3bc
 }
 
 .navigation ul li a:hover {
@@ -206,3 +202,115 @@ body section form p{
 	margin-bottom: 10px;
 	margin-top:10%;
 }
+
+/* APP LIST CSS */
+
+
+.app-list{
+    width:100%;
+    
+    -webkit-column-gap: 5px;
+	column-gap: 5px;
+	-moz-column-gap: 5px;
+}
+@media screen and (min-width: 800px) {
+.app-list{
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px){
+.app-list{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    }
+
+}
+
+@media screen and (max-width: 499) {
+.app-list{
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    }
+
+}
+
+.app-list-child {
+  border-radius: 12px;
+  border-width: thin;
+  position:relative;
+  font-family: Arial, Helvetica, sans-serif;
+  width:100%;
+  height:100px;
+  background-color:rgba(0,0,0,0.3);
+  list-style-type: none;
+  overflow:hidden;
+  margin-bottom:5px;
+}
+
+.app-list-child a {
+color:black;
+}
+
+.app-list-child-img-container{
+	position:absolute;
+    border-width: 10px;
+    width: 80px;
+    height:80px;
+    top:10px;
+    left:10px;
+}
+.app-list-child-img-container img{
+	border-radius: 12px;
+	width:100%;
+    height:100%;
+}
+ 
+.app-list-child-title {
+text-shadow: #000 0px 0px 6px;
+
+    color: white;
+  font-size: 23px;
+  text-align:left;
+  margin:0;
+  width:60%;
+  height:30px;
+  position:absolute;
+  top:10px;
+  left:100px;
+}
+
+.app-list-child-rating{
+  text-align:left;
+  margin:0;
+  width:60%;
+  height:20px;
+  position:absolute;
+  top:38px;
+  left:100px;
+  right:10px;
+}
+
+.rating-checked {
+    color: orange;
+}
+
+.app-list-child-downloads{
+  text-align:left;
+  margin:0;
+  width:60%;
+  height:20px;
+  position:absolute;
+  top:65px;
+  left:100px;
+  right:10px;
+  text-shadow: #000 0px 0px 2px;
+  color:white;
+}
+
+/* END APP LIST CSS */
