@@ -87,17 +87,41 @@ header {
 .search-container{
 	position: absolute;
 	right: 30px;
-	top: 30px;
+	top: 20px;
+	width: 60%;
 	float:right;
 	padding-top: 20px;
 
 }
 .search-container form input{
-	border-radius: 50px;
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	left:0px;
+    padding: 12px 20px;
+	background-color: #34495e;
+	color: #909aa4;
+    display: inline-block;
+    border: 1px solid #b3b4ab;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .search-container form button{
-	border-radius: 25px;
+	position: absolute;
+	right:0px;
+	top:0px;
+	padding: 12px 20px;
+	background-color: #34495e;
+	color: #909aa4;
+    display: inline-block;
+	border: 1px solid #b3b4ab;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+    border-radius: 4px;
+	box-sizing: border-box;
+	z-index: 1;
 	}
 
 .navigation {
@@ -408,7 +432,7 @@ text-shadow: #000 0px 0px 6px;
 	background-color: rgba(0,0,0,0.5);
     border-radius: 12px;
     width:100%;
-    heigth:100%;
+    height:100%;
     color: white;
 }
 
