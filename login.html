@@ -43,32 +43,39 @@
         </span>
     </header>
 
-    <section id="login-window">
-       <form action="login.php" method="post">
-            <div>
-               <p>Login</p><br>
+    <section id="main">
+        <div class="connection-container">
+            <div class="login-container">
+                <h1>Login</h1>
                 <input type="text" placeholder="Enter Username" name="username" required>
-                <br><br>
+                <br>
+                <br>
                 <input type="password" placeholder="Enter Password" name="password" required>
-                <br><br>
-                <input type="submit" name="submit">
+
+                <p> Press the login button!</p>
+                <button type="submit" type="button">Login</button>
             </div>
-            
-        <form action="create_account.php" method="post">
-            <div>
-                <p>Create an account</p><br>
+
+            <div class="separator"></div>
+
+            <div class="register-container">
+                <h1>Register</h1>
                 <input type="text" placeholder="Enter Username" name="username" required>
-                <br><br>
-                <input type="email" placeholder="Enter Email Address" required><br><br>
+                <br>
+                <br>
+                <input type="email" placeholder="Enter Email Address" required>
+                <br>
+                <br>
                 <input type="password" placeholder="Enter Password" name="password" required>
-                <br><br>
+                <br>
+                <br>
                 <input type="password" placeholder="Re-enter Password" name="password" required>
-                <br><br>
-                <input type="submit" name="submit">
+                <p>Fill all fields.</p>
+                <button type="submit" type="button">Register</button>
             </div>
-        </form>
+
     </section>
-    
+
 </body>
 
 </html>

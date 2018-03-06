@@ -4,7 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1 h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -52,7 +52,7 @@ The real css
 */
 
 body {
-	background-color: #092856;	
+	background-color: #e9ebee;	
 }
 
 header {
@@ -140,7 +140,7 @@ header {
 	height: 700px;
 	margin: 30px 10%;
 	padding-top:30px 15%;
-	background-color:rgba(75,37,232,0.3);
+	background-color:rgba(0,0,0,0.3);
 }
 
 footer {
@@ -220,7 +220,6 @@ body section form p{
     -moz-columns: 3;
     columns: 3;
     }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 799px){
@@ -273,17 +272,16 @@ color:black;
 }
  
 .app-list-child-title {
-text-shadow: #000 0px 0px 6px;
-
+	text-shadow: #000 0px 0px 6px;
     color: white;
-  font-size: 23px;
-  text-align:left;
-  margin:0;
-  width:60%;
-  height:30px;
-  position:absolute;
-  top:10px;
-  left:100px;
+  	font-size: 23px;
+  	text-align:left;
+  	margin:0;
+  	width:60%;
+  	height:30px;
+  	position:absolute;
+  	top:10px;
+  	left:100px;
 }
 
 .app-list-child-rating{
@@ -315,3 +313,102 @@ text-shadow: #000 0px 0px 6px;
 }
 
 /* END APP LIST CSS */
+
+/* START LOGIN/REGISTER CSS */
+
+.connection-container{
+	font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+	background-color: rgba(0,0,0,0.5);
+    border-radius: 12px;
+    width:100%;
+    heigth:100%;
+    color: white;
+}
+
+.login-container {
+	text-shadow: #000 0px 0px 6px;
+	position: absolute;
+    
+    width: 200px;
+    height: 240px;
+    right:53%;
+    top: 45px;
+}
+
+.login-container button{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+}
+
+.login-container button:hover{
+	background-color: grey;
+}
+
+.login-container input{
+    width: 100%;
+    padding: 12px 20px;
+    
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.separator {
+	position: absolute;
+    top:20px;
+    left:50%;
+    border-left: 3px solid white;
+    border-radius: 100px;
+    height: 400px;
+}
+
+.register-container {
+	text-shadow: #000 0px 0px 6px;
+	position: absolute;
+    left:53%;
+    width: 200px;
+    height: 330px;
+}
+
+.register-container input{
+    width: 100%;
+    padding: 12px 20px;
+   
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-container button{
+	position:absolute;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 20%;
+}
+
+.register-container button:hover{
+	background-color: grey;
+}
+
+/* END LOGIN/REGISTER CSS */
