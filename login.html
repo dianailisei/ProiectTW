@@ -3,9 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="(max-width:600px)" href="css/small.css">
+    <link rel="stylesheet" media="(min-width:601px) and (max-width:899px)" href="css/small.css">
+    <link rel="stylesheet" media="(min-width:900px)" href="css/large.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/logo.png" type="image/x-icon" />
+
+    <title>Login</title>
 </head>
 
 <body>
@@ -45,7 +52,7 @@
 
     <section id="login-window">
         <div class="connection-container">
-            <div class="login-container">
+            <form class="login-container">
                 <h1>Login</h1>
                 <input type="text" placeholder="Enter Username" name="username" required>
                 <br>
@@ -54,11 +61,11 @@
 
                 <p> Press the login button!</p>
                 <button type="submit" type="button">Login</button>
-            </div>
+            </form>
 
             <div class="separator"></div>
 
-            <div class="register-container">
+            <form class="register-container">
                 <h1>Register</h1>
                 <input type="text" placeholder="Enter Username" name="username" required>
                 <br>
@@ -72,7 +79,7 @@
                 <input type="password" placeholder="Re-enter Password" name="password" required>
                 <p>Fill all fields.</p>
                 <button type="submit" type="button">Register</button>
-            </div>
+            </form>
         </div>
     </section>
 
