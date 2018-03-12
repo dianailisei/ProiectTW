@@ -111,7 +111,7 @@ header {
    BEGIN TITLE&DESCRIPTION CSS*/
 
 #description {
-	background: #212121;
+	background: #2c3e50;
 	border-radius: 12px;
 	border-style: solid;
 	border-color: #2e465d;
@@ -124,7 +124,7 @@ header {
 /* END TITLE&DESCRIPTION CSS
    BEGIN MAIN CSS*/
 
-#main, aside {
+#main, aside, .main-full {
 	background-color: #2c3e50;
 	border-radius: 12px;
 	border-style: solid;
@@ -134,6 +134,7 @@ header {
 	text-align: center;
 	color: white;
 }
+
 
 /* END MAIN CSS
    BEGIN FOOTER CSS*/
@@ -173,6 +174,13 @@ header {
 /* END FOOTER CSS 
    BEGIN APP LIST CSS */
 
+.app-section{
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #b3b4ab;
+}
+
 
 .app-list{
     width:100%;
@@ -201,6 +209,10 @@ header {
   list-style-type: none;
   overflow:hidden;
   margin-bottom:5px;
+}
+
+.app-list-child:hover{
+	background-color: #475562;
 }
 
 .app-list-child a {
