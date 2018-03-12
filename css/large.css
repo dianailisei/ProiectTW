@@ -75,13 +75,13 @@ header {
 
 #description {
 	position: relative;
-	width: 88%;
-	height: 150px;
+	width: 88.5%;
 	padding: 10px;
 	margin-top: 3%;
 	margin-left: 5%;
 	margin-bottom: 0;
 	line-height: 40px;
+	height: auto;
 }
 
 #description h1 {
@@ -89,24 +89,26 @@ header {
 }
 
 #main {
-	width: 65%;
-	margin-top: 3%;
+	width: 69%;
+	margin-top: 15px;
 	margin-left: 5%;
-	float:left;
-}
-
-#main, aside {
-    position: relative;
-	display: block;
+	display: inline-block;
 	height: 700px;
-	margin-bottom: 5%;
+	margin-bottom: 15px;
+	float: left;
 }
 
 aside {
+	position: relative;
+	left: 1%;
+	top: 15px;
 	width: 20%;
-	margin-right: 5%;
-	margin-top: 3%;
-    float: right;
+	margin-top: 15px;
+	margin-left: 10px;
+	display: inline-block;
+	height: 700px;
+	margin-bottom: 15px;
+	float: left;
 }
 
 #wrapper aside h2 {
@@ -115,17 +117,6 @@ aside {
 
 #wrapper aside p {
 	font-size: 20px;
-}
-
-footer {
-	display: block;
-	width: 100%;
-	height: 70px;
-	margin-bottom: 0px;
-	font-size-adjust: auto;
-	font-size: 20px;
-	vertical-align: middle;
-	clear:both;
 }
 
 body section form div {
@@ -311,3 +302,34 @@ br{
 
 
 /* STOP LOGIN/REGISTER CSS */
+
+
+/* START FOOTER CSS */
+
+footer {
+	display: block;
+	width: 100%;
+	margin-bottom: 0px;
+	clear:both;
+	height: auto;
+}
+
+.useful-links{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width:100%;
+}
+.footer-column{
+	display: inline-block;
+	width: 20%;
+}
+
+.footer-column li{
+	padding-bottom:5px;
+}
+
+.bottom-footer{
+	padding-top: 10px;
+	font-size: 1.5em;
+	padding-bottom: 10px;
+}
