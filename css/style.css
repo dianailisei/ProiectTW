@@ -181,6 +181,27 @@ header {
 	border-bottom-color: #b3b4ab;
 }
 
+.see-more-button {
+	font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #252e38;
+    padding: 15px 32px;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-color: #2c3e50;
+	border-color:#4d515e;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 12px;
+}
+
+.see-more-button:hover{
+	background-color: grey;
+}
 
 .app-list{
     width:100%;
