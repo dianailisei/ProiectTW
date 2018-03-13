@@ -124,7 +124,7 @@ header {
 /* END TITLE&DESCRIPTION CSS
    BEGIN MAIN CSS*/
 
-#main, aside, .main-full {
+#main, aside, .main-full, #profile-main {
 	background-color: #2c3e50;
 	border-radius: 12px;
 	border-style: solid;
@@ -247,6 +247,11 @@ color:black;
   left:100px;
 }
 
+.bigger-title {
+    font-size: 40px !important;
+    margin-top: 20px !important;
+}
+
 .app-list-child-rating{
   text-align:left;
   margin:0;
@@ -279,56 +284,27 @@ color:black;
    BEGIN PROFILE PAGE CSS */
 
 #basic-info-container {
-	width:50%;
-	height: 300px;
-	background-color: rgba(255,255,255,0.4);
+	
+	background: #475562;
   	border-radius: 10% 25%;
-	float:left;
-	top:65px;
-	position: relative;
-	margin-left: 7%;
 }
 
 #pic {
-	position:relative;
-	float:left;
-	margin-left: 10%;
-	margin-top: 5%;
-	width:40%;
 	outline: thin double #32a1ce;
 }
 
 #info {
-	float:right;
-	position: relative;
-	width:50%;
-	margin-top:12%;
-	left:10px;
-	text-align: left;
-	line-height: 30px;
 	font-family: Arial, Helvetica, sans-serif;
-}
-
-.small-icon {
-	width: 20px;
-	height: 20px;
-	position: relative;
 }
 
 #options-container {
-	position: absolute;
-	
-	right:0px;
-	top:0px;
-	line-height: 30px;
 	font-family: Arial, Helvetica, sans-serif;
-	list-style:none;
+	list-style: none;
 	text-align: center;
 }
 
 .option {
-	background-color: rgba(75,37,232,0.5);
-	padding:10px 40px;
+	background: #475562;
 	margin-bottom:10px;
 	border-radius: 5px 15px;
 		
@@ -340,7 +316,6 @@ color:black;
 
 .option a:hover {
 	color: darkred;
-	font-size: 20px;
 }
 
 /* END PROFILE CSS 

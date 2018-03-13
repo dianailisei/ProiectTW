@@ -106,6 +106,7 @@ header {
 	margin-top: 3%;
 	margin-bottom: 15px;
 	height: auto;
+    padding: 0;
 }
 
 aside {
@@ -191,70 +192,80 @@ body section form p{
 /* PROFILE PAGE CSS */
 
 #basic-info-container {
-	width:50%;
+	width:60%;
 	height: 300px;
-	background-color: rgba(255,255,255,0.4);
-  	border-radius: 10% 25%;
-	float:left;
-	top:65px;
 	position: relative;
-	margin-left: 7%;
+    display: inline-block;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 #pic {
 	position:relative;
 	float:left;
 	margin-left: 10%;
-	margin-top: 5%;
-	width:40%;
-	outline: thin double #32a1ce;
+    margin-top: 20px;
+	width:35%;
+    height: auto;
+    display: inline-block;
 }
 
 #info {
 	float:right;
 	position: relative;
 	width:50%;
-	margin-top:12%;
+    top: 20px;
 	left:10px;
 	text-align: left;
 	line-height: 30px;
-	font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
 }
 
 .small-icon {
 	width: 20px;
 	height: 20px;
 	position: relative;
+    display: inline-block;
 }
 
 #options-container {
-	position: absolute;
-	right:0px;
-	top:0px;
+	position: relative;
+    float: right;
 	line-height: 30px;
-	font-family: Arial, Helvetica, sans-serif;
-	list-style:none;
-	text-align: center;
+    width: 150px;
+    display: inline-block;
+    margin-right: 10%;
+    margin-top: 7%;
+    margin-left: 0%;
+    margin-bottom: 3%;
 }
 
 .option {
-	background-color: rgba(75,37,232,0.5);
-	padding:10px 40px;
-	margin-bottom:10px;
-	border-radius: 5px 15px;
-		
-}
-.option a{
-	text-decoration: none;
-	color: #FFF;
+	padding:10px 20px;
 }
 
 .option a:hover {
-	color: darkred;
 	font-size: 20px;
 }
 
+.delete-button {
+    position: relative;
+    float: right;
+    width: 10%;
+}
 
+.profile-rating-container {
+    position: relative;
+}
+
+.profile-rating-text {
+    display: inline;
+}
+.profile-rating-stars {
+    position: absolute !important;
+    display: inline-block !important;
+    
+}
 /* START LOGIN/REGISTER CSS */
 
 #login-window {
