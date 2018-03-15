@@ -183,6 +183,7 @@ body section form p{
 .app-section h1{
 	padding-left: 20px;
 	display: inline-block;
+    font-size: 30px;
 }
 
 .see-more-button {
