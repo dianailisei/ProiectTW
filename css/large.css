@@ -112,7 +112,6 @@ header {
 aside {
 	position: relative;
 	left: 1%;
-	top: 15px;
 	width: 20%;
 	margin-top: 15px;
 	margin-left: 10px;
@@ -432,7 +431,7 @@ br{
 footer {
 	display: block;
 	width: 100%;
-    height: 100px;
+    height: 150px;
 	margin-bottom: 0px;
 	clear:both;
     line-height: 40px;
@@ -461,4 +460,35 @@ footer p {
     margin-right: 10%;
     width: 50px;
     height: 50px;
+}
+
+/* CONTACT CSS */
+
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.map-container{
+    width: 430px;
+    height: 650px;
+}
+
+.map-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.contact-information-container{
+    width:  40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.diana-container, .mihai-container p{
+    
 }

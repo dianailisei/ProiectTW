@@ -97,7 +97,7 @@ header {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 3%;
+	margin-top: 15px;
 	margin-bottom: 15px;
 	height: auto;
     padding: 0;
@@ -183,7 +183,7 @@ body section form p{
 
 .app-list-child {
     position:relative;
-    width: 96%;
+    width: 94%;
     height: 100px;
     overflow:hidden;
     margin-bottom:5px;
@@ -319,6 +319,8 @@ body section form p{
 	position: relative;
 	display:block;
 	margin: 3% 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 	width: 90%;
 	height: 700px;
 	border-radius: 12px;
