@@ -65,9 +65,9 @@ header {
 }
 
 .search-container form button{
-	background-color: #34495e;
+    background-color : transparent;
 	color: #909aa4;
-	border: 1px solid #b3b4ab;
+	border: 0px solid #b3b4ab;
 	border-left-width: 0px;
 	border-bottom-width: 0px;
     border-radius: 4px;
@@ -342,8 +342,8 @@ color:black;
 }
 
 .separator {
-    border-left: 3px solid white;
-    border-radius: 100px;
+    border-style: solid;
+    border-color: white;
 }
 .register-container button:hover{
 	background-color: grey;
