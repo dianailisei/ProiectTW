@@ -250,7 +250,7 @@ body section form p{
 
 /* PROFILE PAGE CSS */
 
-#basic-info-container {
+.basic-info-container {
 	width: 60%;
 	height: 310px;
 	position: relative;
@@ -281,7 +281,7 @@ body section form p{
 }
 
 
-#options-container {
+.options-container {
 	position: relative;
     float: right;
 	line-height: 30px;
@@ -454,6 +454,7 @@ br{
     position: relative !important;
     display: inline-block !important;
 }
+
 #download-button {
     margin-top: 10px;
     margin-right: 10px;
@@ -461,8 +462,27 @@ br{
     height: 200px;
 }
 
+#app-statistics {
+    display: flex;
+    flex-direction: row;
+    width: 87%;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
 .tag {
-    
+    background-color: grey;
+    padding: 3px;
+    border-style: solid;
+    border-color: rgb(183, 188, 193);
+    border-width: 2px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+#no-border {
+    border: none;
+    margin-bottom: 30px;
 }
 /* END APP PAGE CSS */
 
