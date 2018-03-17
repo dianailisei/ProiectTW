@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:600px)" href="css/small.css">
+    <link rel="stylesheet" media="(min-width:601px) and (max-width:899px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:900px)" href="css/large.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+
+    <title>Categories</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sofy logo" title="Sofy">
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html" class="noborder">HOME</a>
+                </li>
+                <li>
+                    <a href="categories.html" class="noborder">CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="tops.html">TOPS</a>
+                </li>
+                <li>
+                    <a href="login.html">ACCOUNT</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <span class="search-container">
+            <form action="/search.php">
+                <input type="text" placeholder="Search app.." name="search">
+                <button type="submit" class="fa fa-search"></button>
+            </form>
+        </span>
+    </header>
+
+    <section>
+        <aside class="all-app-aside">
+            <div class="order-contariner">
+            <h1>Order by</h1>
+             <form action="">
+                <input type="radio" name="gender" value="male"> Rating<br>
+                <input type="radio" name="gender" value="female"> Download<br>
+                <input type="radio" name="gender" value="other"> Newest
+            </form>
+            </div>
+            <h1>Category</h1>
+            <div class="category-container">
+                <form action="/action_page.php" method="get">
+                    <input type="checkbox" name="Entertaiment" value="Bike"> Entertaiment<br>
+                    <input type="checkbox" name="Network" value="Bike"> Network<br>
+                    <input type="checkbox" name="Office" value="Bike"> Office<br>
+                    <input type="checkbox" name="Utility" value="Bike"> Utility<br>
+                </form>
+            </div>
+        </aside>
+        <div class="main app-main">
+            <div class="all-app-list">
+                <div class="all-app-child">
+                    <div class="all-app-icon">
+                        <img src="images/app.png" alt="App logo" title="Icon">
+                    </div>
+                </div>
+                <p class="all-app-title">
+                    Messenger
+                </p>
+                <div clas="all-app-rating">
+                    <span class="fa fa-star rating-checked"></span>
+                    <span class="fa fa-star rating-checked"></span>
+                    <span class="fa fa-star rating-checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                
+                 <div class="all-app-downloads">
+                    <span class="fa fa-download"></span> 1234
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+           <div>
+            <ul>
+              <li>
+              <a href="http://www.softpedia.com/">Softpedia</a>
+              </li>
+              <li>
+              <a href="https://sourceforge.net/">Sourceforge</a>
+              </li>
+              <li>
+              <a href="https://alternativeto.net/">Alternativeto</a>
+              </li>
+            </ul>
+          </div>
+        <p>© 2018 - Sofy - Tehnologii Web</p>
+        <a href="#"><img src="images/go-up.png" alt="Go to Top" title="Go to Top" id="goUp"> </a>
+        </footer>
+</body>
+
+
+</html>
