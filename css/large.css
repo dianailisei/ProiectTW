@@ -10,11 +10,10 @@ header {
 
 .logo {
 	position: relative;
-	top: 10px;
 	left: 10px;
-	top: -10px;
 	height: 170px;
 	width: 200px;
+	top: -10px;
 }
 
 .logo img{
@@ -252,8 +251,8 @@ body section form p{
 /* PROFILE PAGE CSS */
 
 #basic-info-container {
-	width:60%;
-	height: 300px;
+	width: 60%;
+	height: 310px;
 	position: relative;
     display: inline-block;
     margin-top: 3%;
@@ -261,32 +260,26 @@ body section form p{
 }
 
 #pic {
-	position:relative;
-	float:left;
+	position: relative;
+	float: left;
 	margin-left: 10%;
-    margin-top: 20px;
-	width:35%;
+    margin-top: 25px;
+	width: 35%;
     height: auto;
     display: inline-block;
 }
 
 #info {
-	float:right;
+	float: right;
 	position: relative;
-	width:50%;
+	width: 50%;
     top: 20px;
-	left:10px;
+	left: 10px;
 	text-align: left;
 	line-height: 30px;
     display: inline-block;
 }
 
-.small-icon {
-	width: 20px;
-	height: 20px;
-	position: relative;
-    display: inline-block;
-}
 
 #options-container {
 	position: relative;
@@ -295,7 +288,7 @@ body section form p{
     width: 150px;
     display: inline-block;
     margin-right: 10%;
-    margin-top: 7%;
+    margin-top: 8%;
     margin-left: 0%;
     margin-bottom: 3%;
 }
@@ -309,23 +302,26 @@ body section form p{
 	font-size: 20px;
 }
 
-.delete-button {
-    position: relative;
-    float: right;
-    width: 10%;
-}
-
 .profile-rating-container {
     position: relative;
 }
 
 .profile-rating-text {
-    display: inline;
+    display: inline-block;
 }
+
 .profile-rating-stars {
-    position: absolute !important;
+    width: 100px !important;
+	top: 0px !important;
+	left: 0px !important;
+    position: relative !important;
     display: inline-block !important;
-    
+}
+
+.delete-button {
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
 }
 /* START LOGIN/REGISTER CSS */
 
@@ -340,7 +336,6 @@ body section form p{
 	border-color:#4d515e;
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 12px;
 	margin-left: 25%;
 }
 
