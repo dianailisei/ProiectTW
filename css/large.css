@@ -491,14 +491,66 @@ footer p {
 
 /* START ALL-APPS CSS */
 
+.all-app-section{
+    height: auto;
+}
+
 .all-app-aside{
     margin-left: 4%;
     margin-right: 15px;
+    height: auto;
 }
 
 .app-main{
-    margin-left: 0px;
+    margin-left: 15px;
     width: 70%;
+    height: auto;
+}
+
+.all-app-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.all-app-child{
+    width: 180px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.all-app-icon{
+    display: inline-block;
+    width: 165px;
+    height: 165px;
+}
+
+.all-app-icon img{
+    width: 165px;
+    height: 165px;
+    border-radius: 12px;
+}
+
+.all-app-title{
+    display: inline-block;
+    font-size: 1.4m;
+    margin-bottom: 10px;
+}
+
+.all-app-rating{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+}
+
+.all-app-downloads{
+    display: inline-block;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
 }
 /* END ALL-APPS CSS */
 
