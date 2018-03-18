@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:600px)" href="css/small.css">
+    <link rel="stylesheet" media="(min-width:601px) and (max-width:899px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:900px)" href="css/large.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+
+    <title>Upload</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sofy logo" title="Sofy">
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="categories.html">CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="tops.html">TOPS</a>
+                </li>
+                <li>
+                    <a href="login.html">ACCOUNT</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <span class="search-container">
+            <form action="/search.php">
+                <input type="text" placeholder="Search app.." name="search">
+                <button type="submit" class="fa fa-search"></button>
+            </form>
+        </span>
+    </header>
+
+    <section id="upload-form-container">
+        <form id="upload-form">
+                <h1>Choose a file</h1><br>
+                <input type="file" placeholder="Enter File" name="file" required>
+                <br><br>
+                <h1>Choose a picture</h1><br>
+                <input type="file" id="app_pic" name="app_pic" accept=".jpg, .jpeg, .png" required>
+                <br><br>
+                <input type="text" placeholder="Enter Name" class="input-box" name="app-name" required>
+                <br><br>
+                <input type="text" placeholder="Enter Description" class="input-box" name="app-info" required>
+                <br><br>
+                <h1>Choose a category</h1>
+                <br>
+                <select name="Categories" class="input-box" >
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Utility">Utility</option>
+                    <option value="Network">Network</option>
+                    <option value="Office">Office</option>
+                </select><br><br>
+                <h1>Choose tags</h1><br>
+                
+                <form action="">
+                      <label for="games">Games</label>
+                      <input type="checkbox" name="tag" id="games" value="games">
+                      <label for="fun">Fun</label>
+                      <input type="checkbox" name="tag" id="fun" value="fun">
+                      <label for="windows">Windows</label>
+                      <input type="checkbox" name="tag" id="windows" value="windows">
+                      <label for="linux">Linux</label>
+                      <input type="checkbox" name="tag" id="linux" value="linux">
+                      <label for="iOS">iOS</label>
+                      <input type="checkbox" name="tag" id="iOS" value="iOS">
+                      <label for="android">Android</label>
+                      <input type="checkbox" name="tag" id="android" value="android"><br>
+                      <br>
+                      <button type="submit" type="button">Upload</button>
+                </form>
+            </form>
+    </section>
+
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="http://www.softpedia.com/">Softpedia</a>
+                </li>
+                <li>
+                    <a href="https://sourceforge.net/">Sourceforge</a>
+                </li>
+                <li>
+                    <a href="https://alternativeto.net/">Alternativeto</a>
+                </li>
+            </ul>
+        </div>
+        <p>© 2018 - Sofy - Tehnologii Web</p>
+        <a href="#"><img src="images/go-up.png" alt="Go to Top" title="Go to Top" id="goUp"> </a>
+    </footer>
+</body>
+
+
+</html>
