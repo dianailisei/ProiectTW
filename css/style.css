@@ -354,5 +354,44 @@ color:black;
 
 /* START ALL-APPS CSS */
 
+.all-app-child{
+    background-color: #475562;
+    text-shadow: #000 0px 0px 0px;
+}
+
+.all-app-icon{
+    margin-top: 7px;
+        border-style: solid;
+    border-width: 1px;
+    border-color: #b3b4ab;
+    border-radius: 12px;
+}
+
+.all-app-title{
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.all-app-child:hover{
+    background-color: #7f8a95;
+}
+
+.all-app-button{
+    color: white;
+    background-color: #252e38;
+	text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+	border-color: #2c3e50;
+	border-color:#4d515e;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 12px;
+}
+
+.all-app-child a{
+    text-decoration: none;
+    color: white;
+}
 
 /* END ALL-APPS CSS */
