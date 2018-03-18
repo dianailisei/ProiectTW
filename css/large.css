@@ -1,228 +1,227 @@
-
 header {
     position: relative;
-	display: block;
-	width:100%;
-	height: 150px;
-	margin: 0;
-	padding: 0;
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-	position: relative;
-	left: 10px;
-	height: 170px;
-	width: 200px;
-	top: -10px;
+    position: relative;
+    left: 10px;
+    height: 170px;
+    width: 200px;
+    top: -10px;
 }
 
-.logo img{
+.logo img {
     height: 100%;
     width: 100%;
 }
 
-.search-container{
-	position: absolute;
-	right: 30px;
-	top: 20px;
-	width: 60%;
-	float:right;
-	padding-top: 20px;
+.search-container {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 60%;
+    float: right;
+    padding-top: 20px;
 
 }
 
-.search-container form input{
-	position: absolute;
-	left:0px;
-	top:0px;
-	width: 100%;
+.search-container form input {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
     padding: 12px 20px;
     display: inline-block;
 }
 
-.search-container form button{
-	position: absolute;
-	right:0px;
-	top:0px;
-	padding: 12px 20px;
+.search-container form button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 12px 20px;
     display: inline-block;
 }
 
 .navigation {
-	position: absolute;
-	width: 100%;
-	height: 40px;
-	top: 110px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 110px;
 }
 
 .navigation ul li {
-	float: left;
-	width: 20%;
+    float: left;
+    width: 20%;
 }
 
 .navigation ul li a {
-	display: block;
-	height: 40px;
+    display: block;
+    height: 40px;
 }
 
 
 #wrapper {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #description {
-	position: relative;
-	width: 88.5%;
-	padding: 10px;
-	margin-top: 3%;
-	margin-left: 5%;
-	margin-bottom: 0;
-	line-height: 40px;
-	height: auto;
+    position: relative;
+    width: 88.5%;
+    padding: 10px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 0;
+    line-height: 40px;
+    height: auto;
 }
 
 #description h1 {
-	font-size:40px;
+    font-size: 40px;
 }
 
 .main {
-	width: 69%;
-	margin-top: 15px;
-	margin-left: 5%;
-	display: inline-block;
-	height: 700px;
-	margin-bottom: 15px;
-	float: left;
+    width: 69%;
+    margin-top: 15px;
+    margin-left: 5%;
+    display: inline-block;
+    height: 700px;
+    margin-bottom: 15px;
+    float: left;
 }
 
-.main-full
-{
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 3%;
-	margin-bottom: 15px;
-	height: auto;
+.main-full {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 15px;
+    height: auto;
     padding: 0;
 }
 
 aside {
-	position: relative;
-	left: 1%;
-	width: 20%;
-	margin-top: 15px;
-	margin-left: 10px;
-	display: inline-block;
-	height: 700px;
-	margin-bottom: 15px;
-	float: left;
+    position: relative;
+    left: 1%;
+    width: 20%;
+    margin-top: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    height: 700px;
+    margin-bottom: 15px;
+    float: left;
 }
 
 #wrapper aside h2 {
-	font-size: 25px;
+    font-size: 25px;
 }
 
 #wrapper aside p {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 body section form div {
-	position: relative;
-	top: 20px;
-	left: 30%;
-	display: inline-block;
-	width: inherit;
-	text-align: center;
+    position: relative;
+    top: 20px;
+    left: 30%;
+    display: inline-block;
+    width: inherit;
+    text-align: center;
 }
 
-body section form p{
-	font-size: 30px;
+body section form p {
+    font-size: 30px;
 }
 
 .left-article {
-	width:45%;
-	margin-left:3%;
-	float:left;
-	margin-top:10%;
-	margin-bottom: 10px;
-	font-size: auto;
+    width: 45%;
+    margin-left: 3%;
+    float: left;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    font-size: auto;
 }
 
 .right-article {
-	width:45%;
-	float:right;
-	margin-right: 3%;
-	margin-bottom: 10px;
-	margin-top:10%;
+    width: 45%;
+    float: right;
+    margin-right: 3%;
+    margin-bottom: 10px;
+    margin-top: 10%;
 }
 
 /* APP LIST CSS */
 
-.app-list{
+.app-list {
     -webkit-columns: 3;
     -moz-columns: 3;
     columns: 3;
-    width:100%;
-    
-    -webkit-column-gap: 5px;
-	column-gap: 5px;
-	-moz-column-gap: 5px;
-    }
+    width: 100%;
 
-.app-section{
-	position: relative;
-	margin-top: 25px;
-	width:100%;
-	height: 300px;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
+    -moz-column-gap: 5px;
 }
 
-.app-section h1{
-	padding-left: 20px;
-	display: inline-block;
+.app-section {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+}
+
+.app-section h1 {
+    padding-left: 20px;
+    display: inline-block;
     font-size: 30px;
 }
 
 .see-more-button {
-	position: absolute;
-	right: 15px;
-	top: -10px;
-	display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    display: inline-block;
     padding: 15px 32px;
     font-size: 16px;
     margin: 4px 2px;
 }
 
+
 .app-list-child {
-    position:relative;
+    position: relative;
     width: 94%;
     height: 100px;
-    overflow:hidden;
-    margin-bottom:5px;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
-.app-list-child-img-container{
-    position:absolute;
+.app-list-child-img-container {
+    position: absolute;
     width: 80px;
-    height:80px;
-    top:10px;
-    left:10px;
+    height: 80px;
+    top: 10px;
+    left: 10px;
 }
 
-.app-list-child-img-container img{
-    width:100%;
-    height:100%;
+.app-list-child-img-container img {
+    width: 100%;
+    height: 100%;
 }
 
 .app-list-child-title {
-    font-size: 23px;   
-    margin:0;
-    width:60%;
-    height:30px;
-    position:absolute;
-    top:10px;
-    left:100px;
+    font-size: 23px;
+    margin: 0;
+    width: 60%;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
 }
 
 .bigger-title {
@@ -231,60 +230,63 @@ body section form p{
 }
 
 .app-list-child-rating {
-    top:38px;
+    top: 38px;
 }
 
-.app-list-child-rating, .app-list-child-downloads{
-    margin:0;
-    width:60%;
-    height:20px;
-    position:absolute;
-    left:100px;
-    right:10px;
+.app-list-child-rating,
+.app-list-child-downloads {
+    margin: 0;
+    width: 60%;
+    height: 20px;
+    position: absolute;
+    left: 100px;
+    right: 10px;
 }
 
-.app-list-child-downloads{
-  top:65px; 
+.app-list-child-downloads {
+    top: 65px;
 }
+
+
 /* END APP LIST CSS */
 
 /* PROFILE PAGE CSS */
 
 #basic-info-container {
-	width: 60%;
-	height: 310px;
-	position: relative;
+    width: 60%;
+    height: 310px;
+    position: relative;
     display: inline-block;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
 #pic {
-	position: relative;
-	float: left;
-	margin-left: 10%;
+    position: relative;
+    float: left;
+    margin-left: 10%;
     margin-top: 25px;
-	width: 35%;
+    width: 35%;
     height: auto;
     display: inline-block;
 }
 
 #info {
-	float: right;
-	position: relative;
-	width: 50%;
+    float: right;
+    position: relative;
+    width: 50%;
     top: 20px;
-	left: 10px;
-	text-align: left;
-	line-height: 30px;
+    left: 10px;
+    text-align: left;
+    line-height: 30px;
     display: inline-block;
 }
 
 
 #options-container {
-	position: relative;
+    position: relative;
     float: right;
-	line-height: 30px;
+    line-height: 30px;
     width: 150px;
     display: inline-block;
     margin-right: 10%;
@@ -294,12 +296,12 @@ body section form p{
 }
 
 .option {
-	padding:10px 20px;
-    margin-bottom:10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
 }
 
 .option a:hover {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 .profile-rating-container {
@@ -312,8 +314,8 @@ body section form p{
 
 .profile-rating-stars {
     width: 100px !important;
-	top: 0px !important;
-	left: 0px !important;
+    top: 0px !important;
+    left: 0px !important;
     position: relative !important;
     display: inline-block !important;
 }
@@ -323,58 +325,60 @@ body section form p{
     margin-right: 5px;
     margin-top: 3px;
 }
+
 /* START LOGIN/REGISTER CSS */
 
 #login-window {
-	position: relative;
-	display:block;
-	margin: 3% 10%;
-	width: 50%;
-	height: 500px;
-	border-radius: 12px;
-	background-color: #2c3e50;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	margin-left: 25%;
+    position: relative;
+    display: block;
+    margin: 3% 10%;
+    width: 50%;
+    height: 500px;
+    border-radius: 12px;
+    background-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 25%;
 }
 
-.connection-container{
-	position: absolute;
-	top:50px;
-    width:100%;
-	height:100%;
+.connection-container {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .login-container {
-	position: absolute;
+    position: absolute;
     width: 200px;
     height: 240px;
-    right:53%;
+    right: 53%;
     top: 66px;
 }
- 
-h1{
-	font-size: 28px;
-	margin-bottom: 10px;
-}
-br{
-	margin-bottom: 5px;
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.login-container p{
-	margin-top: 10px;
-	margin-bottom: 10px;
+br {
+    margin-bottom: 5px;
+}
+
+.login-container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
 }
 
-.register-container p{
-	margin-top: 10px;
-	margin-bottom: 10px;
+.register-container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
 }
 
-.login-container button{
+.login-container button {
     padding: 15px 32px;
     display: inline-block;
     font-size: 16px;
@@ -383,36 +387,35 @@ br{
     left: 20%;
 }
 
-.login-container input{
+.login-container input {
     width: 100%;
     padding: 12px 20px;
     display: inline-block;
 }
 
 .register-container {
-	position: absolute;
-    left:53%;
+    position: absolute;
+    left: 53%;
     width: 200px;
     height: 330px;
 }
 
-.register-container input{
+.register-container input {
     width: 100%;
     padding: 12px 20px;
     display: inline-block;
 }
 
-
-.register-container button{
-    position:absolute;
+.register-container button {
+    position: absolute;
     padding: 15px 32px;
     display: inline-block;
 }
 
 .separator {
-	position: absolute;
-    top:0px;
-    left:50%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
     height: 370px;
 }
 
@@ -420,17 +423,123 @@ br{
 
 /* STOP LOGIN/REGISTER CSS */
 
+/* START APP PAGE CSS */
+
+#display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#app-logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+#app-name {
+    width: auto;
+    margin-top: 2%;
+    line-height: 1.2;
+}
+
+#app-name h1 {
+    font-size: 60px;
+}
+
+#app-rating-stars {
+    width: 250px !important;
+    height: auto;
+    top: 20px !important;
+    left: 0px !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+#download-button {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+#app-statistics {
+    display: flex;
+    flex-direction: row;
+    width: 87%;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+.tag {
+    background-color: grey;
+    padding: 3px;
+    border-style: solid;
+    border-color: rgb(183, 188, 193);
+    border-width: 2px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.app-description-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.app-info-container {
+    width: 50%;
+    height: 250px;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    background: #475562;
+    border-radius: 10% 25%;
+    line-height: 20px;
+    margin-left: 50px;
+    padding: 30px;
+}
+
+.app-info-container h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.app-info-container p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#related-apps-container {
+    margin-top: 0px;
+    width: 35%;
+    height: auto;
+    padding-bottom: 30px;
+    border-bottom: none;
+    margin-right: 40px;
+    margin-bottom: 3%;
+}
+
+#columns {
+    display: flex;
+    flex-direction: column;
+}
+
+/* END APP PAGE CSS */
 
 /* START FOOTER CSS */
 
 footer {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
     height: 150px;
-	margin-bottom: 0px;
-	clear:both;
+    margin-bottom: 0px;
+    clear: both;
     line-height: 40px;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 footer ul {
@@ -446,7 +555,7 @@ footer ul li {
 footer p {
     position: relative;
     display: block;
-    top:40px;
+    top: 40px;
 }
 
 #goUp {
@@ -459,55 +568,54 @@ footer p {
 
 /* CONTACT CSS */
 
-.contact-container{
+.contact-container {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.map-container{
+.map-container {
     width: 430px;
     height: 650px;
 }
 
-.map-container img{
+.map-container img {
     height: 100%;
     width: 100%;
     border-radius: 12px;
 }
 
-.contact-information-container{
-    width:  40%;
+.contact-information-container {
+    width: 40%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.diana-container, .mihai-container p{
-    
-}
+.diana-container,
+.mihai-container p {}
 
 
 /* START ALL-APPS CSS */
 
-.all-app-section{
+.all-app-section {
     height: auto;
 }
 
-.all-app-aside{
+.all-app-aside {
     margin-left: 4%;
     margin-right: 15px;
     height: auto;
 }
 
-.app-main{
+.app-main {
     margin-left: 15px;
     width: 70%;
     height: auto;
 }
 
-.all-app-list{
+.all-app-list {
     width: 100%;
     height: auto;
     display: flex;
@@ -516,61 +624,41 @@ footer p {
     align-items: flex-start;
 }
 
-.all-app-child{
+.all-app-child {
     width: 180px;
     height: 300px;
     border-radius: 12px;
 }
 
-.all-app-icon{
+.all-app-icon {
     display: inline-block;
     width: 165px;
     height: 165px;
 }
 
-.all-app-icon img{
+.all-app-icon img {
     width: 165px;
     height: 165px;
     border-radius: 12px;
 }
 
-.all-app-title{
+.all-app-title {
     display: inline-block;
     font-size: 1.4m;
     margin-bottom: 10px;
 }
 
-.all-app-rating{
+.all-app-rating {
     display: inline-block;
     height: 50px;
     width: 100%;
 }
 
-.all-app-downloads{
+.all-app-downloads {
     display: inline-block;
     margin-top: 10px;
     height: 50px;
     width: 100%;
 }
+
 /* END ALL-APPS CSS */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
