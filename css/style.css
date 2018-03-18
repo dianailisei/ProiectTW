@@ -180,13 +180,12 @@ footer ul li a{
 	background-color: grey;
 }
 
-.app-list-container {
+#app-list-container {
 	position:relative;
 	top:20px;
 	right:10px;
 	left:10px;
 	bottom:20px;
-  
 }
 
 .app-section h1{
@@ -240,7 +239,7 @@ color:black;
 /* END APP LIST CSS 
    BEGIN PROFILE PAGE CSS */
 
-.basic-info-container {
+#basic-info-container {
 	background: #475562;
   	border-radius: 10% 25%;
 }
@@ -253,7 +252,7 @@ color:black;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.options-container {
+#options-container {
 	font-family: Arial, Helvetica, sans-serif;
 	list-style: none;
 	text-align: center;
