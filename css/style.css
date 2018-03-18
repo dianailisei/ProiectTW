@@ -290,7 +290,7 @@ color:black;
 	text-shadow: #000 0px 0px 6px;
 }
 
-.login-container button, #upload-form button{
+.login-container button, #upload-form button, #settings-container .settings button{
     border: none;
     color: white;
     background-color: #252e38;
