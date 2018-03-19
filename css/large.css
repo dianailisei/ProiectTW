@@ -265,7 +265,7 @@ body section form p {
     position: relative;
     float: left;
     margin-left: 10%;
-    margin-top: 25px;
+    margin-top: 3%;
     width: 35%;
     height: auto;
     display: inline-block;
@@ -274,11 +274,11 @@ body section form p {
 #info {
     float: right;
     position: relative;
-    width: 50%;
-    top: 20px;
-    left: 10px;
+    width: 40%;
+    top: 20%;
+    right: 10%;
     text-align: left;
-    line-height: 30px;
+    line-height: 20px;
     display: inline-block;
 }
 
@@ -406,7 +406,7 @@ br {
     display: inline-block;
 }
 
-.register-container button {
+.register-container button, #upload-form button, #settings-container .settings button {
     position: absolute;
     padding: 15px 32px;
     display: inline-block;
@@ -421,8 +421,85 @@ br {
 
 
 
-/* STOP LOGIN/REGISTER CSS */
+/* END LOGIN/REGISTER CSS */
 
+/* START UPLOAD CSS */
+
+#upload-form-container {
+    position: relative;
+    display: block;
+    margin: 3% 27%;
+    width: 45%;
+    height: auto;
+    border-radius: 12px;
+    background-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#upload-form {
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: 5% 15%;
+}
+
+.input-box {
+    width: 50%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#upload-form button {
+    position: relative;
+    margin-left: 35%;
+}
+
+#upload-form h1, #settings-container .settings h1 {
+    color: white;
+}
+
+/* END UPLOAD CSS */
+
+/* START SETTINGS CSS */
+
+#settings-container {
+    position: relative;
+    display: block;
+    margin: 3% 27%;
+    width: 45%;
+    height: auto;
+    border-radius: 12px;
+    background-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.settings {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.set-form {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    margin: 5%;
+}
+#settings-container .settings button {
+    position: relative;
+    display: inline-block;
+}
+
+.input-box {
+    width: 100%;
+}
+/* END SETTINGS CSS */
 /* START APP PAGE CSS */
 
 #display {
