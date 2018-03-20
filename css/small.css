@@ -73,17 +73,18 @@ header {
 
 
 #wrapper {
-	width: 100%;
+    width: 100%;
 }
 
 #description {
 	position: relative;
-	width: 88.5%;
 	padding: 10px;
 	margin-top: 3%;
+	width: 90%-20px;
 	margin-left: 5%;
+	margin-right: 5%;
 	margin-bottom: 0;
-	line-height: 40px;
+	line-height: 35px;
 	height: auto;
 }
 
@@ -92,7 +93,7 @@ header {
 }
 
 
-.main-full, #main, aside
+.main-full, .main, aside
 {
 	width: 90%;
 	margin-left: 5%;
@@ -444,3 +445,332 @@ footer p {
     width: 50px;
     height: 50px;
 }
+
+
+/* CONTACT CSS */
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.map-container {
+    width: 90%;
+    height: auto;
+    box-sizing:border-box;
+    object-fit: contain;
+}
+
+.map-container img {
+    height: 100%;
+    width: 100%;
+    box-sizing:border-box;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.contact-information-container {
+    width: 90%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.diana-container,
+.mihai-container p {}
+
+/* END CONTACT CSS */
+
+
+/* START ALL-APPS CSS */
+
+.all-app-section {
+    height: auto;
+    
+}
+
+.all-app-aside {
+    width: 90%;
+    height: auto;
+}
+
+.app-main {
+    width: 90%;
+    height: auto;
+}
+
+.all-app-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items: space-between;
+}
+
+.all-app-child {
+    width: 180px;
+    height: 300px;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.all-app-icon {
+    display: inline-block;
+    width: 165px;
+    height: 165px;
+    
+}
+
+.all-app-icon img{
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    border-radius: 12px;
+}
+
+.all-app-title {
+    display: inline-block;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.all-app-rating {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+}
+
+.all-app-downloads {
+    display: inline-block;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.all-app-pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.all-app-button{
+    width: 40px;
+    height: 20px;
+    padding-top: 10px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+}
+/* END ALL-APPS CSS */
+
+
+/* START APP PAGE CSS */
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+#app-logo {
+    margin-top: 15px;
+    height: 90%;
+    width: 90%;
+    box-sizing:border-box;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+#app-logo img{
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#app-name {
+    width: auto;
+    margin-top: 2%;
+    line-height: 1.2;
+}
+
+#app-name h1 {
+    font-size: 60px;
+}
+
+#app-rating-stars {
+    width: 250px !important;
+    height: auto;
+    top: 20px !important;
+    left: 0px !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+#download-button {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+#app-statistics {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    justify-content: center;
+    padding: 20px 20px;
+    font-size: 20px;
+    
+}
+
+#app-statistics *{
+    margin-bottom: 15px;
+    
+}
+
+
+.tag {
+    background-color: grey;
+    padding: 3px;
+    border-style: solid;
+    border-color: rgb(183, 188, 193);
+    border-width: 2px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.app-description-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.app-info-container {
+    width: 90%;
+    height: auto;
+    background: #475562;
+    border-radius: 10% 25%;
+    line-height: 20px;
+    padding: 15px;
+}
+
+.app-info-container h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.app-info-container p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#related-apps-container {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+}
+
+#related-apps-container h1{
+    margin-bottom: 10px;
+}
+
+#columns {
+    display: flex;
+    flex-direction: column;
+}
+
+/* END APP PAGE CSS */
+
+/* PROFILE PAGE CSS */
+
+#profile-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#basic-info-container {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#pic {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 40%;
+    height: 70%;
+    display: inline-block;
+    
+    box-sizing:border-box;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+#info {
+    width: 55%;
+    height: auto;
+    text-align: left;
+    line-height: 15px;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+#profile-star-center{
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+#options-container {
+    width: 80%;
+    padding-left: 10%;
+}
+
+.option {
+
+}
+
+.profile-rating-container {
+    position: relative;
+}
+
+.profile-rating-text {
+    display: inline-block;
+}
+
+.profile-rating-stars {
+    width: 100px !important;
+    top: 0px !important;
+    left: 0px !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+#app-section-small{
+    position: none;
+}
+
+.delete-button {
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* END PROFILE CSS */
