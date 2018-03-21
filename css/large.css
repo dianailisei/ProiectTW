@@ -65,13 +65,13 @@ header {
 }
 
 
-#wrapper {
+.wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 
-#description {
+.description {
     position: relative;
     width: 88.5%;
     padding: 10px;
@@ -365,9 +365,9 @@ footer p {
     position: relative;
     display: block;
     margin: 3% 10%;
-    width: 50%;
+    width: 60%;
     height: 500px;
-    margin-left: 25%;
+    margin-left: 22%;
 }
 
 .connection-container {
@@ -445,6 +445,8 @@ br {
     top: 0px;
     left: 50%;
     height: 370px;
+    width: 3px;
+    background-color: white;
 }
 
 /* END LOGIN/REGISTER CSS */
@@ -600,6 +602,8 @@ br {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 #app-logo {
