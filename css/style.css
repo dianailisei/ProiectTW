@@ -107,8 +107,7 @@ header {
 	color: #FFF;
 }
 
-/* END HEADER CSS 
-   BEGIN MAIN-INDEX CSS*/
+/* END HEADER CSS */
 
 #description {
 	background: #2c3e50;
@@ -132,9 +131,7 @@ header {
 	color: white;
 }
 
-
-/* END MAIN-INDEX CSS
-   BEGIN FOOTER CSS*/
+/*BEGIN FOOTER CSS*/
 
 footer {
 	font-family: Arial;
@@ -159,7 +156,7 @@ footer ul li a{
 	border-bottom-color: #b3b4ab;
 }
 
-.see-more-button {
+.see-more-button, .option {
 	font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: #252e38;
@@ -173,7 +170,7 @@ footer ul li a{
 	border-radius: 12px;
 }
 
-.see-more-button:hover{
+.see-more-button:hover, .option:hover {
 	background-color: grey;
 }
 
@@ -205,11 +202,11 @@ footer ul li a{
 color:black;
 }
 
-.app-list-child-img-container{
+.app-list-child-img-container {
     border-width: 10px;
 }
 
-.app-list-child-img-container img{
+.app-list-child-img-container img {
 	border-radius: 12px;
 }
  
@@ -219,7 +216,7 @@ color:black;
     text-align:left;
 }
 
-.app-list-child-rating{
+.app-list-child-rating {
   text-align:left;
 }
 
@@ -227,7 +224,7 @@ color:black;
     color: orange;
 }
 
-.app-list-child-downloads{
+.app-list-child-downloads {
   text-align:left;
   text-shadow: #000 0px 0px 2px;
   color:white;
@@ -249,24 +246,9 @@ color:black;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-#options-container {
-	font-family: Arial, Helvetica, sans-serif;
-	list-style: none;
-	text-align: center;
-}
-
-.option {
-	background: #475562;
-	border-radius: 5px 15px;
-		
-}
 .option a{
-	text-decoration: none;
-	color: #FFF;
-}
-
-.option a:hover {
-	color: darkred;
+    text-decoration: none;
+    color: #FFF;
 }
 
 /* END PROFILE CSS 
@@ -278,7 +260,6 @@ color:black;
 	border-color:#4d515e;
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 12px;
 }
 
 .connection-container{
@@ -356,16 +337,10 @@ color:black;
 }
 
 .all-app-icon{
-    margin-top: 7px;
-        border-style: solid;
+    border-style: solid;
     border-width: 1px;
     border-color: #b3b4ab;
     border-radius: 12px;
-}
-
-.all-app-title{
-    margin-top: 10px;
-    font-size: 1.1em;
 }
 
 .all-app-child:hover{
@@ -390,4 +365,87 @@ color:black;
     color: white;
 }
 
-/* END ALL-APPS CSS */
+/* END ALL-APPS CSS
+   START UPLOAD CSS */
+
+#upload-form-container {
+    border-radius: 12px;
+    background-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.input-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+#upload-form h1, #settings-container .settings h1 {
+    color: white;
+}
+
+/* END UPLOAD CSS 
+
+   START SETTINGS CSS */
+
+#settings-container {
+    border-radius: 12px;
+    background-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* END SETTINGS CSS */
+
+/* START APP PAGE CSS */
+
+.tag {
+    background-color: grey;
+    border-style: solid;
+    border-color: rgb(183, 188, 193);
+    border-width: 2px;
+    border-radius: 25px;
+}
+
+.app-info-container {
+    background: #475562;
+    border-radius: 10% 25%;
+}
+
+#related-apps-container {
+    border-bottom: none;
+}
+
+/* END APP PAGE CSS 
+
+   START CONTACT CSS */
+
+.map-container img {
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

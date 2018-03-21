@@ -156,7 +156,44 @@ body section form p {
     margin-top: 10%;
 }
 
-/* APP LIST CSS */
+/* START FOOTER CSS */
+
+footer {
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 0px;
+    clear: both;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+footer ul {
+    position: relative;
+    top: 30px;
+}
+
+footer ul li {
+    display: inline;
+    padding: 40px 40px;
+}
+
+footer p {
+    position: relative;
+    display: block;
+    top: 40px;
+}
+
+#goUp {
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+/*  END FOOTER CSS 
+    APP LIST CSS */
 
 .app-list {
     -webkit-columns: 3;
@@ -254,40 +291,38 @@ body section form p {
 
 #basic-info-container {
     width: 60%;
-    height: 310px;
+    height: auto;
     position: relative;
     display: inline-block;
     margin-top: 3%;
     margin-bottom: 3%;
+    padding: 2% 0;
 }
 
 #pic {
     position: relative;
-    float: left;
-    margin-left: 10%;
-    margin-top: 3%;
     width: 35%;
-    height: auto;
     display: inline-block;
 }
 
 #info {
-    float: right;
     position: relative;
+    float: right;
     width: 40%;
-    top: 20%;
-    right: 10%;
     text-align: left;
     line-height: 20px;
     display: inline-block;
+    margin-right: 10%;
+    margin-top: 7%;
 }
 
 
 #options-container {
     position: relative;
     float: right;
-    line-height: 30px;
-    width: 150px;
+    line-height: 40px;
+    font-size: 20px;
+    width: 200px;
     display: inline-block;
     margin-right: 10%;
     margin-top: 8%;
@@ -298,10 +333,6 @@ body section form p {
 .option {
     padding: 10px 20px;
     margin-bottom: 10px;
-}
-
-.option a:hover {
-    font-size: 20px;
 }
 
 .profile-rating-container {
@@ -336,11 +367,6 @@ body section form p {
     margin: 3% 10%;
     width: 50%;
     height: 500px;
-    border-radius: 12px;
-    background-color: #2c3e50;
-    border-color: #4d515e;
-    border-style: solid;
-    border-width: 1px;
     margin-left: 25%;
 }
 
@@ -421,11 +447,92 @@ br {
     height: 370px;
 }
 
-
-
 /* END LOGIN/REGISTER CSS */
 
-/* START UPLOAD CSS */
+/* START ALL-APPS CSS */
+
+.all-app-section {
+    height: auto;
+}
+
+.all-app-aside {
+    margin-left: 4%;
+    margin-right: 15px;
+    height: auto;
+}
+
+.app-main {
+    margin-left: 15px;
+    width: 70%;
+    height: auto;
+}
+
+.all-app-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items: space-between;
+}
+
+.all-app-child {
+    width: 180px;
+    height: 300px;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.all-app-icon {
+    display: inline-block;
+    width: 165px;
+    height: 165px;
+    margin-top: 7px;
+}
+
+.all-app-icon img{
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    border-radius: 12px;
+}
+
+.all-app-title {
+    display: inline-block;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.all-app-rating {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+}
+
+.all-app-downloads {
+    display: inline-block;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.all-app-pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.all-app-button{
+    width: 40px;
+    height: 20px;
+    padding-top: 10px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+}
+/* END ALL-APPS CSS 
+   START UPLOAD CSS */
 
 #upload-form-container {
     position: relative;
@@ -433,11 +540,6 @@ br {
     margin: 3% 27%;
     width: 45%;
     height: auto;
-    border-radius: 12px;
-    background-color: #2c3e50;
-    border-color: #4d515e;
-    border-style: solid;
-    border-width: 1px;
 }
 
 #upload-form {
@@ -450,8 +552,6 @@ br {
 .input-box {
     width: 50%;
     padding: 12px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
 }
 
@@ -460,13 +560,9 @@ br {
     margin-left: 35%;
 }
 
-#upload-form h1, #settings-container .settings h1 {
-    color: white;
-}
+/* END UPLOAD CSS 
 
-/* END UPLOAD CSS */
-
-/* START SETTINGS CSS */
+   START SETTINGS CSS */
 
 #settings-container {
     position: relative;
@@ -474,11 +570,6 @@ br {
     margin: 3% 27%;
     width: 45%;
     height: auto;
-    border-radius: 12px;
-    background-color: #2c3e50;
-    border-color: #4d515e;
-    border-style: solid;
-    border-width: 1px;
 }
 
 .settings {
@@ -554,12 +645,7 @@ br {
 }
 
 .tag {
-    background-color: grey;
     padding: 3px;
-    border-style: solid;
-    border-color: rgb(183, 188, 193);
-    border-width: 2px;
-    border-radius: 25px;
     margin: 5px;
 }
 
@@ -575,8 +661,6 @@ br {
     height: 250px;
     margin-top: 4%;
     margin-bottom: 3%;
-    background: #475562;
-    border-radius: 10% 25%;
     line-height: 20px;
     margin-left: 50px;
     padding: 30px;
@@ -598,7 +682,6 @@ br {
     width: 35%;
     height: auto;
     padding-bottom: 30px;
-    border-bottom: none;
     margin-right: 40px;
     margin-bottom: 3%;
 }
@@ -610,41 +693,6 @@ br {
 
 /* END APP PAGE CSS */
 
-/* START FOOTER CSS */
-
-footer {
-    display: block;
-    width: 100%;
-    height: 150px;
-    margin-bottom: 0px;
-    clear: both;
-    line-height: 40px;
-    font-size: 20px;
-}
-
-footer ul {
-    position: relative;
-    top: 30px;
-}
-
-footer ul li {
-    display: inline;
-    padding: 40px 40px;
-}
-
-footer p {
-    position: relative;
-    display: block;
-    top: 40px;
-}
-
-#goUp {
-    position: relative;
-    float: right;
-    margin-right: 10%;
-    width: 50px;
-    height: 50px;
-}
 
 /* CONTACT CSS */
 
@@ -663,103 +711,21 @@ footer p {
 .map-container img {
     height: 100%;
     width: 100%;
-    border-radius: 12px;
 }
 
 .contact-information-container {
     width: 40%;
+    margin-top: 3%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    line-height: 30px;
 }
 
-.diana-container,
-.mihai-container p {}
 
 
-/* START ALL-APPS CSS */
 
-.all-app-section {
-    height: auto;
-}
 
-.all-app-aside {
-    margin-left: 4%;
-    margin-right: 15px;
-    height: auto;
-}
-
-.app-main {
-    margin-left: 15px;
-    width: 70%;
-    height: auto;
-}
-
-.all-app-list {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    align-items: space-between;
-}
-
-.all-app-child {
-    width: 180px;
-    height: 300px;
-    border-radius: 12px;
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
-.all-app-icon {
-    display: inline-block;
-    width: 165px;
-    height: 165px;
-    
-}
-
-.all-app-icon img{
-    object-fit: cover;
-    width: 165px;
-    height: 165px;
-    border-radius: 12px;
-}
-
-.all-app-title {
-    display: inline-block;
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
-.all-app-rating {
-    display: inline-block;
-    height: 50px;
-    width: 100%;
-}
-
-.all-app-downloads {
-    display: inline-block;
-    margin-top: 10px;
-    height: 50px;
-    width: 100%;
-}
-
-.all-app-pages{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.all-app-button{
-    width: 40px;
-    height: 20px;
-    padding-top: 10px;
-    margin-left: 5px;
-    padding-bottom: 10px;
-}
-/* END ALL-APPS CSS */
 
 
 
