@@ -437,13 +437,14 @@ footer p {
     position: relative;
     display: block;
     top:40px;
+    z-index: 0;
 }
 
 #goUp {
-    
     float: right;
     width: 50px;
     height: 50px;
+    z-index: 12;
 }
 
 
@@ -774,3 +775,68 @@ footer p {
 }
 
 /* END PROFILE CSS */
+
+/* START UPLOAD CSS */
+
+#upload-form-container {
+    position: relative;
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+}
+
+#upload-form {
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: 5% 15%;
+}
+
+.input-box {
+    width: 50%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+#upload-form button {
+    position: relative;
+    margin-left: 35%;
+}
+
+/* STOP UPLOAD CSS */
+/* START SETTINGS CSS */
+
+#settings-container {
+    position: relative;
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+}
+
+.settings {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.set-form {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    margin: 5%;
+}
+#settings-container .settings button {
+    position: relative;
+    display: inline-block;
+}
+
+.input-box {
+    width: 100%;
+}
+/* END SETTINGS CSS */
