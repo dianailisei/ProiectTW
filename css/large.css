@@ -1,3 +1,4 @@
+/* START HEADER + INDEX CSS */
 header {
     position: relative;
     display: block;
@@ -125,7 +126,7 @@ aside {
 #wrapper aside p {
     font-size: 20px;
 }
-
+/*
 body section form div {
     position: relative;
     top: 20px;
@@ -155,8 +156,10 @@ body section form p {
     margin-bottom: 10px;
     margin-top: 10%;
 }
+*/
 
-/* START FOOTER CSS */
+/* END HEADER + INDEX CSS 
+START FOOTER CSS */
 
 footer {
     display: block;
@@ -194,6 +197,14 @@ footer p {
 
 /*  END FOOTER CSS 
     APP LIST CSS */
+
+#app-list-container {
+	position:relative;
+	top:20px;
+	right:10px;
+	left:10px;
+	bottom:20px;
+}
 
 .app-list {
     -webkit-columns: 3;
@@ -303,6 +314,7 @@ footer p {
     position: relative;
     width: 35%;
     display: inline-block;
+    margin-top: 3%;
 }
 
 #info {
@@ -364,10 +376,9 @@ footer p {
 #login-window {
     position: relative;
     display: block;
-    margin: 3% 10%;
+    margin: 3% 22%;
     width: 60%;
     height: 500px;
-    margin-left: 22%;
 }
 
 .connection-container {
@@ -570,7 +581,7 @@ br {
     position: relative;
     display: block;
     margin: 3% 27%;
-    width: 45%;
+    width: 57%;
     height: auto;
 }
 
@@ -583,12 +594,13 @@ br {
 .set-form {
     position: relative;
     display: inline-block;
-    width: 70%;
+    width: 65%;
     margin: 5%;
 }
 #settings-container .settings button {
     position: relative;
     display: inline-block;
+    left: 5%;
 }
 
 .input-box {

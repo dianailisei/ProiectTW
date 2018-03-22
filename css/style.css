@@ -208,14 +208,6 @@ footer ul li a{
 	background-color: grey;
 }
 
-#app-list-container {
-	position:relative;
-	top:20px;
-	right:10px;
-	left:10px;
-	bottom:20px;
-}
-
 .app-section h1{
     text-shadow: #000 1px 0px 3px;
 }

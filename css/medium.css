@@ -1,60 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*
-The real css
-*/
-
-body {
-	background-color: #b3b4ab;	
-}
-
+/* START HEADER + INDEX CSS */
 header {
 	display: block;
 	width:100%;
@@ -62,18 +6,13 @@ header {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	/*background-color: black;
-	background-image: url("../images/header-background.jpg"); */
-	background-color: #2c3e50;
-	background-size:cover;
 	margin:0 auto;
 }
 
 .logo {
 	position: relative;
-	top: 10px;
-	left: 10px;
 	top: -10px;
+	left: 10px;
 	height: 170px;
 	width: 200px;
 	
@@ -98,133 +37,91 @@ header {
 	left:0px;
 	top:0px;
 	width: 100%;
-	left:0px;
     padding: 12px 20px;
-	background-color: #34495e;
-	color: #909aa4;
     display: inline-block;
-    border: 1px solid #b3b4ab;
-    border-radius: 4px;
-    box-sizing: border-box;
 }
 
 .search-container form button{
 	position: absolute;
-	right:0px;
-	top:0px;
+	right: 0px;
+	top: 0px;
 	padding: 12px 20px;
-	background-color: #34495e;
-	color: #909aa4;
     display: inline-block;
-	border: 1px solid #b3b4ab;
-	border-left-width: 0px;
-	border-bottom-width: 0px;
-    border-radius: 4px;
-	box-sizing: border-box;
-	z-index: 1;
 	}
 
 .navigation {
 	position: absolute;
-	list-style:none;
-	text-align: center;
 	width: 100%;
 	height: 40px;
 	top: 110px;
-	text-shadow: #000 1px 0px 3px;
-  	color:white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navigation ul li {
 	float: left;
-	width: 20%;
-	text-align: center;
-	list-style-type: none;
-	color: #FFF;
-	border-bottom:2px;
-	border-bottom-color: aliceblue;
-	border-bottom-style: solid;	
+	width: 20%;	
 }
 
 .navigation ul li a {
-	text-decoration: none;
 	display: block;
 	height: 40px;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 40px;
-	color: #FFF;
-	/*background-color:rgba(75,37,232,0.5); */
-	background: rgba(208,170,171,0.3);
-
 }
 
-.navigation ul li a:hover {
-	/*background-color: #092856; */
-	background-color: #2c3e50;
-	color: #FFF;
-}
-
-#wrapper {
+.wrapper {
 	width: 100%;
-	margin: 0 auto;
-	padding: 0;
+    margin: 0 auto;
+    padding: 0;
 }
-#description {
+
+.description {
 	position:relative;
 	width:88%;
-	height: 150px;
-	background: rgba(208,170,171,0.3);
-	
-	border-radius: 12px;
-	border-style: solid;
-	border-color:aliceblue;
-	border-width: 2px;
-	box-shadow: 0 0 10px #9ecaed;
-	
+	height: auto;
 	padding: 10px;
-	margin-top:3%;
-	margin-left:5%;
-	margin-bottom:0;
-	font-family: Arial, Helvetica, sans-serif;
-	color: midnightblue;
-	line-height: 40px;
+	margin-top: 3%;
+	margin-left: 5%;
+	margin-bottom: 0;
+	line-height: 30px;
 	text-align: center;
 }
+
 #description h1 {
-	font-size:40px;
+	font-size:30px;
 	
 }
 
-#main {
+.main {
 	width: 65%;
 	margin-top: 3%;
 	margin-left: 5%;
-	float:left;
+	float: left;
+    display: inline-block;
 }
 
-#main, aside {
+.main-full {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 15px;
+    height: auto;
+    padding: 0;
+}
+
+.main, aside {
 	position: relative;
-	display: block;
-	height: 700px;
+	display: inline-block;
+	height: auto;
 	margin-bottom: 5%;
-	background-color: #2c3e50;
-	border-radius: 12px;
-	border-style: solid;
-	border-color:aliceblue;
-	border-width: 2px;
-	box-shadow: 0 0 10px #9ecaed;
 }
 aside {
-	width: 20%;
-	float: right;
-	margin-right: 5%;
-	margin-top: 3%;
-	color: white;
-	line-height: 30px;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
+	position: relative;
+    width: 21%;
+    margin-top: 15px;
+    margin-left: 30px;
+    display: inline-block;
+    margin-bottom: 15px;
+    float: left;
+    line-height: 20px;
 }
 
 #wrapper aside h2 {
@@ -235,93 +132,46 @@ aside {
 	font-size: 20px;
 }
 
+/* END HEADER + INDEX CSS 
+START FOOTER CSS */
+
 footer {
 	display: block;
-	width: 100%;
-	height: 70px;
-	margin-bottom: 0px;
-	background-color: #2c3e50;
-	/*background-color:rgba(75,37,232,0.3); */
-	font-family: Arial;
-	font-size-adjust: auto;
-	font-size: 20px;
-	vertical-align: middle;
-	text-align: center;
-	clear:both;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0px;
+    clear: both;
+    line-height: 30px;
+    font-size: 20px;
 }
 
-#footer-text {
-	color: #FFF;
+footer ul {
+    position: relative;
+    top: 30px;
 }
 
-body section form div {
-	position: relative;
-	top: 20px;
-	left: 30%;
-	display: inline-block;
-	width: inherit;
-	text-align: center;
+footer ul li {
+    display: inline;
+    padding: 0 15px;
 }
 
-body section form p{
-	color:white;
-	font-size: 30px;
+footer p {
+    position: relative;
+    display: block;
+    top: 40px;
 }
 
-.left-article {
-	width:45%;
-	margin-left:3%;
-	float:left;
-	margin-top:10%;
-	margin-bottom: 10px;
-	font-size: auto;
+#goUp {
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    width: 40px;
+    height: 40px;
 }
 
-.right-article {
-	width:45%;
-	float:right;
-	margin-right: 3%;
-	margin-bottom: 10px;
-	margin-top:10%;
-}
 
-/* APP LIST CSS */
-
-
-.app-list{
-    width:100%;
-    
-    -webkit-column-gap: 5px;
-	column-gap: 5px;
-	-moz-column-gap: 5px;
-}
-
-@media screen and (min-width: 800px) {
-.app-list{
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    columns: 3;
-    }
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 799px){
-.app-list{
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
-    }
-
-}
-
-@media screen and (max-width: 499) {
-.app-list{
-    -webkit-columns: 1;
-    -moz-columns: 1;
-    columns: 1;
-    }
-
-}
+/*  END FOOTER CSS 
+    APP LIST CSS */
 
 #app-list-container {
 	position:relative;
@@ -331,288 +181,543 @@ body section form p{
 	bottom:20px;
 }
 
+.app-list {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    width: 100%;
+
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
+    -moz-column-gap: 5px;
+}
+
+.app-section {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 400px;
+}
+
+.app-section h1 {
+    padding-left: 20px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.see-more-button {
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    display: inline-block;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+
 .app-list-child {
-  border-radius: 12px;
-  border-width: thin;
-  position:relative;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 94%;
-  height: 100px;
-  /*background-color:rgba(0,0,0,0.3); */
-  background-color: rgba(208,170,171,0.3);
-  list-style-type: none;
-  overflow:hidden;
-  margin-bottom:5px;
+    position: relative;
+    width: 94%;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
-.app-list-child a {
-color:black;
-}
-
-.app-list-child-img-container{
-	position:absolute;
-    border-width: 10px;
+.app-list-child-img-container {
+    position: absolute;
     width: 80px;
-    height:80px;
-    top:10px;
-    left:10px;
+    height: 80px;
+    top: 10px;
+    left: 10px;
 }
-.app-list-child-img-container img{
-	border-radius: 12px;
-	width:100%;
-    height:100%;
+
+.app-list-child-img-container img {
+    width: 100%;
+    height: 100%;
 }
- 
+
 .app-list-child-title {
-text-shadow: #000 0px 0px 6px;
-
-    color: white;
-  font-size: 23px;
-  text-align:left;
-  margin:0;
-  width:60%;
-  height:30px;
-  position:absolute;
-  top:10px;
-  left:100px;
+    font-size: 23px;
+    margin: 0;
+    width: 60%;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
 }
 
-.app-list-child-rating{
-  text-align:left;
-  margin:0;
-  width:60%;
-  height:20px;
-  position:absolute;
-  top:38px;
-  left:100px;
-  right:10px;
+.bigger-title {
+    font-size: 40px !important;
+    margin-top: 20px !important;
 }
 
-.rating-checked {
-    color: orange;
+.app-list-child-rating {
+    top: 38px;
 }
 
-.app-list-child-downloads{
-  text-align:left;
-  margin:0;
-  width:60%;
-  height:20px;
-  position:absolute;
-  top:65px;
-  left:100px;
-  right:10px;
-  text-shadow: #000 0px 0px 2px;
-  color:white;
+.app-list-child-rating,
+.app-list-child-downloads {
+    margin: 0;
+    width: 60%;
+    height: 20px;
+    position: absolute;
+    left: 100px;
+    right: 10px;
 }
+
+.app-list-child-downloads {
+    top: 65px;
+}
+
 
 /* END APP LIST CSS */
 
 /* PROFILE PAGE CSS */
 
 #basic-info-container {
-	width:50%;
-	height: 300px;
-	background-color: rgba(255,255,255,0.4);
-  	border-radius: 10% 25%;
-	float:left;
-	top:65px;
-	position: relative;
-	margin-left: 7%;
+    width: 50%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 2% 0;
 }
 
 #pic {
-	position:relative;
-	float:left;
-	margin-left: 10%;
-	margin-top: 5%;
-	width:40%;
-	outline: thin double #32a1ce;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    display: block;
 }
 
 #info {
-	float:right;
-	position: relative;
-	width:50%;
-	margin-top:12%;
-	left:10px;
-	text-align: left;
-	line-height: 30px;
-	font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 70%;
+    text-align: left;
+    line-height: 20px;
+    display: block;
+    left: 17%;
+    top: 10px;
 }
 
-.small-icon {
-	width: 20px;
-	height: 20px;
-	position: relative;
-}
 
 #options-container {
-	position: absolute;
-	
-	right:0px;
-	top:0px;
-	line-height: 30px;
-	font-family: Arial, Helvetica, sans-serif;
-	list-style:none;
-	text-align: center;
+    position: relative;
+    float: right;
+    line-height: 40px;
+    font-size: 20px;
+    width: 30%;
+    display: inline-block;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-left: 0%;
+    margin-bottom: 3%;
 }
 
 .option {
-	background-color: rgba(75,37,232,0.5);
-	padding:10px 40px;
-	margin-bottom:10px;
-	border-radius: 5px 15px;
-		
-}
-.option a{
-	text-decoration: none;
-	color: #FFF;
+    padding: 10px 10px;
+    margin-bottom: 10px;
 }
 
-.option a:hover {
-	color: darkred;
-	font-size: 20px;
+.profile-rating-container {
+    position: relative;
 }
 
+.profile-rating-text {
+    display: inline-block;
+}
 
-/* START LOGIN/REGISTER CSS */
+.profile-rating-stars {
+    width: 100px !important;
+    top: 0px !important;
+    left: 0px !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+.delete-button {
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* END PROFILE CSS 
+   START LOGIN/REGISTER CSS */
 
 #login-window {
-	position: relative;
-	display:block;
-	margin: 3% 10%;
-	width: 50%;
-	height: 500px;
-	border-radius: 12px;
-	background-color: #2c3e50;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 12px;
-	/*background-color:#2c3e50;*/
-	margin-left: 25%;
+    position: relative;
+    display: block;
+    margin: 3% 12%;
+    width: 75%;
+    height: 400px;
 }
 
-.connection-container{
-	font-family: Arial, Helvetica, sans-serif;
-	position: absolute;
-	top:50px;
-    width:100%;
-	height:100%;
-
-    color: white;
+.connection-container {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    height: 100%;
 }
 
 .login-container {
-	text-shadow: #000 0px 0px 6px;
-	position: absolute;
-    
+    position: absolute;
     width: 200px;
     height: 240px;
-    right:53%;
+    right: 53%;
     top: 66px;
 }
- 
-h1{
-	font-size: 28px;
-	margin-bottom: 10px;
-}
-br{
-	margin-bottom: 5px;
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.login-container p{
-	margin-top: 10px;
-	margin-bottom: 10px;
+br {
+    margin-bottom: 5px;
 }
 
-.register-container p{
-	margin-top: 10px;
-	margin-bottom: 10px;
+.login-container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-.login-container button{
-    border: none;
-    color: white;
-    background-color: #252e38;
+.register-container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.login-container button {
     padding: 15px 32px;
-	text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
-	position: absolute;
-	border-color: #2c3e50;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 12px;
+    position: absolute;
     left: 20%;
 }
 
-.login-container button:hover{
-	background-color: grey;
-}
-
-.login-container input{
+.login-container input {
     width: 100%;
     padding: 12px 20px;
-    
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.separator {
-	position: absolute;
-    top:0px;
-    left:50%;
-    border-left: 3px solid white;
-    border-radius: 100px;
-    height: 370px;
 }
 
 .register-container {
-	text-shadow: #000 0px 0px 6px;
-	position: absolute;
-    left:53%;
+    position: absolute;
+    left: 53%;
     width: 200px;
     height: 330px;
 }
 
-.register-container input{
+.register-container input {
     width: 100%;
     padding: 12px 20px;
-   
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+}
+
+.register-container button, #upload-form button, #settings-container .settings button {
+    position: absolute;
+    padding: 15px 32px;
+    display: inline-block;
+}
+
+.separator {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 350px;
+    width: 3px;
+    background-color: white;
+}
+
+/* END LOGIN/REGISTER CSS
+   START ALL-APPS CSS */
+
+.all-app-section {
+    height: auto;
+}
+
+.all-app-aside {
+    height: auto;
+    margin-left: 4%;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.app-main {
+    margin-top: 20px;
+    width: 60%;
+    height: auto;
+}
+
+.all-app-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items: space-between;
+}
+
+.all-app-child {
+    width: 180px;
+    height: 300px;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.all-app-icon {
+    display: inline-block;
+    width: 165px;
+    height: 165px;
+    margin-top: 7px;
+}
+
+.all-app-icon img{
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    border-radius: 12px;
+}
+
+.all-app-title {
+    display: inline-block;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.all-app-rating {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+}
+
+.all-app-downloads {
+    display: inline-block;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.all-app-pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.all-app-button{
+    width: 40px;
+    height: 20px;
+    padding-top: 10px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+}
+/* END ALL-APPS CSS 
+   START UPLOAD CSS */
+
+#upload-form-container {
+    position: relative;
+    display: block;
+    margin: 3% 27%;
+    width: 45%;
+    height: auto;
+}
+
+#upload-form {
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: 5% 15%;
+}
+
+.input-box {
+    width: 50%;
+    padding: 12px 20px;
     box-sizing: border-box;
 }
 
-.register-container button{
-	position:absolute;
-    background-color: #252e38;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-	cursor: pointer;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 12px;
-    left: 20%;
+#upload-form button {
+    position: relative;
+    margin-left: 25%;
 }
 
-.register-container button:hover{
-	background-color: grey;
+/* END UPLOAD CSS 
+
+   START SETTINGS CSS */
+
+#settings-container {
+    position: relative;
+    display: block;
+    margin: 3% 27%;
+    width: 50%;
+    height: auto;
 }
 
-/* STOP LOGIN/REGISTER CSS */
+.settings {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.set-form {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 5%;
+}
+#settings-container .settings button {
+    position: relative;
+    left: 5%;
+}
+
+.input-box {
+    width: 100%;
+}
+/* END SETTINGS CSS */
+
+/* START APP PAGE CSS */
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#app-logo {
+    margin-top: 15px;
+    margin-left: 25%;
+    height: 50%;
+    width: 50%;
+    box-sizing:border-box;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+#app-logo img{
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#app-name {
+    width: auto;
+    margin-top: 2%;
+    line-height: 1.2;
+}
+
+#app-name h1 {
+    font-size: 60px;
+}
+
+#app-rating-stars {
+    width: 250px !important;
+    height: auto;
+    top: 20px !important;
+    left: 0px !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+#download-button {
+    margin-top: 50px;
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#app-statistics {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.tag {
+    padding: 2px;
+    margin: 5px;
+}
+
+.app-description-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.app-info-container {
+    width: 70%;
+    height: auto;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    line-height: 20px;
+    margin-left: 10%;
+    padding: 30px;
+}
+
+.app-info-container h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.app-info-container p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#related-apps-container {
+    margin-top: 10px;
+    margin-left: 80px;
+    width: 70%;
+    height: auto;
+    padding-bottom: 30px;
+    margin-right: 40px;
+    margin-bottom: 3%;
+}
+
+#columns {
+    display: flex;
+    flex-direction: column;
+}
+
+/* END APP PAGE CSS */
+
+
+/* CONTACT CSS */
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.map-container {
+    width: 430px;
+    height: 650px;
+}
+
+.map-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-information-container {
+    width: 40%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    line-height: 20px;
+    padding: 0px 10px;
+}
