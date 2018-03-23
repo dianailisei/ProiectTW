@@ -65,6 +65,10 @@ header {
     height: 40px;
 }
 
+.categories-father{
+    overflow: hidden;
+    height: 40px;
+}
 
 .wrapper {
     width: 100%;
@@ -109,7 +113,6 @@ header {
 
 aside {
     position: relative;
-    left: 1%;
     width: 20%;
     margin-top: 15px;
     margin-left: 10px;
