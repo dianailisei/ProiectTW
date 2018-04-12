@@ -2,68 +2,20 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include_once "includes/head.inc.php" ?>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" media="(max-width:600px)" href="css/small.css">
-    <link rel="stylesheet" media="(min-width:601px) and (max-width:899px)" href="css/medium.css">
-    <link rel="stylesheet" media="(min-width:900px)" href="css/large.css">
-    <link rel="icon" href="images/logo.png" type="image/x-icon" />
-
-    <title>Categories</title>
+    <title>Tops</title>
 </head>
 
 <body>
 
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Sofy logo" title="Sofy">
-            </a>
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li class="categories-father">
-                    <a href="categories.html">CATEGORIES</a>
-                    <div id="drop-down">
-                        <a href="all.html">Entertaiment</a>
-                        <a href="all.html">Network</a>
-                        <a href="all.html">Office</a>
-                        <a href="all.html">Utility</a>
-                    </div>
-                </li>
-                <li class="categories-father">
-                    <a href="tops.html">TOPS</a>
-                     <div id="drop-down">
-                        <a href="all.html">Most downloaded apps</a>
-                        <a href="all.html">Most popular apps</a>
-                        <a href="all.html">Most recent apps</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="login.html">ACCOUNT</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-        <span class="search-container">
-            <form action="all.html">
-                <input type="text" placeholder="Search app.." name="search">
-                <button type="submit" class="fa fa-search"></button>
-            </form>
-        </span>
+        <?php include_once "includes/header.inc.php" ?>
     </header>
 
     <section class="main-full">
         <div class="app-section">
-            <h1>Entertaiment</h1>
+            <h1>Most downloaded apps</h1>
             <a href="all.html" class="see-more-button">See more</a>
 
             <div id="app-list-container">
@@ -169,7 +121,7 @@
         </div>
 
         <div class="app-section">
-            <h1>Network</h1>
+            <h1>Most popular apps</h1>
             <a href="all.html" class="see-more-button">See more</a>
 
             <div id="app-list-container">
@@ -275,113 +227,7 @@
         </div>
 
         <div class="app-section">
-            <h1>Office</h1>
-            <a href="all.html" class="see-more-button">See more</a>
-
-            <div id="app-list-container">
-                <ul class="app-list">
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title">Skype</div>
-                            <div class="app-list-child-rating">
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="app-list-child-downloads">
-                                <span class="fa fa-download"></span> 1234</div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title">Skype</div>
-                            <div class="app-list-child-rating">
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="app-list-child-downloads">
-                                <span class="fa fa-download"></span> 1234</div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title">Skype</div>
-                            <div class="app-list-child-rating">
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="app-list-child-downloads">
-                                <span class="fa fa-download"></span> 1234</div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title">Skype</div>
-                            <div class="app-list-child-rating">
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="app-list-child-downloads">
-                                <span class="fa fa-download"></span> 1234</div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title">Skype</div>
-                            <div class="app-list-child-rating">
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="app-list-child-downloads">
-                                <span class="fa fa-download"></span> 1234</div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title">Skype</div>
-                            <div class="app-list-child-rating">
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star rating-checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="app-list-child-downloads">
-                                <span class="fa fa-download"></span> 1234</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="app-section">
-            <h1>Utility</h1>
+            <h1>Most recent apps</h1>
             <a href="all.html" class="see-more-button">See more</a>
 
             <div id="app-list-container">
@@ -487,23 +333,7 @@
         </div>
     </section>
 
-    <footer>
-        <div>
-            <ul>
-                <li>
-                    <a href="http://www.softpedia.com/">Softpedia</a>
-                </li>
-                <li>
-                    <a href="https://sourceforge.net/">Sourceforge</a>
-                </li>
-                <li>
-                    <a href="https://alternativeto.net/">Alternativeto</a>
-                </li>
-            </ul>
-        </div>
-        <p>© 2018 - Sofy - Tehnologii Web</p>
-        <a href="#"><img src="images/go-up.png" alt="Go to Top" title="Go to Top" id="goUp"> </a>
-    </footer>
+    <?php include_once "includes/footer.inc.php" ?>
 </body>
 
 

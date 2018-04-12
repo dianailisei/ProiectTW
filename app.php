@@ -2,15 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" media="(max-width:600px)" href="css/small.css">
-    <link rel="stylesheet" media="(min-width:601px) and (max-width:899px)" href="css/medium.css">
-    <link rel="stylesheet" media="(min-width:900px)" href="css/large.css">
-    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <?php include_once "includes/head.inc.php" ?>
 
     <title>Sofy</title>
 </head>
@@ -19,47 +11,7 @@
 <body>
 
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Sofy logo" title="Sofy">
-            </a>
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li class="categories-father">
-                    <a href="categories.html">CATEGORIES</a>
-                    <div id="drop-down">
-                        <a href="all.html">Entertaiment</a>
-                        <a href="all.html">Network</a>
-                        <a href="all.html">Office</a>
-                        <a href="all.html">Utility</a>
-                    </div>
-                </li>
-                <li class="categories-father">
-                    <a href="tops.html">TOPS</a>
-                     <div id="drop-down">
-                        <a href="all.html">Most downloaded apps</a>
-                        <a href="all.html">Most popular apps</a>
-                        <a href="all.html">Most recent apps</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="login.html">ACCOUNT</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-        <span class="search-container">
-            <form action="all.html">
-                <input type="text" placeholder="Search app.." name="search">
-                <button type="submit" class="fa fa-search"></button>
-            </form>
-        </span>
+        <?php include_once "includes/header.inc.php" ?>
     </header>
 
     <section class="main-full" id="display">
@@ -157,21 +109,7 @@
         </div>
     </section>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="http://www.softpedia.com/">Softpedia</a>
-            </li>
-            <li>
-                <a href="https://sourceforge.net/">Sourceforge</a>
-            </li>
-            <li>
-                <a href="https://alternativeto.net/">Alternativeto</a>
-            </li>
-        </ul>
-        <p>© 2018 - Sofy - Tehnologii Web</p>
-        <a href="#"><img src="images/go-up.png" alt="Go to Top" title="Go to Top" id="goUp"> </a>
-    </footer>
+    <?php include_once "includes/footer.inc.php" ?>
 </body>
 
 
