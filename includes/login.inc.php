@@ -7,7 +7,7 @@
     $password=mysqli_real_escape_string($conn, $_POST['password']);
      
      if(empty($username) || empty($password)){
-         header("Location: ../login.php?fields=empty");
+         header("Location: ../login.php?log=empty");
          exit();
      }
      else {
@@ -15,17 +15,17 @@
         $result = mysqli_query($conn, $query);
         
         if(mysqli_num_rows($result)<1){
-            header("Location: ../login.php?user=none");
+            header("Location: ../login.php?log=none");
             exit();
         }
         else {
             if($row = mysqli_fetch_assoc($result)) {
-                if($password != $row['password']) {
-                    header("Location: ../login.php?password=incorrect");
+                if(password_verify($password,$row['password'])) {
+                    header("Location: ../profile.php");
                     exit();
                 }
                 else {
-                    header("Location: ../profile.php");
+                    header("Location: ../login.php?log=fail");
                     exit();
                 }
             }
