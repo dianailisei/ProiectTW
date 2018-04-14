@@ -6,7 +6,7 @@ if(isset($_POST['submit'])) {
     
     $first=mysqli_real_escape_string($conn, $_POST['first']);
     $last=mysqli_real_escape_string($conn, $_POST['last']);
-    echo $first . $last;
+    
     $id = $_SESSION['id'];
     $query="UPDATE users SET first = '$first', last='$last' WHERE id='$id'";
     $result = mysqli_query($conn, $query); 

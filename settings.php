@@ -15,7 +15,7 @@
 
     <section id="settings-container">
         <div class="settings">
-            <form class="set-form" action="includes/first-last.inc.php" method="POST">
+            <form class="set-form" action="includes/firstLast.inc.php" method="POST">
                 <h1>Set your personal info</h1>
                 <input type="text" placeholder="Set First Name" class="input-box" name="first" required><br><br>
                 <input type="text" placeholder="Set Last Name" class="input-box" name="last" required>
