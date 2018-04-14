@@ -3,7 +3,7 @@
 
 <head>
     <?php include_once "includes/head.inc.php" ?>
-
+    <?php include_once "includes/sessionCheck.inc.php" ?>
     <title>Settings</title>
 </head>
 
