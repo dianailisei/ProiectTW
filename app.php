@@ -7,7 +7,6 @@
     <title>Sofy</title>
 </head>
 
-
 <body>
 
     <header>

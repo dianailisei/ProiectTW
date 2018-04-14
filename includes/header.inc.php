@@ -1,5 +1,5 @@
 <div class="logo">
-    <a href="index.html">
+    <a href="index.php">
                 <img src="images/logo.png" alt="Sofy logo" title="Sofy">
             </a>
 </div>
@@ -26,7 +26,11 @@
             </div>
         </li>
         <li>
-            <a href="login.php">ACCOUNT</a>
+            <?php if(isset($_SESSION['id'])) 
+                    echo '<a href="profile.php">ACCOUNT</a>'; 
+                 else
+                    echo '<a href="login.php">ACCOUNT</a>';
+            ?>
         </li>
         <li>
             <a href="contact.php">CONTACT</a>

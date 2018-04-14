@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if(isset($_POST['submit'])) {
     
     include_once 'db.inc.php';
@@ -33,9 +33,9 @@ if(isset($_POST['submit'])) {
             exit();
         }
     }
-    $hasedPassword = password_hash($password, PASSWORD_DEFAULT);
-    $query="INSERT INTO users (username, email, password) ";
-    $query .="VALUES('$username', '$email', '$hasedPassword')";
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    $query="INSERT INTO users (username, email, password, joindate) ";
+    $query .="VALUES('$username', '$email', '$hashedPassword', NOW())";
     
     $result = mysqli_query($conn, $query); 
     if(!$result){
@@ -43,7 +43,8 @@ if(isset($_POST['submit'])) {
     }
     else{
         header("Location: ../profile.php");
-        exit();
+        $_SESSION['username'] = $row['username'];
+        $_SESSION['email'] = $row['email'];
     }
 }
 

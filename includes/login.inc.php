@@ -1,4 +1,6 @@
 <?php
+ session_start();
+
  if(isset($_POST['submit'])) {
 
     include_once 'db.inc.php';
@@ -22,6 +24,13 @@
             if($row = mysqli_fetch_assoc($result)) {
                 if(password_verify($password,$row['password'])) {
                     header("Location: ../profile.php");
+                    $_SESSION['id'] = $row['id'];
+                    $_SESSION['first'] = $row['first'];
+                    $_SESSION['last'] = $row['last'];
+                    $_SESSION['username'] = $row['username'];
+                    $_SESSION['email'] = $row['email'];
+                    $_SESSION['country'] = $row['country'];
+                    $_SESSION['picture'] = $row['picture'];
                     exit();
                 }
                 else {

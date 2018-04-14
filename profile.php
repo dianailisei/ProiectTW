@@ -35,9 +35,11 @@
         </div>
         <div id="options-container">
             <ul>
-                <li class="option"><a href="upload.html">Upload File</a></li>
-                <li class="option"><a href="settings.html">Settings</a></li>
-                <li class="option"><a href="login.html">Logout</a></li>
+                <li class="option"><a href="upload.php">Upload File</a></li>
+                <li class="option"><a href="settings.php">Settings</a></li>
+                <li class="option">
+                    <?php session_destroy() ?>
+                    <a href="index.php">Logout</a></li>
             </ul>
         </div>
 

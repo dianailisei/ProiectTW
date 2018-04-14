@@ -14,13 +14,30 @@
     </header>
 
     <section id="settings-container">
+        <div class="settings">
+            <form class="set-form" action="includes/first-last.inc.php" method="POST">
+                <h1>Set your personal info</h1>
+                <input type="text" placeholder="Set First Name" class="input-box" name="first" required><br><br>
+                <input type="text" placeholder="Set Last Name" class="input-box" name="last" required>
+                <br><br>
+                <button type="submit" name="submit">Save</button><br><br>
+            </form>
+        </div>
 
         <div class="settings">
             <form class="set-form">
-                <h1>Change your profile picture</h1>
-                <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png" required>
+                <h1>Set your location</h1>
+                <input type="text" placeholder="Enter Country" class="input-box" name="country" required>
             </form>
             <button type="submit" type="button">Save</button><br><br>
+        </div>
+
+        <div class="settings">
+            <form class="set-form">
+                <h1>Set your profile picture</h1>
+                <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png" required>
+            </form>
+            <button type="submit" name="picture">Save</button><br><br>
         </div>
 
         <div class="settings">
@@ -34,13 +51,11 @@
             <button type="submit" type="button">Save</button><br><br>
         </div>
 
-        <div class="settings">
-            <form class="set-form">
-                <h1>Change your address</h1>
-                <input type="text" placeholder="Enter New Address" class="input-box" name="address" required>
-            </form>
-            <button type="submit" type="button">Save</button><br><br>
+        <div class="settings set-form">
+            <h1>Delete account</h1>
+            <button type="submit" name="delete">Delete</button><br><br>
         </div>
+
     </section>
 
     <?php include_once "includes/footer.inc.php" ?>
