@@ -11,7 +11,8 @@ if(isset($_POST['submit'])) {
     $query="UPDATE users SET first = '$first', last='$last' WHERE id='$id'";
     $result = mysqli_query($conn, $query); 
     if(!$result){
-        die("Query FAILED.<br>" . mysqli_error()); 
+        die("Query FAILED.<br>" . mysqli_error());
+        exit();
     }
     else {
         header("Location: ../profile.php");

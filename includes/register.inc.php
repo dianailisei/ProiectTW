@@ -42,9 +42,10 @@ if(isset($_POST['submit'])) {
         die("Query FAILED.<br>" . mysqli_error()); 
     }
     else{
-        header("Location: ../profile.php");
         $_SESSION['username'] = $row['username'];
         $_SESSION['email'] = $row['email'];
+        header("Location: ../profile.php");
+        exit();
     }
 }
 

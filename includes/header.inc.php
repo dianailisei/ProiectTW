@@ -26,7 +26,8 @@
             </div>
         </li>
         <li>
-            <?php if(isset($_SESSION['id'])) 
+            <?php
+            if(isset($_SESSION['id'])) 
                     echo '<a href="profile.php">ACCOUNT</a>'; 
                  else
                     echo '<a href="login.php">ACCOUNT</a>';
