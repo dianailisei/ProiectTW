@@ -40,6 +40,7 @@ if(isset($_POST['submit'])) {
     $result = mysqli_query($conn, $query); 
     if(!$result){
         die("Query FAILED.<br>" . mysqli_error()); 
+        exit();
     }
     else{
         $_SESSION['username'] = $row['username'];

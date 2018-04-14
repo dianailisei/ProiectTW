@@ -27,10 +27,12 @@
         </li>
         <li>
             <?php
-            if(isset($_SESSION['id'])) 
+            if(isset($_SESSION['username'])) {
                     echo '<a href="profile.php">ACCOUNT</a>'; 
-                 else
+            }
+                 else{
                     echo '<a href="login.php">ACCOUNT</a>';
+            }
             ?>
         </li>
         <li>

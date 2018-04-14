@@ -29,7 +29,6 @@ session_start();
                     $_SESSION['email'] = $row['email'];
                     $_SESSION['country'] = $row['country'];
                     $_SESSION['picture'] = $row['picture'];
-                    session_write_close();
                     header("Location: ../profile.php");
                     exit();
                 }
