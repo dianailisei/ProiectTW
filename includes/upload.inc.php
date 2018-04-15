@@ -25,7 +25,6 @@ if(isset($_POST['submit'])) {
         $targetIcon = "../users/" . $_SESSION["username"] . "/icons/" . basename($_FILES["iconToUpload"]["name"]);
         $noIcon = FALSE;
     }
-    echo $targetIcon . "<br>";
     $appName = mysqli_real_escape_string($conn,$_POST["appName"]);
     $appUploader = $_SESSION["id"];
     $appDescription = mysqli_real_escape_string($conn,$_POST["appDescription"]);
@@ -71,7 +70,6 @@ if(isset($_POST['submit'])) {
     if (move_uploaded_file($_FILES["appToUpload"]["tmp_name"], $targetFile)) {
         echo "The file ". basename( $_FILES["appToUpload"]["name"]). " has been uploaded.";
         echo "<br>";
-        echo $targetIcon . "<br>";
         if (move_uploaded_file($_FILES["iconToUpload"]["tmp_name"], $targetIcon) || $noIcon==TRUE) {
             echo "The icon ". basename( $_FILES["iconToUpload"]["name"]). " has been uploaded.";
             echo "<br>";

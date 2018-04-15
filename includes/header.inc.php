@@ -11,18 +11,18 @@
         <li class="categories-father">
             <a href="categories.php">CATEGORIES</a>
             <div id="drop-down">
-                <a href="all.php">Entertaiment</a>
-                <a href="all.php">Network</a>
-                <a href="all.php">Office</a>
-                <a href="all.php">Utility</a>
+                <a href="all.php?category=Entertainment">Entertainment</a>
+                <a href="all.php?category=Network">Network</a>
+                <a href="all.php?category=Office">Office</a>
+                <a href="all.php?category=Utility">Utility</a>
             </div>
         </li>
         <li class="categories-father">
             <a href="tops.php">TOPS</a>
             <div id="drop-down">
-                <a href="all.php">Most downloaded apps</a>
-                <a href="all.php">Most popular apps</a>
-                <a href="all.php">Most recent apps</a>
+                <a href="all.php?order=downloads">Most downloaded apps</a>
+                <a href="all.php?order=rating">Most popular apps</a>
+                <a href="all.php?order=upload_date">Most recent apps</a>
             </div>
         </li>
         <li>
@@ -41,7 +41,7 @@
     </ul>
 </nav>
 <span class="search-container">
-            <form action="all.php">
+            <form method="POST" action="includes/search.inc.php">
                 <input type="text" placeholder="Search app.." name="search">
                 <button type="submit" class="fa fa-search"></button>
             </form>
