@@ -58,19 +58,39 @@ if(isset($_POST['submit'])) {
             
             if(!$result){
                 die("Querry faild... No app was added to the server.<br>" . mysqli_error()); 
+                echo "Something went wrong! <a href='../profile.php'>Click here to go back!</a>";
                 exit();
             }
             else
             {
+                $query = "SELECT id FROM apps WHERE uploader='$appUploader' AND name='$appName' order by upload_date desc";
+                $result = mysqli_query($conn, $query);
+                $row = mysqli_fetch_assoc($result);
+                $appId = $row['id'];
+                foreach($appTags as $tag)
+                {
+                    $query = "INSERT INTO tags (id_app, tag) VALUES ('$appId','$tag');";
+                    $result = mysqli_query($conn, $query);
+                    if(!$result){
+                        die("Querry faild... No app was added to the server.<br>" . mysqli_error()); 
+                        echo "Something went wrong! <a href='../profile.php'>Click here to go back!</a>";
+                        exit();
+                    }
+                }
                 echo "All done! <a href='../profile.php'>Click here to go back!</a>";
+                exit();
             }
         } 
         else 
         {
             echo "Sorry, there was an error uploading your app icon.";
+            echo "Something went wrong! <a href='../profile.php'>Click here to go back!</a>";
+            exit();
         }
     } else {
         echo "Sorry, there was an error uploading your app.";
+        echo "Something went wrong! <a href='../profile.php'>Click here to go back!</a>";
+        exit();
     }
     
 }
