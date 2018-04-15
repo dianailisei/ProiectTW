@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once "sessionCheck.inc.php";
 if(isset($_POST['submit'])) {
     
     include_once 'db.inc.php';
@@ -19,5 +20,9 @@ if(isset($_POST['submit'])) {
         exit();
     }
 }
-
+else
+{
+    header("Location: ../settings.php");
+    exit();
+}
 ?>

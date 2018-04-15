@@ -7,7 +7,7 @@ if(isset($_POST['submit'])) {
     }
     
     
-    $targetFile = "apps/" . $_SESSION["username"] . "_" . basename($_FILES["appToUpload"]["name"]);
+    $targetFile = "../apps/" . $_SESSION["username"] . "_" . basename($_FILES["appToUpload"]["name"]);
     $targetIcon = "icons/" . $_SESSION["username"] . "_" . basename($_FILES["iconToUpload"]["name"]);
     $appName = $_POST["appName"];
     $appDescription = $_POST["appDescription"];
@@ -22,6 +22,12 @@ if(isset($_POST['submit'])) {
     {
         echo $tag;
         echo "<br>";
+    }
+    
+    if (move_uploaded_file($_FILES["appToUpload"]["tmp_name"], $targetFile)) {
+        echo "The file ". basename( $_FILES["appToUpload"]["name"]). " has been uploaded.";
+    } else {
+        echo "Sorry, there was an error uploading your file.";
     }
 }
 ?>

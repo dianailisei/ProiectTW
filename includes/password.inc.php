@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+include_once "sessionCheck.inc.php";
 if(isset($_POST['submit'])) {
     include_once 'db.inc.php';
     $actualPwd = mysqli_real_escape_string($conn, $_POST['password']);
@@ -34,6 +34,11 @@ if(isset($_POST['submit'])) {
         }
     }
         
+}
+else
+{
+    header("Location: ../settings.php");
+    exit();
 }
 
 ?>
