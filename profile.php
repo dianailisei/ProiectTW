@@ -39,8 +39,7 @@
             <ul>
                 <li class="option"><a href="upload.php">Upload File</a></li>
                 <li class="option"><a href="settings.php">Settings</a></li>
-                <li class="option">
-                    <a href="includes/sessionDestroy.inc.php">Logout</a></li>
+                <li class="option"><a href="includes/sessionDestroy.inc.php">Logout</a></li>
             </ul>
         </div>
 

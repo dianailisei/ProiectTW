@@ -27,35 +27,37 @@
         </div>
 
         <div class="settings">
-            <form class="set-form">
+            <form class="set-form" action="includes/country.inc.php" method="post">
                 <h1>Set your location</h1>
-                <input type="text" placeholder="Enter Country" class="input-box" name="country" required>
+                <input type="text" placeholder="Enter Country" class="input-box" name="country" required><br><br>
+                <button type="submit" name="submit">Save</button><br><br>
             </form>
-            <button type="submit" type="button">Save</button><br><br>
         </div>
 
         <div class="settings">
-            <form class="set-form">
+            <form class="set-form" action="includes/profilePic.inc.php" method="post">
                 <h1>Set your profile picture</h1>
-                <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png" required>
+                <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png" required><br><br>
+                <button type="submit" name="submit">Save</button><br><br>
             </form>
-            <button type="submit" name="picture">Save</button><br><br>
         </div>
 
         <div class="settings">
 
-            <form class="set-form">
+            <form class="set-form" action="includes/password.inc.php" method="post">
                 <h1>Change your password</h1>
                 <input type="password" placeholder="Enter Actual Password" class="input-box" name="password" required><br><br>
-                <input type="password" placeholder="Enter New Password" class="input-box" name="password" required><br><br>
-                <input type="password" placeholder="Re-Enter New Password" class="input-box" name="password" required>
+                <input type="password" placeholder="Enter New Password" class="input-box" name="password1" required><br><br>
+                <input type="password" placeholder="Re-Enter New Password" class="input-box" name="password2" required><br><br>
+                <button type="submit" name="submit">Save</button><br><br>
             </form>
-            <button type="submit" type="button">Save</button><br><br>
         </div>
 
         <div class="settings set-form">
             <h1>Delete account</h1>
-            <button type="submit" name="delete">Delete</button><br><br>
+            <form action="includes/delete_profile.inc.php" method="post">
+                <button type="submit" name="submit">Delete</button><br><br>
+            </form>
         </div>
 
     </section>

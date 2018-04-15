@@ -38,13 +38,14 @@ if(isset($_POST['submit'])) {
     $query .="VALUES('$username', '$email', '$hashedPassword', NOW())";
     
     $result = mysqli_query($conn, $query); 
+    
     if(!$result){
         die("Query FAILED.<br>" . mysqli_error()); 
         exit();
     }
     else{
-        $_SESSION['username'] = $row['username'];
-        $_SESSION['email'] = $row['email'];
+        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
         header("Location: ../profile.php");
         exit();
     }
