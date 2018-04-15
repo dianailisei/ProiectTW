@@ -25,7 +25,7 @@
             <br><br>
             <input type="text" placeholder="Enter Name" class="input-box" name="appName" required>
             <br><br>
-            <input type="text" placeholder="Enter Description" class="input-box" name="appDescription" required>
+            <textarea type="text" cols= "30" rows="4" placeholder="Enter Description" class="input-box" name="appDescription" required></textarea>
             <br><br>
             <h1>Choose a category</h1>
             <br>
