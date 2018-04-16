@@ -24,7 +24,7 @@
         <section class="main">
             <div id="app-list-container">
                 <ul class="app-list">
-                     <?php getAppsPreview("Utility","none",6); ?>
+                     <?php getAppsPreview("All","rating",6); ?>
                 </ul>
             </div>
         </section>

@@ -182,18 +182,16 @@ footer p {
     -webkit-columns: 3;
     -moz-columns: 3;
     columns: 3;
-    width: 100%;
-
-    -webkit-column-gap: 5px;
-    column-gap: 5px;
-    -moz-column-gap: 5px;
 }
 
 .app-section {
+    display: block;
     position: relative;
     margin-top: 25px;
     width: 100%;
-    height: 300px;
+    height: auto;
+    padding-bottom: 50px;
+    
 }
 
 .app-section h1 {
@@ -215,10 +213,16 @@ footer p {
 
 .app-list-child {
     position: relative;
-    width: 94%;
+    break-inside: avoid-column;
+    width: 90%;
     height: 100px;
     overflow: hidden;
     margin-bottom: 5px;
+    
+    border-right: 10px;
+    border-style: solid;
+    margin-right: -10px;
+    border-color: #252e38;
 }
 
 .app-list-child-img-container {
@@ -230,6 +234,7 @@ footer p {
 }
 
 .app-list-child-img-container img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -237,6 +242,7 @@ footer p {
 .app-list-child-title {
     font-size: 23px;
     margin: 0;
+    white-space: nowrap;
     width: 60%;
     height: 30px;
     position: absolute;
@@ -467,16 +473,28 @@ br {
     border-radius: 12px;
     margin-right: 10px;
     margin-top: 10px;
+    
+}
+
+.all-app-child a{
+    width: 180px;
+    height: 300px;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 .all-app-icon {
-    display: inline-block;
     width: 165px;
     height: 165px;
     margin-top: 7px;
+    overflow: hidden;
 }
 
 .all-app-icon img{
+    display: block;
     object-fit: cover;
     width: 165px;
     height: 165px;
@@ -484,19 +502,19 @@ br {
 }
 
 .all-app-title {
-    display: inline-block;
+    margin-top: 10px;
     font-size: 1.4em;
+    height: auto;
+    width: 90%;
     margin-bottom: 10px;
 }
 
 .all-app-rating {
-    display: inline-block;
     height: 50px;
     width: 100%;
 }
 
 .all-app-downloads {
-    display: inline-block;
     margin-top: 10px;
     height: 50px;
     width: 100%;

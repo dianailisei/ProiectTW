@@ -181,6 +181,7 @@ header {
 }
 
 .app-list-child-img-container img{
+    object-fit: cover;
     width:100%;
     height:100%;
 }
@@ -188,6 +189,7 @@ header {
 .app-list-child-title {
     font-size: 1.4em;   
     margin:0;
+    white-space: nowrap;
     width:60%;
     height:30px;
     position:absolute;
@@ -501,16 +503,28 @@ footer p {
     border-radius: 12px;
     margin-right: 10px;
     margin-top: 10px;
-}
-
-.all-app-icon {
-    display: inline-block;
-    width: 165px;
-    height: 165px;
     
 }
 
+.all-app-child a{
+    width: 180px;
+    height: 300px;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-app-icon {
+    width: 165px;
+    height: 165px;
+    margin-top: 7px;
+    overflow: hidden;
+}
+
 .all-app-icon img{
+    display: block;
     object-fit: cover;
     width: 165px;
     height: 165px;
@@ -518,19 +532,19 @@ footer p {
 }
 
 .all-app-title {
-    display: inline-block;
+    margin-top: 10px;
     font-size: 1.4em;
+    height: auto;
+    width: 90%;
     margin-bottom: 10px;
 }
 
 .all-app-rating {
-    display: inline-block;
     height: 50px;
     width: 100%;
 }
 
 .all-app-downloads {
-    display: inline-block;
     margin-top: 10px;
     height: 50px;
     width: 100%;

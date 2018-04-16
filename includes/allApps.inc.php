@@ -21,6 +21,8 @@ function showAllApps($number)
     if(isset($_GET["page"]))
     {
         $page = mysqli_real_escape_string($conn, $_GET["page"]);
+        if($page < 1)
+            $page = 1;
     }
     $page *= $number;
     
@@ -31,7 +33,7 @@ function showAllApps($number)
         $searchWords = explode(" ",$searchString);
     }
     
-    $query = "SELECT a.id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app ";
+    $query = "SELECT MAX(a.id) AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app ";
     if($category!="All")
     {
         $query = $query . "WHERE a.category='".$category."' ";
@@ -58,7 +60,7 @@ function showAllApps($number)
                 $query = $query . "LOWER(a.name) like LOWER('%".$word."%') OR LOWER(t.tag) like LOWER('%".$word."%') OR ";
         }
     }
-    $query = $query . "GROUP BY name, downloads ";
+    $query = $query . "GROUP BY name, downloads, uploader, category ";
     
     if($order!="none")
     {
@@ -67,6 +69,7 @@ function showAllApps($number)
         else    
             $query = $query . "ORDER BY a.$order desc ";
     }
+
     $lowerPage = $page-$number;
     $query = $query . "LIMIT ".$lowerPage.", ".$number;
     //echo $query . "<br>";
@@ -104,7 +107,7 @@ function showAllApps($number)
 function getPage()
 {
     include("db.inc.php");
-    if(isset($_GET["page"]))
+    if(isset($_GET["page"]) && $_GET["page"] > 0)
     {
         echo $_GET["page"];
     }

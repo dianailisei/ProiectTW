@@ -89,7 +89,7 @@ function getAppsPreview($category, $order, $number){
             echo "<li class=\"app-list-child\">
                         <a href=\"app.php?=".$row["id"]."\">
                             <div class=\"app-list-child-img-container\"> <img src=\"".$row['icon']."\"> </div>
-                            <div class=\"app-list-child-title\">".mb_substr($row["name"],0,13)."</div>
+                            <div class=\"app-list-child-title\">".$row["name"]."</div>
                             <div class=\"app-list-child-rating\">".getAppsPreviewRating($row["rating"])."</div>
                             <div class=\"app-list-child-downloads\"> <span class=\"fa fa-download\"></span> ".$row["downloads"]."</div>
                         </a>
