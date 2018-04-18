@@ -6,6 +6,7 @@
 <head>
     <?php include_once "includes/head.inc.php" ?>
     <?php include_once "includes/allApps.inc.php" ?>
+    <?php include_once "includes/page.inc.php" ?>
     <title>All Apps</title>
 </head>
 
@@ -40,9 +41,9 @@
                <?php showAllApps(10); ?>
             </div>
             <div class="all-app-pages">
-                <a href="#" class="fa fa-arrow-left all-app-button"></a>
-                <p href="#" class="all-app-button"><?php getPage();?></p>
-                <a href="#" class="fa fa-arrow-right all-app-button"></a>
+                <?php previousPage(getPage()); ?>
+                <p href="#" class="all-app-button"><?php printPage();?></p>
+                <?php nextPage(getPage()); ?>
             </div>
         </div>
     </section>

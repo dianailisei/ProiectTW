@@ -1,5 +1,6 @@
 <?php
 include_once "appsPreview.inc.php";
+$resultsNumber;
 
 function showAllApps($number)
 {
@@ -75,6 +76,7 @@ function showAllApps($number)
     //echo $query . "<br>";
     if($result = mysqli_query($conn, $query))
     {
+        $GLOBALS["resultsNumber"] = mysqli_num_rows($result);
         while($row = mysqli_fetch_assoc($result))
         {
             //echo $row["name"] . "  " . $row["downloads"] . "  " . $row["rating"] . "<br>";
@@ -103,19 +105,5 @@ function showAllApps($number)
         echo mysqli_error($conn);
     }
 }
-
-function getPage()
-{
-    include("db.inc.php");
-    if(isset($_GET["page"]) && $_GET["page"] > 0)
-    {
-        echo $_GET["page"];
-    }
-    else
-    {
-        echo "1";
-    }
-}
-
 
 ?>
