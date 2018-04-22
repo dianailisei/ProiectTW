@@ -538,6 +538,25 @@ br {
     margin-left: 5px;
     padding-bottom: 10px;
 }
+
+.all-app-container{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+}
+
+.all-app-sub {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.all-app-sub div{
+    display: block;
+}
 /* END ALL-APPS CSS 
    START UPLOAD CSS */
 

@@ -42,7 +42,7 @@
 </nav>
 <span class="search-container">
             <form method="POST" action="includes/search.inc.php">
-                <input type="text" placeholder="Search app.." name="search">
+                <input type="text" placeholder="Search app.." name="search" <?php if(isset($_GET['search'])) echo "value=\"".$_GET['search']."\"";?>>
                 <button type="submit" class="fa fa-search"></button>
             </form>
         </span>

@@ -42,7 +42,9 @@ function nextPage($cPage){
         $allUrl = $allUrl . "order=" . mysqli_real_escape_string($conn, $_GET["order"]) . "&";
     if(isset($_GET["search"]))
         $allUrl = $allUrl . "search=" . mysqli_real_escape_string($conn, $_GET["search"]) . "&";
-    if($GLOBALS["resultsNumber"] == 10)
+    
+    if(isset($GLOBALS["resultsNumber"]))
+    if($GLOBALS["resultsNumber"] >= 12)
         $cPage++;
     
     $allUrl = $allUrl . "page=" . $cPage;
