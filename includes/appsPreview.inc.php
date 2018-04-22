@@ -63,13 +63,13 @@ function getAppsPreviewRating($rating){
 
 function getAppsPreview($category, $order, $number){
     include("db.inc.php");
-    $query = "SELECT a.id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app ";
+    $query = "SELECT MAX(a.id) as id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app ";
     if($category!="All")
     {
         $query = $query . "WHERE a.category='$category' ";
     }
     
-    $query = $query . "GROUP BY name, downloads ";
+    $query = $query . "GROUP BY name, uploader ";
     
     if($order!="none")
     {

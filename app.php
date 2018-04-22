@@ -19,27 +19,11 @@
     <section class="main-full" id="display">
         <?php getIcon(); ?>
         <div id="app-name">
-            <h1>Facebook Messenger</h1>
-            <p>By AUTHOR, uploaded at 30.02.2016</p>
-            <form class="app-list-child-rating" id="app-rating-stars" action="includes/rating.inc.php?id=20" method="POST">
-                <button type="submit" value="1" name="rating">
-                    <i class="fa fa-star rating-checked fa-3x"></i>
-                </button>
-                <button type="submit" value="2" name="rating">
-                    <i class="fa fa-star rating-checked fa-3x"></i>
-                </button>
-                <button type="submit" value="3" name="rating">
-                    <i class="fa fa-star rating-checked fa-3x"></i>
-                </button>
-                <button type="submit" value="4" name="rating">
-                    <i class="fa fa-star rating fa-3x"></i>
-                </button>
-                <button type="submit" value="5" name="rating">
-                    <i class="fa fa-star rating fa-3x"></i>
-                </button>
-            </form>
+            <?php getName(); ?>
+            <?php getUploader(); ?>
+            <?php getRating(); ?>
         </div>
-        <a href="#"><img src="images/download-button.png" id="download-button"></a>
+        <?php getDownload() ?>
 
     </section>
 

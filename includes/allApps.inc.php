@@ -73,13 +73,12 @@ function showAllApps($number)
 
     $lowerPage = $page-$number;
     $query = $query . "LIMIT ".$lowerPage.", ".$number;
-    //echo $query . "<br>";
+
     if($result = mysqli_query($conn, $query))
     {
         $GLOBALS["resultsNumber"] = mysqli_num_rows($result);
         while($row = mysqli_fetch_assoc($result))
         {
-            //echo $row["name"] . "  " . $row["downloads"] . "  " . $row["rating"] . "<br>";
             echo "<div class=\"all-app-child\">
                     <a href=\"app.php?id=".$row["id"]."\">
                         <div class=\"all-app-icon\">
