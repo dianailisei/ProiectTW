@@ -87,7 +87,7 @@ function getAppsPreview($category, $order, $number){
         {
             //echo $row["name"] . "  " . $row["downloads"] . "  " . $row["rating"] . "<br>";
             echo "<li class=\"app-list-child\">
-                        <a href=\"app.php?=".$row["id"]."\">
+                        <a href=\"app.php?id=".$row["id"]."\">
                             <div class=\"app-list-child-img-container\"> <img src=\"".$row['icon']."\"> </div>
                             <div class=\"app-list-child-title\">".$row["name"]."</div>
                             <div class=\"app-list-child-rating\">".getAppsPreviewRating($row["rating"])."</div>

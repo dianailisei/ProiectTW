@@ -5,7 +5,7 @@
 
 <head>
     <?php include_once "includes/head.inc.php" ?>
-
+    <?php include_once "includes/showApp.inc.php" ?>
     <title>Sofy</title>
 </head>
 
@@ -17,7 +17,7 @@
     </header>
 
     <section class="main-full" id="display">
-        <img src="images/logo.png" id="app-logo">
+        <?php getIcon(); ?>
         <div id="app-name">
             <h1>Facebook Messenger</h1>
             <p>By AUTHOR, uploaded at 30.02.2016</p>
