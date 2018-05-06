@@ -6,6 +6,7 @@ function showAllApps($number)
 {
     include("db.inc.php");
     $category="All";
+    
     $order="none";
     $page=1;
     $searchWords = [];
