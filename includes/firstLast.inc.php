@@ -10,7 +10,8 @@ if(isset($_POST['submit'])) {
     
     $username = $_SESSION['username'];
     $query="UPDATE users SET first = '$first', last='$last' WHERE username='$username'";
-    
+    $_SESSION['first'] = $first;
+    $_SESSION['last'] = $last;
     if(!mysqli_query($conn, $query)){
         die("Query FAILED.<br>" . mysqli_error());
         exit();

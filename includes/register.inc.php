@@ -40,12 +40,26 @@ if(isset($_POST['submit'])) {
     $result = mysqli_query($conn, $query); 
     
     if(!$result){
-        die("Query FAILED.<br>" . mysqli_error()); 
+        die("Query FAILED.<br>" . mysqli_error($conn)); 
         exit();
     }
     else{
         $_SESSION['username'] = $username;
         $_SESSION['email'] = $email;
+        if (!file_exists("../users/" . $_SESSION["username"])) {
+            mkdir("../users/" . $_SESSION["username"], 0777, true);
+        }
+        $query = "SELECT id FROM users WHERE username = '$username'";
+        $result = mysqli_query($conn, $query);
+        if(!$result){
+            die("Query FAILED.<br>" . mysqli_error($conn)); 
+            exit();
+        }
+        if(mysqli_num_rows($result) > 0){
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION['id'] = $row['id'];
+            
+        }
         header("Location: ../profile.php");
         exit();
     }

@@ -38,7 +38,8 @@ if(isset($_POST['submit'])) {
         mkdir("../users/" . $_SESSION["username"], 0777, true);
     }
     if (move_uploaded_file($_FILES["image"]["tmp_name"], $picture_path)){
-        echo "Done";
+        header("Location: ../profile.php");
+        exit();
     }
     else {
         echo "Upload error.";

@@ -14,6 +14,7 @@ if(isset($_POST['submit'])) {
         exit();
     }
     else {
+        $_SESSION['country'] = $country;
         header("Location: ../profile.php");
         exit();
     }
