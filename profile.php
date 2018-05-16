@@ -6,6 +6,8 @@
 <head>
     <?php include_once "includes/head.inc.php" ?>
     <?php include_once "includes/sessionCheck.inc.php" ?>
+    <?php include_once "includes/profileInfo.inc.php" ?>
+    <?php include_once "includes/appsPreview.inc.php" ?>
     <title>Profile</title>
 </head>
 
@@ -17,20 +19,24 @@
 
     <section class="main-full" id="profile-container">
         <div id="basic-info-container">
-            <img src="images/profile-icon.png" alt="Profile Picture" title="Profile Picture" id="pic">
+            <?php showPicture(); ?>
             <article id="info">
-                <p><span class="fa fa-address-book"></span> NAME: <?php echo $_SESSION["username"]; ?> </p><br>
-                <p><span class="fa fa-envelope"></span> E-MAIL: pp@jsfnd</p><br>
-                <p><span class="fa fa-map-marker"></span> ADDRESS: fnwifnWPOE</p><br>
-                <p><span class="fa fa-download"></span> DOWNLOADS: 1234</p><br>
+                <p><span class="fa fa-address-book"></span> NAME:
+                    <?php showName(); ?>
+                </p><br>
+                <p><span class="fa fa-envelope"></span> E-MAIL:
+                    <?php showEmail(); ?>
+                </p><br>
+                <p><span class="fa fa-map-marker"></span> COUNTRY:
+                    <?php showCountry(); ?>
+                </p><br>
+                <p><span class="fa fa-download"></span> DOWNLOADS:
+                    <?php showDownloadsNumber(); ?>
+                </p><br>
                 <div class="profile-rating-container">
                     <p class="profile-rating-text"><span class="fa fa-thumbs-up"></span> YOUR RATING:</p>
                     <div class="app-list-child-rating profile-rating-stars" id="profile-star-center">
-                        <span class="fa fa-star rating-checked"></span>
-                        <span class="fa fa-star rating-checked"></span>
-                        <span class="fa fa-star rating-checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                        <?php showProfileRating(); ?>
                     </div>
                 </div>
             </article>
@@ -48,66 +54,7 @@
 
             <div id="app-list-container">
                 <ul class="app-list">
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title bigger-title">Skype</div>
-                        </a>
-                        <a href="">
-                            <div class="fa fa-close fa-2x delete-button"></div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title bigger-title">Skype</div>
-                        </a>
-                        <a href="">
-                            <div class="fa fa-close fa-2x delete-button"></div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title bigger-title">Skype</div>
-                        </a>
-                        <a href="">
-                            <div class="fa fa-close fa-2x delete-button"></div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title bigger-title">Skype</div>
-                        </a>
-                        <a href="">
-                            <div class="fa fa-close fa-2x delete-button"></div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title bigger-title">Skype</div>
-                        </a>
-                        <a href="">
-                            <div class="fa fa-close fa-2x delete-button"></div>
-                        </a>
-                    </li>
-                    <li class="app-list-child">
-                        <a href="app.html">
-                            <div class="app-list-child-img-container">
-                                <img src="images/logo.png"> </div>
-                            <div class="app-list-child-title bigger-title">Skype</div>
-                        </a>
-                        <a href="">
-                            <div class="fa fa-close fa-2x delete-button"></div>
-                        </a>
-                    </li>
+                    <?php getUserApps($_SESSION['id']); ?>
                 </ul>
             </div>
 

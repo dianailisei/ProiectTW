@@ -35,9 +35,9 @@
         </div>
 
         <div class="settings">
-            <form class="set-form" action="includes/profilePic.inc.php" method="post">
+            <form class="set-form" action="includes/profilePic.inc.php" method="post" enctype="multipart/form-data">
                 <h1>Set your profile picture</h1>
-                <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png" required><br><br>
+                <input type="file" id="profile_pic" name="image" accept=".jpg, .jpeg, .png" required><br><br>
                 <button type="submit" name="submit">Save</button><br><br>
             </form>
         </div>
