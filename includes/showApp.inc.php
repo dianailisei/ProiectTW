@@ -81,4 +81,9 @@ function getDownload(){
     global $row;
     echo "<a href=\"".$row["location"]."\"><img src=\"images/download-button.png\" id=\"download-button\"></a>";
 }
+
+function getDownloadsNumber(){
+    global $row;
+    echo $row["downloads"];
+}
 ?>

@@ -20,7 +20,7 @@ if(isset($_POST['submit'])) {
         }
         $path = "../users/" . $_SESSION['username'];
         deleteFiles($path);
-        header("Location: ../login.php");
+        header("Location: ../includes/sessionDestroy.inc.php");
         exit();
     }
 }

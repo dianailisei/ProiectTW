@@ -30,7 +30,7 @@
     <section class="main-full">
         <div id="app-statistics">
             <div><span class="fa fa-download"></span>
-                <span> &#8470; Downloads: 1234 </span></div>
+                <span> &#8470; Downloads: <?php getDownloadsNumber(); ?> </span></div>
             <div>
                 <span class="fa fa-check-square"></span>
                 <span> Category: Entertainment </span></div>

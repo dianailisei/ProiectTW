@@ -77,7 +77,7 @@ if(isset($_POST['submit'])) {
             $result = mysqli_query($conn, $query);
             
             if(!$result){
-                die("Querry faild... No app was added to the server.<br>" . mysqli_error()); 
+                die("Query failed... No app was added to the server.<br>" . mysqli_error()); 
                 echo "Something went wrong! <a href='../profile.php'>Click here to go back!</a>";
                 unlink($targetFile);
                 unlink($targetIcon);
