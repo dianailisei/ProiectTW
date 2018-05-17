@@ -40,10 +40,11 @@
         </div>
         <div class="app-description-container">
             <div class="app-info-container">
-                <h1> DESCRIPTION </h1>
-                <p> About: Lorem ipsum dolor sit amet, his ne postea euripidis expetendis. Quo nostro sadipscing ut. Ad vix adhuc oporteat adolescens, at rebum laoreet usu. Ut sit alii facilis, utamur efficiendi ea sit, eum an iisque deserunt sententiae. Pro an cibo intellegebat.</p>
-                <p> Version History: </p>
-                <p> Web Site: www.google.com</p>
+                <h1> About </h1>
+                <?php showDescription(); ?>
+                <p> Version History:<br>
+                    <?php showVersionHistory(); ?>
+                </p>
                 <p> About Author: Name</p>
             </div>
             <div class="app-section" id="related-apps-container">

@@ -74,7 +74,7 @@ function showName(){
 
 function showUploader(){
     global $row;
-    echo "<p>by ".$row["username"].", uploaded a ".$row["upload_date"]."</p>";
+    echo "<p>by ".$row["username"].", uploaded at ".$row["upload_date"]."</p>";
 }
 
 function showDownloadButton(){
@@ -95,8 +95,8 @@ function showCategory(){
 function showTags(){
     include "db.inc.php";
     global $row;
-    $id_app = $row["id"];
-    $query = "SELECT tag FROM tags WHERE id_app = '$id_app'";
+    global $id;
+    $query = "SELECT tag FROM tags WHERE id_app = '$id' LIMIT 5";
     $result = mysqli_query($conn, $query);
     if(mysqli_num_rows($result) > 0){
         while($rowTags = mysqli_fetch_assoc($result)){
@@ -105,6 +105,24 @@ function showTags(){
     }
     else{
         echo "<span class=\"tag\">No tags chosen.</span>";
+    }
+}
+
+function showDescription(){
+    global $row;
+    echo "<p>" . $row["description"] . "</p>";
+}
+
+function showVersionHistory(){
+    include "db.inc.php";
+    global $row;
+    $name = $row["name"];
+    $query = "SELECT DAY(upload_date) \"day\", MONTH(upload_date) \"month\", YEAR(upload_date) \"year\" FROM apps WHERE name = '$name' AND uploader = " . $row["uploader"] . " ORDER BY upload_date ASC";
+    $counter = 1;
+    $result = mysqli_query($conn, $query);
+    while($dates = mysqli_fetch_assoc($result)){
+        echo "<a href=\"".$row["location"]."\"> Version $counter</a> (" . $dates["day"] ."-" . $dates["month"] ."-" . $dates["year"] . ")<br>";
+            $counter++;
     }
 }
 ?>
