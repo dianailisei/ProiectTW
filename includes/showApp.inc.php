@@ -13,7 +13,7 @@ $query = "SELECT MAX(a.id), ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN
 $result = mysqli_query($conn, $query);
 $calculatedRating = mysqli_fetch_assoc($result);
 
-function getIcon(){
+function showIcon(){
     global $row;
     echo "<img src=\"".$row["icon"]."\" id=\"app-logo\">";
 }
@@ -59,7 +59,7 @@ function showStars($rating){
     return  $code;   
 }
 
-function getRating(){
+function showRating(){
     global $calculatedRating;
     global $id;
     echo "<form class=\"app-list-child-rating\" id=\"app-rating-stars\" action=\"includes/rating.inc.php?id=".$id."\" method=\"POST\">";
@@ -67,23 +67,44 @@ function getRating(){
     echo "</form>";
 }
 
-function getName(){
+function showName(){
     global $row;
     echo "<h1>".$row["name"]."</h1>";
 }
 
-function getUploader(){
+function showUploader(){
     global $row;
     echo "<p>by ".$row["username"].", uploaded a ".$row["upload_date"]."</p>";
 }
 
-function getDownload(){
+function showDownloadButton(){
     global $row;
     echo "<a href=\"".$row["location"]."\"><img src=\"images/download-button.png\" id=\"download-button\"></a>";
 }
 
-function getDownloadsNumber(){
+function showDownloadsNumber(){
     global $row;
     echo $row["downloads"];
+}
+
+function showCategory(){
+    global $row;
+    echo $row["category"];
+}
+
+function showTags(){
+    include "db.inc.php";
+    global $row;
+    $id_app = $row["id"];
+    $query = "SELECT tag FROM tags WHERE id_app = '$id_app'";
+    $result = mysqli_query($conn, $query);
+    if(mysqli_num_rows($result) > 0){
+        while($rowTags = mysqli_fetch_assoc($result)){
+            echo "<span class=\"tag\">".$rowTags["tag"]."</span>";
+        }
+    }
+    else{
+        echo "<span class=\"tag\">No tags chosen.</span>";
+    }
 }
 ?>

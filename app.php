@@ -17,26 +17,25 @@
     </header>
 
     <section class="main-full" id="display">
-        <?php getIcon(); ?>
+        <?php showIcon(); ?>
         <div id="app-name">
-            <?php getName(); ?>
-            <?php getUploader(); ?>
-            <?php getRating(); ?>
+            <?php showName(); ?>
+            <?php showUploader(); ?>
+            <?php showRating(); ?>
         </div>
-        <?php getDownload() ?>
+        <?php showDownloadButton() ?>
 
     </section>
 
     <section class="main-full">
         <div id="app-statistics">
             <div><span class="fa fa-download"></span>
-                <span> &#8470; Downloads: <?php getDownloadsNumber(); ?> </span></div>
+                <span> &#8470; Downloads: <?php showDownloadsNumber(); ?> </span></div>
             <div>
                 <span class="fa fa-check-square"></span>
-                <span> Category: Entertainment </span></div>
+                <span> Category: <?php showCategory(); ?></span></div>
             <div>
-                <span class="tag">Games</span>
-                <span class="tag">Fun</span>
+                <?php showTags(); ?>
             </div>
         </div>
         <div class="app-description-container">
