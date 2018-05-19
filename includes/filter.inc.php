@@ -57,4 +57,5 @@ function showFilter(){
         <button type="submit">Apply</button>
     </form>';
 }
+
 ?>

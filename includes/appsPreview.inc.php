@@ -103,6 +103,7 @@ function getAppsPreview($category, $order, $number){
     }
 }
 
+
 function getUserApps($id) {
     include("db.inc.php");
     $query = "SELECT MAX(a.id) as id, a.name, a.icon, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id = r.id_app WHERE a.uploader = '$id'";
@@ -118,7 +119,7 @@ function getUserApps($id) {
                         <a href=\"app.php?=".$row["id"]."\">
                             <div class=\"app-list-child-img-container\"> <img src=\"".$row['icon']."\"> </div>
                             <div class=\"app-list-child-title\">".$row["name"]."</div>
-                            <a href=\"\">
+                            <a href=\"includes/deleteUserApp.inc.php?id=".$row['id']."\">
                             <div class=\"fa fa-close fa-2x delete-button\"></div>
                             </a>
                             <div class=\"app-list-child-rating\">".getAppsPreviewRating($row["rating"])."</div>
@@ -126,11 +127,7 @@ function getUserApps($id) {
                         </a>
                     </li>";
     }
-    mysqli_free_result($result);
 }
 
-function getRelatedApps(){
-    
-}
 
 ?>
