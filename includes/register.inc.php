@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_POST["submit"])) {
+if(isset($_POST['submit'])) {
     
     include_once 'db.inc.php';
     

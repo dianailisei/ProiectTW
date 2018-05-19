@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-
-
-=======
 function showFilter(){
     $search='';
     $order='';
@@ -61,5 +57,4 @@ function showFilter(){
         <button type="submit">Apply</button>
     </form>';
 }
->>>>>>> 259af6c0461b6b71f99778c06d380009037fce23
 ?>

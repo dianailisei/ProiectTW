@@ -117,11 +117,5 @@ function showAllApps($number)
     }
 }
 
-<<<<<<< HEAD
-function showFilter(){
-    
-}
-=======
->>>>>>> 259af6c0461b6b71f99778c06d380009037fce23
 
 ?>

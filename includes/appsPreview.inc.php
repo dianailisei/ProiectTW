@@ -118,7 +118,7 @@ function getUserApps($id) {
                         <a href=\"app.php?=".$row["id"]."\">
                             <div class=\"app-list-child-img-container\"> <img src=\"".$row['icon']."\"> </div>
                             <div class=\"app-list-child-title\">".$row["name"]."</div>
-                            <a href=\"includes/deleteUserApp.inc.php?id=".$row['id']."\">
+                            <a href=\"\">
                             <div class=\"fa fa-close fa-2x delete-button\"></div>
                             </a>
                             <div class=\"app-list-child-rating\">".getAppsPreviewRating($row["rating"])."</div>
@@ -126,7 +126,11 @@ function getUserApps($id) {
                         </a>
                     </li>";
     }
+    mysqli_free_result($result);
 }
 
+function getRelatedApps(){
+    
+}
 
 ?>
