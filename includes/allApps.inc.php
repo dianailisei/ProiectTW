@@ -10,6 +10,7 @@ function showAllApps($number)
     $order="none";
     $page=1;
     $searchWords = [];
+    $tags = [];
     if(isset($_GET["category"]))
     {
         $category = mysqli_real_escape_string($conn, $_GET["category"]);
@@ -35,7 +36,17 @@ function showAllApps($number)
         $searchWords = explode(" ",$searchString);
     }
     
+    if(isset($_GET["tags"]))
+    {
+        $tagsString = mysqli_real_escape_string($conn, $_GET["tags"]);
+        $tagsString = urldecode($tagsString);
+        $tags = explode(" ",$tagsString);
+    }
+    
+    $searchWords = array_merge($searchWords, $tags);
+    
     $query = "SELECT MAX(a.id) AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app ";
+    
     if($category!="All")
     {
         $query = $query . "WHERE a.category='".$category."' ";
@@ -105,5 +116,6 @@ function showAllApps($number)
         echo mysqli_error($conn);
     }
 }
+
 
 ?>
