@@ -28,10 +28,10 @@
                 <br><br>
                 <h1>Category</h1>
                 <div class="all-app-sub">
-                <div><input type="checkbox" name="category" value="Entertaiment"> Entertaiment</div><br>
-                <div><input type="checkbox" name="category1" value="Network"> Network</div><br>
-                <div><input type="checkbox" name="category2" value="Office"> Office</div><br>
-                <div><input type="checkbox" name="category3" value="Utility"> Utility</div><br>
+                <div><input type="radio" name="category" value="Entertaiment"> Entertaiment</div><br>
+                <div><input type="radio" name="category" value="Network"> Network</div><br>
+                <div><input type="radio" name="category" value="Office"> Office</div><br>
+                <div><input type="radio" name="category" value="Utility"> Utility</div><br>
                 </div>
                 <h1>Tags</h1>
                 <input type="text" placeholder="Type tags here" name="tags"><br>

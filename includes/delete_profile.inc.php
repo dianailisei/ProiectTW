@@ -11,6 +11,7 @@ if(isset($_POST['submit'])) {
         exit();
     }
     else {
+        /*
         $id = $_SESSION['id'];
         $query = "DELETE FROM apps WHERE uploader = $id";
         $result = mysqli_query($conn, $query);
@@ -18,6 +19,7 @@ if(isset($_POST['submit'])) {
             die("Query FAILED.<br>" . mysqli_error($conn));
             exit();
         }
+        */
         $path = "../users/" . $_SESSION['username'];
         deleteFiles($path);
         header("Location: ../includes/sessionDestroy.inc.php");
