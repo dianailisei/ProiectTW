@@ -12,7 +12,7 @@ function showFilter(){
     $tags='';
     
     if(isset($_GET["search"]))
-        $search = $search . "?search=" . $_GET["search"];
+        $search = $_GET["search"];
     
     if(isset($_GET["order"]))
         if($_GET["order"]=="rating")
@@ -37,7 +37,7 @@ function showFilter(){
         $tags = $tags . 'value="' . $_GET["tags"] . '"';
     
     
-    echo '<form method="GET" action="all.php'.$search.'" class="all-app-container">
+    echo '<form method="GET" action="all.php" class="all-app-container" enctype="multipart/form-data">
         <h1>Order by</h1>
         <div class="all-app-sub">
         <div><input type="radio" name="order" value="rating" '.$order.'>Rating</div><br>
@@ -53,7 +53,8 @@ function showFilter(){
         <div><input type="radio" name="category" value="Utility" '.$category3.'> Utility</div><br>
         </div>
         <h1>Tags</h1>
-        <input type="text" placeholder="Type tags here" name="tags" '.$tags.'><br>
+        <input type="text" placeholder="Type tags here" name="tags" '.$tags.'>
+        <input type="hidden" name="search" value='.$search.'><br>
         <button type="submit">Apply</button>
     </form>';
 }

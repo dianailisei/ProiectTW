@@ -6,6 +6,7 @@
 <head>
     <?php include_once "includes/head.inc.php" ?>
     <?php include_once "includes/showApp.inc.php" ?>
+    <?php include_once "includes/appsPreview.inc.php" ?>
     <title>Sofy</title>
 </head>
 
@@ -51,54 +52,7 @@
                 <h1> Related Apps</h1>
                 <div id="app-list-container">
                     <ul class="app-list" id="columns">
-                        <li class="app-list-child">
-                            <a href="#">
-                                <div class="app-list-child-img-container">
-                                    <img src="images/logo.png"> </div>
-                                <div class="app-list-child-title">Skype</div>
-                                <div class="app-list-child-rating">
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <div class="app-list-child-downloads">
-                                    <span class="fa fa-download"></span> 1234</div>
-                            </a>
-                        </li>
-                        <li class="app-list-child">
-                            <a href="#">
-                                <div class="app-list-child-img-container">
-                                    <img src="images/logo.png"> </div>
-                                <div class="app-list-child-title">Skype</div>
-                                <div class="app-list-child-rating">
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <div class="app-list-child-downloads">
-                                    <span class="fa fa-download"></span> 1234</div>
-                            </a>
-                        </li>
-                        <li class="app-list-child">
-                            <a href="#">
-                                <div class="app-list-child-img-container">
-                                    <img src="images/logo.png"> </div>
-                                <div class="app-list-child-title">Skype</div>
-                                <div class="app-list-child-rating">
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star rating-checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <div class="app-list-child-downloads">
-                                    <span class="fa fa-download"></span> 1234</div>
-                            </a>
-                        </li>
+                        <?php getRelatedApps($id); ?>
                     </ul>
                 </div>
             </div>
