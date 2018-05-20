@@ -15,7 +15,7 @@ $calculatedRating = mysqli_fetch_assoc($result);
 
 function showIcon(){
     global $row;
-    echo "<img src=\"".$row["icon"]."\" id=\"app-logo\">";
+    echo "<div class=\"app-icon\"><img src=\"".$row["icon"]."\"></div>";
 }
 
 function showStars($rating){

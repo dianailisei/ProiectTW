@@ -1,4 +1,5 @@
 /* START HEADER + INDEX CSS */
+
 header {
     position: relative;
     display: block;
@@ -65,7 +66,7 @@ header {
     height: 40px;
 }
 
-.categories-father{
+.categories-father {
     overflow: hidden;
     height: 40px;
 }
@@ -171,11 +172,11 @@ footer p {
     APP LIST CSS */
 
 #app-list-container {
-	position:relative;
-	top:20px;
-	right:10px;
-	left:10px;
-	bottom:20px;
+    position: relative;
+    top: 20px;
+    right: 10px;
+    left: 10px;
+    bottom: 20px;
 }
 
 .app-list {
@@ -191,7 +192,7 @@ footer p {
     width: 100%;
     height: auto;
     padding-bottom: 50px;
-    
+
 }
 
 .app-section h1 {
@@ -218,7 +219,7 @@ footer p {
     height: 100px;
     overflow: hidden;
     margin-bottom: 5px;
-    
+
     border-right: 10px;
     border-style: solid;
     margin-right: -10px;
@@ -288,11 +289,18 @@ footer p {
     padding: 2% 0;
 }
 
-#pic {
-    position: relative;
-    width: 35%;
-    display: inline-block;
-    margin-top: 3%;
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: inline;
+}
+
+.profile-pic img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
 }
 
 #info {
@@ -303,7 +311,7 @@ footer p {
     line-height: 20px;
     display: inline-block;
     margin-right: 10%;
-    margin-top: 7%;
+    margin-top: 4%;
 }
 
 
@@ -423,7 +431,9 @@ br {
     display: inline-block;
 }
 
-.register-container button, #upload-form button, #settings-container .settings button {
+.register-container button,
+#upload-form button,
+#settings-container .settings button {
     position: absolute;
     padding: 15px 32px;
     display: inline-block;
@@ -462,8 +472,8 @@ br {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: space-between;
 }
 
@@ -477,10 +487,10 @@ br {
     margin-bottom: 5px;
 }
 
-.all-app-child a{
+.all-app-child a {
     width: 180px;
     height: 300px;
-    
+
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -495,7 +505,7 @@ br {
     overflow: hidden;
 }
 
-.all-app-icon img{
+.all-app-icon img {
     display: block;
     object-fit: cover;
     width: 165px;
@@ -506,7 +516,7 @@ br {
 .all-app-title {
     margin-top: 10px;
     font-size: 1.4em;
-    
+
     height: 48px;
     overflow: hidden;
     width: 90%;
@@ -524,14 +534,14 @@ br {
     width: 100%;
 }
 
-.all-app-pages{
+.all-app-pages {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.all-app-button{
+.all-app-button {
     width: 40px;
     height: 20px;
     padding-top: 10px;
@@ -539,7 +549,7 @@ br {
     padding-bottom: 10px;
 }
 
-.all-app-container{
+.all-app-container {
     width: 80%;
     display: flex;
     justify-content: flex-start;
@@ -554,9 +564,11 @@ br {
     justify-content: flex-start;
     align-content: flex-start;
 }
-.all-app-sub div{
+
+.all-app-sub div {
     display: block;
 }
+
 /* END ALL-APPS CSS 
    START UPLOAD CSS */
 
@@ -610,6 +622,7 @@ br {
     width: 65%;
     margin: 5%;
 }
+
 #settings-container .settings button {
     position: relative;
     display: inline-block;
@@ -619,6 +632,7 @@ br {
 .input-box {
     width: 100%;
 }
+
 /* END SETTINGS CSS */
 
 /* START APP PAGE CSS */
@@ -629,13 +643,6 @@ br {
     justify-content: space-between;
     height: auto;
     padding-bottom: 20px;
-}
-
-#app-logo {
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 200px;
-    height: 200px;
 }
 
 #app-name {
@@ -720,8 +727,23 @@ br {
     flex-direction: column;
 }
 
-/* END APP PAGE CSS */
+.app-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 10px;
+    overflow: hidden;
+}
 
+.app-icon img {
+    display: block;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+/* END APP PAGE CSS */
 
 /* CONTACT CSS */
 
@@ -750,13 +772,3 @@ br {
     flex-direction: column;
     line-height: 30px;
 }
-
-
-
-
-
-
-
-
-
-

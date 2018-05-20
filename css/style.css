@@ -1,45 +1,133 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*
@@ -47,182 +135,186 @@ The real css
 */
 
 body {
-	background-color: #b3b4ab;	
+    background-color: #b3b4ab;
 }
 
 /* BEGIN HEADER CSS */
 
 header {
-	background-color: #2c3e50;
+    background-color: #2c3e50;
 }
 
-.search-container form input{
-	background-color: #34495e;
-	color: #909aa4;
+.search-container form input {
+    background-color: #34495e;
+    color: #909aa4;
     border: 1px solid #b3b4ab;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-.search-container form button{
-    background-color : transparent;
-	color: #909aa4;
-	border: 0px solid #b3b4ab;
-	border-left-width: 0px;
-	border-bottom-width: 0px;
+.search-container form button {
+    background-color: transparent;
+    color: #909aa4;
+    border: 0px solid #b3b4ab;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
     border-radius: 4px;
-	box-sizing: border-box;
-	z-index: 1;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 .navigation {
-    z-index:99;
-	list-style:none;
-	text-align: center;
-	text-shadow: #000 1px 0px 3px;
-  	color: white;
+    z-index: 99;
+    list-style: none;
+    text-align: center;
+    text-shadow: #000 1px 0px 3px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .navigation ul li {
-	text-align: center;
-	list-style-type: none;
-	color: #FFF;
-	border-bottom:2px;
-	border-bottom-color: #2e465d;
-	border-bottom-style: solid;	
+    text-align: center;
+    list-style-type: none;
+    color: #FFF;
+    border-bottom: 2px;
+    border-bottom-color: #2e465d;
+    border-bottom-style: solid;
 }
 
 .navigation ul li a {
-	text-decoration: none;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 40px;
-	color: #FFF;
-	background: #475562;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    color: #FFF;
+    background: #475562;
 
 }
 
 .navigation ul li a:hover {
-	background-color: #2c3e50;
-	color: #FFF;
+    background-color: #2c3e50;
+    color: #FFF;
 }
 
-.categories-father a{
-    border-bottom:2px;
-	border-bottom-color: #2e465d;
-	border-bottom-style: solid;	
+.categories-father a {
+    border-bottom: 2px;
+    border-bottom-color: #2e465d;
+    border-bottom-style: solid;
 }
 
-.categories-father:hover{
+.categories-father:hover {
     height: auto;
 }
 
-#drop-down a{
-    z-index:99;
+#drop-down a {
+    z-index: 99;
     background: #566674;
-    border-left:2px;
-    border-right:2px;
-	border-bottom-color: #2e465d;
-	border-bottom-style: solid;	
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom-color: #2e465d;
+    border-bottom-style: solid;
 }
 
-#drop-down a:hover{
+#drop-down a:hover {
     background-color: #2c3e50;
-    
+
 }
 
 /* END HEADER CSS */
 
 .description {
-	background: #2c3e50;
-	border-radius: 12px;
-	border-style: solid;
-	border-color: #2e465d;
-	border-width: 2px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: White;
-	text-align: center;
+    background: #2c3e50;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #2e465d;
+    border-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: White;
+    text-align: center;
 }
 
-.main, aside, .main-full {
-	background-color: #2c3e50;
-	border-radius: 12px;
-	border-style: solid;
-	border-color: #2e465d;
-	border-width: 2px;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-	color: white;
+.main,
+aside,
+.main-full {
+    background-color: #2c3e50;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #2e465d;
+    border-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
 }
 
 /*BEGIN FOOTER CSS*/
 
 footer {
-	font-family: Arial;
-	color: #FFF;
-	background-color: #2c3e50;
+    font-family: Arial;
+    color: #FFF;
+    background-color: #2c3e50;
     text-align: center;
 }
 
 
-footer ul li a{
-	text-decoration: none;
+footer ul li a {
+    text-decoration: none;
     color: #FFF;
 }
 
 /* END FOOTER CSS 
    BEGIN APP LIST CSS */
 
-.app-section{
-	text-align: left;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	border-bottom-color: #b3b4ab;
+.app-section {
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #b3b4ab;
 }
 
-.app-section:last-child{
+.app-section:last-child {
     border-style: none;
 }
 
-.see-more-button, .option {
-	font-family: Arial, Helvetica, sans-serif;
+.see-more-button,
+.option {
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: #252e38;
-	text-align: center;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
-	border-color: #2c3e50;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 12px;
+    border-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
 }
 
-.see-more-button:hover, .option:hover {
-	background-color: grey;
+.see-more-button:hover,
+.option:hover {
+    background-color: grey;
 }
 
-.app-section h1{
+.app-section h1 {
     text-shadow: #000 1px 0px 3px;
 }
 
 .app-list-child {
-  border-radius: 12px;
-  border-width: thin;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #252e38;
-  list-style-type: none;
-  border-color: #252e38;
+    border-radius: 12px;
+    border-width: thin;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #252e38;
+    list-style-type: none;
+    border-color: #252e38;
 }
 
-.app-list-child:hover{
-	background-color: #475562;
+.app-list-child:hover {
+    background-color: #475562;
     border-color: #475562;
 }
 
 .app-list-child a {
-color:black;
+    color: black;
 }
 
 .app-list-child-img-container {
@@ -231,20 +323,20 @@ color:black;
 
 .app-list-child-img-container img {
     object-fit: cover;
-	border-radius: 12px;
+    border-radius: 12px;
 }
- 
+
 .app-list-child-title {
-    text-shadow: #000 0px 0px 6px;    
+    text-shadow: #000 0px 0px 6px;
     color: white;
-    text-align:left;
+    text-align: left;
 }
 
 .app-list-child-rating {
-  text-align:left;
+    text-align: left;
 }
 
-.app-list-child-rating button{
+.app-list-child-rating button {
     background-color: inherit;
     border: none;
     margin: 0px -6px;
@@ -257,28 +349,24 @@ color:black;
 }
 
 .app-list-child-downloads {
-  text-align:left;
-  text-shadow: #000 0px 0px 2px;
-  color:white;
+    text-align: left;
+    text-shadow: #000 0px 0px 2px;
+    color: white;
 }
 
 /* END APP LIST CSS 
    BEGIN PROFILE PAGE CSS */
 
 #basic-info-container {
-	background: #475562;
-  	border-radius: 10% 25%;
-}
-
-#pic {
-	outline: thin double #32a1ce;
+    background: #475562;
+    border-radius: 10% 25%;
 }
 
 #info {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.option a{
+.option a {
     text-decoration: none;
     color: #FFF;
 }
@@ -291,144 +379,147 @@ color:black;
    BEGIN LOGIN/REGISTER CSS */
 
 #login-window {
-	border-radius: 12px;
-	background-color: #2c3e50;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
+    border-radius: 12px;
+    background-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
 }
 
-.connection-container{
-	font-family: Arial, Helvetica, sans-serif;
+.connection-container {
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
 .login-container {
-	text-shadow: #000 0px 0px 6px;
+    text-shadow: #000 0px 0px 6px;
 }
 
-.login-container button, #upload-form button, #settings-container .settings button{
+.login-container button,
+#upload-form button,
+#settings-container .settings button {
     border: none;
     color: white;
     background-color: #252e38;
-	text-align: center;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
-	border-color: #2c3e50;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 12px;
+    border-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
 }
 
-.login-container button:hover{
-	background-color: grey;
+.login-container button:hover {
+    background-color: grey;
 }
 
-.login-container input{
+.login-container input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 .register-container {
-	text-shadow: #000 0px 0px 6px;
+    text-shadow: #000 0px 0px 6px;
 }
 
-.register-container input{
+.register-container input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-.register-container button{
-	
+.register-container button {
+
     background-color: #252e38;
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
-	cursor: pointer;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 12px;
+    cursor: pointer;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
 }
 
 .separator {
     border-style: solid;
     border-color: white;
 }
-.register-container button:hover{
-	background-color: grey;
+
+.register-container button:hover {
+    background-color: grey;
 }
 
 /* END LOGIN/REGISTER CSS */
 
 /* START ALL-APPS CSS */
 
-.all-app-child{
+.all-app-child {
     background-color: #475562;
     text-shadow: #000 0px 0px 2px;
 }
 
-.all-app-icon{
+.all-app-icon {
     border-style: solid;
     border-width: 1px;
     border-color: #b3b4ab;
     border-radius: 12px;
 }
 
-.all-app-child:hover{
+.all-app-child:hover {
     background-color: #7f8a95;
 }
 
-.all-app-button{
+.all-app-button {
     color: white;
     background-color: #252e38;
-	text-align: center;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
-	border-color: #2c3e50;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 12px;
+    border-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
 }
 
-.all-app-child a{
+.all-app-child a {
     text-decoration: none;
-    outline: none; 
+    outline: none;
     color: white;
 }
 
-.all-app-aside{
+.all-app-aside {
     display: flex;
     justify-content: center;
 }
 
-.all-app-aside input{
+.all-app-aside input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-.all-app-aside button{
+.all-app-aside button {
     border: none;
     color: white;
     background-color: #252e38;
-	text-align: center;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
-	border-color: #2c3e50;
-	border-color:#4d515e;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 12px;
+    border-color: #2c3e50;
+    border-color: #4d515e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
 }
 
-.all-app-aside button:hover{
-	background-color: grey;
+.all-app-aside button:hover {
+    background-color: grey;
 }
 
 /* END ALL-APPS CSS
@@ -449,7 +540,8 @@ color:black;
 }
 
 
-#upload-form h1, #settings-container .settings h1 {
+#upload-form h1,
+#settings-container .settings h1 {
     color: white;
 }
 
@@ -487,6 +579,13 @@ color:black;
     border-bottom: none;
 }
 
+.app-icon {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b3b4ab;
+    border-radius: 12px;
+}
+
 /* END APP PAGE CSS 
 
    START CONTACT CSS */
@@ -494,26 +593,3 @@ color:black;
 .map-container img {
     border-radius: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

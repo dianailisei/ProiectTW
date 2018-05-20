@@ -1,72 +1,74 @@
 /* START HEADER + INDEX CSS */
+
 header {
-	display: block;
-	width:100%;
-	height: 150px;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	margin:0 auto;
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
 }
 
 .logo {
-	position: relative;
-	top: -10px;
-	left: 10px;
-	height: 170px;
-	width: 200px;
-	
+    position: relative;
+    top: -10px;
+    left: 10px;
+    height: 170px;
+    width: 200px;
+
 }
 
-.logo img{
+.logo img {
     height: 100%;
     width: 100%;
 }
 
-.search-container{
-	position: absolute;
-	right: 30px;
-	top: 20px;
-	width: 60%;
-	float:right;
-	padding-top: 20px;
+.search-container {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 60%;
+    float: right;
+    padding-top: 20px;
 
 }
-.search-container form input{
-	position: absolute;
-	left:0px;
-	top:0px;
-	width: 100%;
+
+.search-container form input {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
     padding: 12px 20px;
     display: inline-block;
 }
 
-.search-container form button{
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	padding: 12px 20px;
+.search-container form button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 12px 20px;
     display: inline-block;
-	}
+}
 
 .navigation {
-	position: absolute;
-	width: 100%;
-	height: 40px;
-	top: 110px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 110px;
 }
 
 .navigation ul li {
-	float: left;
-	width: 20%;	
+    float: left;
+    width: 20%;
 }
 
 .navigation ul li a {
-	display: block;
-	height: 40px;
+    display: block;
+    height: 40px;
 }
 
-.categories-father{
+.categories-father {
     overflow: hidden;
     height: 40px;
 }
@@ -76,34 +78,35 @@ header {
     line-height: 20px;
     padding-top: 10px;
 }
+
 .wrapper {
-	width: 100%;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 
 .description {
-	position:relative;
-	width:88%;
-	height: auto;
-	padding: 10px;
-	margin-top: 3%;
-	margin-left: 5%;
-	margin-bottom: 0;
-	line-height: 30px;
-	text-align: center;
+    position: relative;
+    width: 88%;
+    height: auto;
+    padding: 10px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 0;
+    line-height: 30px;
+    text-align: center;
 }
 
 #description h1 {
-	font-size:30px;
-	
+    font-size: 30px;
+
 }
 
 .main {
-	width: 65%;
-	margin-top: 3%;
-	margin-left: 5%;
-	float: left;
+    width: 65%;
+    margin-top: 3%;
+    margin-left: 5%;
+    float: left;
     display: inline-block;
 }
 
@@ -117,11 +120,12 @@ header {
     padding: 0;
 }
 
-.main, aside {
-	position: relative;
-	display: inline-block;
-	height: auto;
-	margin-bottom: 5%;
+.main,
+aside {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    margin-bottom: 5%;
 }
 
 
@@ -137,7 +141,7 @@ header {
 }
 
 aside {
-	position: relative;
+    position: relative;
     width: 21%;
     margin-top: 3%;
     margin-left: 30px;
@@ -148,18 +152,18 @@ aside {
 }
 
 #wrapper aside h2 {
-	font-size: 25px;
+    font-size: 25px;
 }
 
 #wrapper aside p {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 /* END HEADER + INDEX CSS 
 START FOOTER CSS */
 
 footer {
-	display: block;
+    display: block;
     width: 100%;
     height: 100px;
     margin-bottom: 0px;
@@ -197,11 +201,11 @@ footer p {
     APP LIST CSS */
 
 #app-list-container {
-	position:relative;
-	top:20px;
-	right:10px;
-	left:10px;
-	bottom:20px;
+    position: relative;
+    top: 20px;
+    right: 10px;
+    left: 10px;
+    bottom: 20px;
 }
 
 .app-list {
@@ -310,11 +314,18 @@ footer p {
     padding: 2% 0;
 }
 
-#pic {
-    position: relative;
-    width: 50%;
-    left: 25%;
-    display: block;
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: inline;
+}
+
+.profile-pic img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
 }
 
 #info {
@@ -454,7 +465,9 @@ br {
     display: inline-block;
 }
 
-.register-container button, #upload-form button, #settings-container .settings button {
+.register-container button,
+#upload-form button,
+#settings-container .settings button {
     position: absolute;
     padding: 15px 32px;
     display: inline-block;
@@ -493,8 +506,8 @@ br {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: space-between;
 }
 
@@ -508,10 +521,10 @@ br {
     margin-bottom: 5px;
 }
 
-.all-app-child a{
+.all-app-child a {
     width: 180px;
     height: 300px;
-    
+
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -526,7 +539,7 @@ br {
     overflow: hidden;
 }
 
-.all-app-icon img{
+.all-app-icon img {
     display: block;
     object-fit: cover;
     width: 165px;
@@ -537,7 +550,7 @@ br {
 .all-app-title {
     margin-top: 10px;
     font-size: 1.4em;
-    
+
     height: 48px;
     overflow: hidden;
     width: 90%;
@@ -555,20 +568,21 @@ br {
     width: 100%;
 }
 
-.all-app-pages{
+.all-app-pages {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.all-app-button{
+.all-app-button {
     width: 40px;
     height: 20px;
     padding-top: 10px;
     margin-left: 5px;
     padding-bottom: 10px;
 }
+
 /* END ALL-APPS CSS 
    START UPLOAD CSS */
 
@@ -622,6 +636,7 @@ br {
     width: 90%;
     margin: 5%;
 }
+
 #settings-container .settings button {
     position: relative;
     left: 5%;
@@ -630,6 +645,7 @@ br {
 .input-box {
     width: 100%;
 }
+
 /* END SETTINGS CSS */
 
 /* START APP PAGE CSS */
@@ -648,13 +664,22 @@ br {
     margin-left: 25%;
     height: 50%;
     width: 50%;
-    box-sizing:border-box;
+    box-sizing: border-box;
     object-fit: contain;
     border-radius: 12px;
 }
 
-#app-logo img{
+.app-icon {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.app-icon img {
+    display: block;
     object-fit: cover;
+    width: 200px;
+    height: 200px;
     border-radius: 12px;
 }
 
@@ -745,7 +770,6 @@ br {
 
 /* END APP PAGE CSS */
 
-
 /* CONTACT CSS */
 
 .contact-container {
@@ -773,4 +797,3 @@ br {
     line-height: 30px;
     padding: 0px 10px;
 }
-

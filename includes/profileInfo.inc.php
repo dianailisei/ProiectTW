@@ -21,11 +21,11 @@ function showDownloadsNumber(){
 
 function showPicture(){
     if(!isset($_SESSION['picture'])){
-        echo '<img src="images/profile-icon.png" alt="Profile Picture" title="Profile Picture" id="pic">';
+        echo "<div class=\"profile-pic\"><img src=\"images/profile-icon.png\" alt=\"Profile Picture\" title=\"Profile Picture\"></div>";
     }
     else{
         $path = "users/" . $_SESSION['picture'];
-        echo '<img src="' . $path .'" alt="Profile Picture" title="Profile Picture" id="pic">';
+        echo "<div class=\"profile-pic\"><img src=\"" . $path ."\" alt=\"Profile sPicture\" title=\"Profile Picture\"></div>";
     }
 }
 
