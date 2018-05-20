@@ -63,13 +63,13 @@ function getAppsPreviewRating($rating){
 
 function getAppsPreview($category, $order, $number){
     include("db.inc.php");
-    $query = "SELECT MAX(a.id) as id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app ";
+    $query = "SELECT a.id AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN (SELECT MAX(a.id) FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app ";
     if($category!="All")
     {
         $query = $query . "WHERE a.category='$category' ";
     }
     
-    $query = $query . "GROUP BY name, uploader ";
+    $query = $query . "GROUP BY name, uploader) GROUP BY name, uploader ";
     
     if($order!="none")
     {
@@ -106,7 +106,7 @@ function getAppsPreview($category, $order, $number){
 
 function getUserApps($id) {
     include("db.inc.php");
-    $query = "SELECT MAX(a.id) as id, a.name, a.icon, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id = r.id_app WHERE a.uploader = '$id' GROUP BY a.name, a.uploader";
+    $query = "SELECT a.id AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN (SELECT MAX(a.id) FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.uploader = '$id' GROUP BY name, uploader, category)  GROUP BY name, uploader, category";
     $result = mysqli_query($conn, $query);
     
     if(!$result) {
@@ -116,7 +116,7 @@ function getUserApps($id) {
     
     while($row = mysqli_fetch_assoc($result)) {
         echo "<li class=\"app-list-child\">
-                        <a href=\"app.php?id=".$row["id"]."\">
+                        <a href=\"app.php?=".$row["id"]."\">
                             <div class=\"app-list-child-img-container\"> <img src=\"".$row['icon']."\"> </div>
                             <div class=\"app-list-child-title\">".$row["name"]."</div>
                             <a href=\"includes/deleteUserApp.inc.php?id=".$row['id']."\">

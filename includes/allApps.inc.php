@@ -31,21 +31,23 @@ function showAllApps($number)
     
     if(isset($_GET["search"]))
     {
+        if(strlen($_GET["search"]) > 0 ){
         $searchString = mysqli_real_escape_string($conn, $_GET["search"]);
         $searchString = urldecode($searchString);
         $searchWords = explode(" ",$searchString);
+        }
     }
     
     if(isset($_GET["tags"]))
     {
+        if(strlen($_GET["tags"]) > 0 ){
         $tagsString = mysqli_real_escape_string($conn, $_GET["tags"]);
         $tagsString = urldecode($tagsString);
         $tags = explode(" ",$tagsString);
+        }
     }
     
-    $searchWords = array_merge($searchWords, $tags);
-    
-    $query = "SELECT MAX(a.id) AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app ";
+    $query = "SELECT a.id AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN (SELECT MAX(a.id) FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app ";
     
     if($category!="All")
     {
@@ -73,7 +75,30 @@ function showAllApps($number)
                 $query = $query . "LOWER(a.name) like LOWER('%".$word."%') OR LOWER(t.tag) like LOWER('%".$word."%') OR ";
         }
     }
-    $query = $query . "GROUP BY name, downloads, uploader, category ";
+    
+    $numItems = count($tags);
+    $i=0;
+    
+    if($numItems > 0)
+    {
+        if(count($searchWords)==0)
+        {
+            $query = $query . "WHERE (";
+        }
+        else
+        {
+            $query = $query . "AND (";
+        }
+        
+        foreach($tags as $word)
+        {
+            if(++$i === $numItems) 
+                $query = $query . " LOWER(t.tag) like LOWER('%".$word."%') ) ";
+            else
+                $query = $query . "LOWER(t.tag) like LOWER('%".$word."%') AND ";
+        }
+    }
+    $query = $query . "GROUP BY name, uploader)  GROUP BY name, uploader ";
     
     if($order!="none")
     {
@@ -84,8 +109,9 @@ function showAllApps($number)
     }
 
     $lowerPage = $page-$number;
-    $query = $query . "LIMIT ".$lowerPage.", ".$number;
-
+    $query = $query . " LIMIT ".$lowerPage.", ".$number;
+    echo $query;
+    
     if($result = mysqli_query($conn, $query))
     {
         $GLOBALS["resultsNumber"] = mysqli_num_rows($result);
