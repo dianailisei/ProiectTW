@@ -42,11 +42,10 @@
         <div class="app-description-container">
             <div class="app-info-container">
                 <h1> About </h1>
-                <?php showDescription(); ?>
+                <pre><?php showDescription(); ?></pre>
                 <p> Version History:<br>
                     <?php showVersionHistory(); ?>
                 </p>
-                <p> About Author: Name</p>
             </div>
             <div class="app-section" id="related-apps-container">
                 <h1> Related Apps</h1>

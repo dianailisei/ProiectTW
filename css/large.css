@@ -692,14 +692,24 @@ br {
     height: auto;
 }
 
+
 .app-info-container {
     width: 50%;
-    height: 250px;
+    height: auto;
     margin-top: 4%;
     margin-bottom: 3%;
     line-height: 20px;
     margin-left: 50px;
     padding: 30px;
+}
+
+.app-info-container pre {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: pre-line;
 }
 
 .app-info-container h1 {

@@ -117,11 +117,11 @@ function showVersionHistory(){
     include "db.inc.php";
     global $row;
     $name = $row["name"];
-    $query = "SELECT DAY(upload_date) \"day\", MONTH(upload_date) \"month\", YEAR(upload_date) \"year\" FROM apps WHERE name = '$name' AND uploader = " . $row["uploader"] . " ORDER BY upload_date ASC";
+    $query = "SELECT DAY(upload_date) \"day\", MONTH(upload_date) \"month\", YEAR(upload_date) \"year\", location FROM apps WHERE name = '$name' AND uploader = " . $row["uploader"] . " ORDER BY upload_date ASC";
     $counter = 1;
     $result = mysqli_query($conn, $query);
     while($dates = mysqli_fetch_assoc($result)){
-        echo "<a href=\"".$row["location"]."\"> Version $counter</a> (" . $dates["day"] ."-" . $dates["month"] ."-" . $dates["year"] . ")<br>";
+        echo "<a href=\"".$dates["location"]."\"> Version $counter</a> (" . $dates["day"] ."-" . $dates["month"] ."-" . $dates["year"] . ")<br>";
             $counter++;
     }
 }

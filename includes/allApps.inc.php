@@ -47,7 +47,8 @@ function showAllApps($number)
         }
     }
     
-    $query = "SELECT a.id AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN (SELECT MAX(a.id) FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app ";
+    
+    $query = "(SELECT MAX(a.id) AS id_aux FROM apps a LEFT JOIN tags t ON a.id=t.id_app ";
     
     if($category!="All")
     {
@@ -70,35 +71,28 @@ function showAllApps($number)
         foreach($searchWords as $word)
         {
             if(++$i === $numItems) 
-                $query = $query . "LOWER(a.name) like LOWER('%".$word."%') OR LOWER(t.tag) like LOWER('%".$word."%') ) ";
+                $query = $query . "LOWER(a.name) like LOWER('%".$word."%') OR LOWER(t.tag) like LOWER('%".$word."%')) ";
             else
                 $query = $query . "LOWER(a.name) like LOWER('%".$word."%') OR LOWER(t.tag) like LOWER('%".$word."%') OR ";
         }
     }
+    
+    $query = $query . "GROUP BY name, uploader)";
     
     $numItems = count($tags);
     $i=0;
     
     if($numItems > 0)
     {
-        if(count($searchWords)==0)
-        {
-            $query = $query . "WHERE (";
-        }
-        else
-        {
-            $query = $query . "AND (";
-        }
         
         foreach($tags as $word)
         {
-            if(++$i === $numItems) 
-                $query = $query . " LOWER(t.tag) like LOWER('%".$word."%') ) ";
-            else
-                $query = $query . "LOWER(t.tag) like LOWER('%".$word."%') AND ";
+            $query = "(SELECT ids.id_aux FROM " . $query . " ids JOIN tags t on ids.id_aux = t.id_app WHERE LOWER(t.tag) like LOWER('%".$word."%'))";
         }
     }
-    $query = $query . "GROUP BY name, uploader)  GROUP BY name, uploader ";
+    
+    $query = "SELECT a.id AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN ". $query. " GROUP BY name, uploader ";
+    
     
     if($order!="none")
     {
@@ -110,7 +104,7 @@ function showAllApps($number)
 
     $lowerPage = $page-$number;
     $query = $query . " LIMIT ".$lowerPage.", ".$number;
-    echo $query;
+    //echo $query;
     
     if($result = mysqli_query($conn, $query))
     {

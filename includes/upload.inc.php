@@ -13,7 +13,10 @@ if(isset($_POST['submit'])) {
     
     include_once("db.inc.php");
     
+    
     $targetFile = "../users/" . $_SESSION["username"] . "/apps/" . basename($_FILES["appToUpload"]["name"]);
+    
+    
     $targetIcon = "";
     $noIcon = TRUE;
     if ($_FILES['iconToUpload']['size'] == 0)
@@ -56,22 +59,22 @@ if(isset($_POST['submit'])) {
     $i=0;
     $getFileName = explode(".", $targetFile);
     while (file_exists($targetFile)) {
-        $targetFile = ".." . $getFileName[count($getFileName)-2] . "_" . $i . "." . $getFileName[count($getFileName)-1];
+        $targetFile = rawurldecode(".." . $getFileName[count($getFileName)-2] . "_" . $i . "." . $getFileName[count($getFileName)-1]);
         $i++;
     }
 
     $i=0;
     $getIconName = explode(".", $targetIcon);
     while (file_exists($targetIcon && $noIcon==FALSE)) {
-        $targetIcon = ".." . $getIconName[count($getIconName)-2] . "_" . $i . "." . $getIconName[count($getIconName)-1];
+        $targetIcon = rawurldecode(".." . $getIconName[count($getIconName)-2] . "_" . $i . "." . $getIconName[count($getIconName)-1]);
         $i++;
     }
     
     if (move_uploaded_file($_FILES["appToUpload"]["tmp_name"], $targetFile)) {
-        echo "The file ". basename( $_FILES["appToUpload"]["name"]). " has been uploaded.";
+        echo "The file ". rawurldecode(basename( $_FILES["appToUpload"]["name"])). " has been uploaded.";
         echo "<br>";
         if (move_uploaded_file($_FILES["iconToUpload"]["tmp_name"], $targetIcon) || $noIcon==TRUE) {
-            echo "The icon ". basename( $_FILES["iconToUpload"]["name"]). " has been uploaded.";
+            echo "The icon ". rawurldecode(basename( $_FILES["iconToUpload"]["name"])). " has been uploaded.";
             echo "<br>";
             $query = "INSERT INTO apps (name, uploader, category, downloads, description, icon, location, upload_date) VALUES ('$appName','$appUploader','$appCategory',0,'$appDescription','$targetIcon','$targetFile',NOW())";
             $result = mysqli_query($conn, $query);

@@ -106,7 +106,7 @@ function getAppsPreview($category, $order, $number){
 
 function getUserApps($id) {
     include("db.inc.php");
-    $query = "SELECT a.id AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN (SELECT MAX(a.id) FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.uploader = '$id' GROUP BY name, uploader, category)  GROUP BY name, uploader, category";
+    $query = "SELECT a.id AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN (SELECT MAX(a.id) FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.uploader = '$id' GROUP BY name, uploader )  GROUP BY name, uploader ";
     $result = mysqli_query($conn, $query);
     
     if(!$result) {
@@ -116,7 +116,7 @@ function getUserApps($id) {
     
     while($row = mysqli_fetch_assoc($result)) {
         echo "<li class=\"app-list-child\">
-                        <a href=\"app.php?=".$row["id"]."\">
+                        <a href=\"app.php?id=".$row["id"]."\">
                             <div class=\"app-list-child-img-container\"> <img src=\"".$row['icon']."\"> </div>
                             <div class=\"app-list-child-title\">".$row["name"]."</div>
                             <a href=\"includes/deleteUserApp.inc.php?id=".$row['id']."\">
@@ -131,7 +131,9 @@ function getUserApps($id) {
 
 function getRelatedApps($appId) {
     include("db.inc.php");
-    $query = "SELECT MAX(a.id) as id, a.name, a.icon, a.downloads, ROUND(AVG(r.rating)) AS rating, COUNT(*) as matches FROM apps a LEFT JOIN tags t ON a.id = t.id_app LEFT JOIN ratings r ON r.id_app=a.id WHERE a.id!=".$appId." AND t.tag IN (SELECT tag FROM tags WHERE id_app = ".$appId.") GROUP BY a.name, a.uploader ORDER BY matches desc, rating desc LIMIT 3";
+    $query = "SELECT a.id, a.name, a.icon, a.downloads, ROUND(AVG(r.rating)) AS rating, COUNT(a.id) as matches FROM apps a LEFT JOIN tags t ON a.id = t.id_app LEFT JOIN ratings r ON r.id_app=a.id WHERE a.id IN (SELECT MAX(a.id) FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE t.tag IN (SELECT tag FROM tags WHERE id_app = ".$appId.") GROUP BY a.name, a.uploader) GROUP BY name, uploader ORDER BY matches desc, rating desc LIMIT 3";
+    
+    //echo $query;
     $result = mysqli_query($conn, $query);
     if($result = mysqli_query($conn, $query))
     {

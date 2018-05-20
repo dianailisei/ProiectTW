@@ -52,7 +52,7 @@ function showProfileRating(){
     include 'db.inc.php';
     
     $id = $_SESSION['id'];
-    $query = "SELECT CEIL(AVG(rating)) as \"rat\" FROM ratings WHERE id_user='$id'";
+    $query = "SELECT CEIL(AVG(r.rating)) as rat from apps a LEFT JOIN ratings r on a.id=r.id_app WHERE a.uploader = $id";
     $result = mysqli_query($conn, $query);
     if(!$result) {
         die("Query FAILED.<br>" . mysqli_error());
