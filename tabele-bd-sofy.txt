@@ -1,0 +1,80 @@
+CREATE OR REPLACE TABLE users (
+    id INT(6) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first VARCHAR(30),
+    last VARCHAR(30), 
+    username VARCHAR(30) NOT NULL, 
+    email VARCHAR(50) NOT NULL, 
+    password VARCHAR(80) NOT NULL, 
+    country VARCHAR(15), 
+    picture VARCHAR(256), 
+    joindate DATETIME NOT NULL
+    )
+
+CREATE OR REPLACE TABLE apps (
+
+    id INT(6) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+
+    name VARCHAR(50) NOT NULL,
+    uploader INT(6) UNSIGNED NOT NULL,
+
+    category VARCHAR(20) NOT NULL,
+
+    downloads INT(10) UNSIGNED NOT NULL DEFAULT 0,
+
+    description VARCHAR(2500),
+
+    icon VARCHAR(256),
+
+    location VARCHAR(256) NOT NULL,
+
+    upload_date DATETIME NOT NULL
+,
+    CONSTRAINT fk_usersApps FOREIGN KEY (uploader)
+    REFERENCES users(id)
+    ON DELETE CASCADE
+    )
+
+
+CREATE OR REPLACE TABLE ratings (
+    
+    id_app INT(6) UNSIGNED NOT NULL,
+    
+    id_user INT(6) UNSIGNED NOT NULL,
+    rating int(1) UNSIGNED
+,
+    CONSTRAINT fk_appsRatings FOREIGN KEY (id_app)
+    REFERENCES apps(id)
+    ON DELETE CASCADE,
+    CONSTRAINT fk_usersRatings FOREIGN KEY (id_user)
+    REFERENCES users(id)
+    ON DELETE CASCADE
+)
+    
+
+
+CREATE OR REPLACE TABLE tags (
+    id_app int(6) UNSIGNED NOT NULL,
+
+    tag VARCHAR(30) NOT NULL,
+    CONSTRAINT fk_appsTags FOREIGN KEY (id_app)
+    REFERENCES apps(id)
+    ON DELETE CASCADE
+)
+
+DELIMITER $$
+CREATE FUNCTION getDownloads(p_id INT) RETURNS INT
+BEGIN
+  DECLARE v_downloads INT;
+  SET v_downloads = (SELECT SUM(downloads) FROM apps WHERE (name,uploader) IN (SELECT nume, uploader FROM apps WHERE id=p_id));
+  RETURN v_downloads;
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE OR REPLACE FUNCTION getRating(p_id INT) RETURNS INT
+BEGIN
+  DECLARE v_rating INT;
+  SET v_rating = (SELECT ROUND(AVG(r.rating)) FROM apps a LEFT JOIN ratings r ON a.id = r.id_app WHERE (name,uploader) IN (SELECT name, uploader FROM apps WHERE id=p_id));
+  RETURN v_rating;
+END$$
+DELIMITER ;

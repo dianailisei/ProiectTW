@@ -5,13 +5,14 @@ if(!isset($_GET["id"])){
 include "db.inc.php";
 
 $id=mysqli_real_escape_string($conn, $_GET["id"]);
-$query = "SELECT * FROM apps a JOIN users u ON a.uploader=u.id WHERE a.id='$id'";
+$query = "SELECT a.id, a.name, a.location, a.icon, a.uploader, u.username, getDownloads(a.id) as downloads, getRating(a.id) as rating, a.category, a.description, a.upload_date FROM apps a JOIN users u ON a.uploader=u.id WHERE a.id='$id'";
 $result = mysqli_query($conn, $query);
 $row = mysqli_fetch_assoc($result);
 
+/*
 $query = "SELECT MAX(a.id), ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app WHERE a.name=(SELECT name FROM apps WHERE id='$id') AND a.uploader=(SELECT uploader FROM apps WHERE id='$id') GROUP BY a.name, a.uploader";
-$result = mysqli_query($conn, $query);
-$calculatedRating = mysqli_fetch_assoc($result);
+$result = mysqli_query($conn, $query);*/
+$calculatedRating = $row["rating"];
 
 function showIcon(){
     global $row;
@@ -63,7 +64,7 @@ function showRating(){
     global $calculatedRating;
     global $id;
     echo "<form class=\"app-list-child-rating\" id=\"app-rating-stars\" action=\"includes/rating.inc.php?id=".$id."\" method=\"POST\">";
-    echo showStars($calculatedRating["rating"]);
+    echo showStars($calculatedRating);
     echo "</form>";
 }
 

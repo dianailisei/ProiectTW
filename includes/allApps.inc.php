@@ -91,7 +91,7 @@ function showAllApps($number)
         }
     }
     
-    $query = "SELECT a.id AS id, a.icon, a.name, a.downloads, ROUND(AVG(r.rating)) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN ". $query. " GROUP BY name, uploader ";
+    $query = "SELECT a.id AS id, a.icon, a.name,getDownloads(a.id) as downloads, getRating(a.id) AS rating FROM apps a LEFT JOIN ratings r ON a.id=r.id_app LEFT JOIN tags t ON a.id=t.id_app WHERE a.id IN ". $query. " GROUP BY name, uploader ";
     
     
     if($order!="none")

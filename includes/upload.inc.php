@@ -59,22 +59,22 @@ if(isset($_POST['submit'])) {
     $i=0;
     $getFileName = explode(".", $targetFile);
     while (file_exists($targetFile)) {
-        $targetFile = rawurldecode(".." . $getFileName[count($getFileName)-2] . "_" . $i . "." . $getFileName[count($getFileName)-1]);
+        $targetFile = ".." . $getFileName[count($getFileName)-2] . "_" . $i . "." . $getFileName[count($getFileName)-1];
         $i++;
     }
 
     $i=0;
     $getIconName = explode(".", $targetIcon);
     while (file_exists($targetIcon && $noIcon==FALSE)) {
-        $targetIcon = rawurldecode(".." . $getIconName[count($getIconName)-2] . "_" . $i . "." . $getIconName[count($getIconName)-1]);
+        $targetIcon = ".." . $getIconName[count($getIconName)-2] . "_" . $i . "." . $getIconName[count($getIconName)-1];
         $i++;
     }
     
     if (move_uploaded_file($_FILES["appToUpload"]["tmp_name"], $targetFile)) {
-        echo "The file ". rawurldecode(basename( $_FILES["appToUpload"]["name"])). " has been uploaded.";
+        echo "The file ". basename( $_FILES["appToUpload"]["name"]). " has been uploaded.";
         echo "<br>";
         if (move_uploaded_file($_FILES["iconToUpload"]["tmp_name"], $targetIcon) || $noIcon==TRUE) {
-            echo "The icon ". rawurldecode(basename( $_FILES["iconToUpload"]["name"])). " has been uploaded.";
+            echo "The icon ". basename( $_FILES["iconToUpload"]["name"]). " has been uploaded.";
             echo "<br>";
             $query = "INSERT INTO apps (name, uploader, category, downloads, description, icon, location, upload_date) VALUES ('$appName','$appUploader','$appCategory',0,'$appDescription','$targetIcon','$targetFile',NOW())";
             $result = mysqli_query($conn, $query);
