@@ -80,7 +80,7 @@ function showUploader(){
 
 function showDownloadButton(){
     global $row;
-    echo "<a href=\"".$row["location"]."\"><img src=\"images/download-button.png\" id=\"download-button\"></a>";
+    echo "<a href=\"includes/downloadsIncrement.inc.php?id=".$row["id"]."\"><img src=\"images/download-button.png\" id=\"download-button\"></a>";
 }
 
 function showDownloadsNumber(){
