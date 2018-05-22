@@ -65,7 +65,7 @@ DELIMITER $$
 CREATE FUNCTION getDownloads(p_id INT) RETURNS INT
 BEGIN
   DECLARE v_downloads INT;
-  SET v_downloads = (SELECT SUM(downloads) FROM apps WHERE (name,uploader) IN (SELECT nume, uploader FROM apps WHERE id=p_id));
+  SET v_downloads = (SELECT SUM(downloads) FROM apps WHERE (name,uploader) IN (SELECT name, uploader FROM apps WHERE id=p_id));
   RETURN v_downloads;
 END$$
 DELIMITER ;
