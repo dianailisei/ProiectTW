@@ -34,12 +34,12 @@ if(isset($_POST['submit'])) {
     $appCategory = mysqli_real_escape_string($conn,$_POST["categories"]);
     $appTags = explode(" ",mysqli_real_escape_string($conn,$_POST["appTags"]));
     
-    if(!preg_match("/^([a-zA-Z0-9]+ ?)+$/", $appName)) {
+    if(!preg_match("/^([a-zA-Z0-9+-_:]+ ?)+$/", $appName)) {
         header("Location: ../upload.php?upd=invalidName");
         exit();
     }
     
-    if(!preg_match("/([a-zA-Z0-9]+ ?)*/", $_POST["appTags"])) {
+    if(!preg_match("/([a-zA-Z0-9+-_:]+ ?)*/", $_POST["appTags"])) {
         header("Location: ../upload.php?upd=invalidTags");
         exit();
     }

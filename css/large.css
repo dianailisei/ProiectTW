@@ -97,10 +97,13 @@ header {
     margin-top: 15px;
     margin-left: 5%;
     display: inline-block;
-    height: 700px;
+    height: auto;
     margin-bottom: 15px;
+    
     float: left;
+    
 }
+
 
 .main-full {
     width: 90%;
@@ -171,13 +174,24 @@ footer p {
 /*  END FOOTER CSS 
     APP LIST CSS */
 
+#app-list-index {
+    position: relative;
+    top: 20px;
+    right: 10px;
+    left: 10px;
+    bottom: 20px;
+    margin-bottom: 30px;    
+}
+
 #app-list-container {
     position: relative;
     top: 20px;
     right: 10px;
     left: 10px;
     bottom: 20px;
+    
 }
+
 
 .app-list {
     -webkit-columns: 3;

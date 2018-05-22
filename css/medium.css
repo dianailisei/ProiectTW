@@ -651,10 +651,11 @@ br {
 /* START APP PAGE CSS */
 
 #display {
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: auto;
+    justify-content:flex-end;
+    align-content:space-around;
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -741,6 +742,16 @@ br {
     margin-left: 10%;
     padding: 30px;
 }
+
+.app-info-container pre {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
 
 .app-info-container h1 {
     font-size: 30px;

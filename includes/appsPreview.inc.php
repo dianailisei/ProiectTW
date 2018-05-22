@@ -117,7 +117,7 @@ function getUserApps($id) {
     
     while($row = mysqli_fetch_assoc($result)) {
         echo "<li class=\"app-list-child\">
-                        <a href=\"app.php?=".$row["id"]."\">
+                        <a href=\"app.php?id=".$row["id"]."\">
                             <div class=\"app-list-child-img-container\"> <img src=\"".$row['icon']."\"> </div>
                             <div class=\"app-list-child-title\">".$row["name"]."</div>
                             <a href=\"includes/deleteUserApp.inc.php?id=".$row['id']."\">

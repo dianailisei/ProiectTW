@@ -682,6 +682,16 @@ footer p {
     padding: 15px;
 }
 
+.app-info-container pre {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+
 .app-info-container h1 {
     font-size: 30px;
     letter-spacing: 4px;

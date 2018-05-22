@@ -24,7 +24,7 @@
             <div class="contact-information-container">
                 <div class="contact-header">
                     <h1>Contact us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin ultricies magna eget lacinia. Sed nisl eros, imperdiet vel libero sit amet, maximus lobortis nulla. Nam vel ligula eu mi fermentum vestibulum. Duis pellentesque vel odio quis tempus. Sed semper faucibus libero, at imperdiet massa pellentesque eu. Duis a lectus euismod, convallis orci vel, congue lacus. Quisque porttitor congue orci id varius.</p>
+                    <p>For any suggestions, opinions or questions, feel free to contact us! Below you can find our personal info. Can’t wait to receive some feedback!</p>
                 </div>
 
                 <div>
