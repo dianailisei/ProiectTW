@@ -593,3 +593,31 @@ footer ul li a {
 .map-container img {
     border-radius: 12px;
 }
+
+/* END CONTACT CSS
+    
+    START ADMIN CSS */
+
+.users-table {
+    width: 100%;
+    line-height: 50px;
+}
+
+.users-table tr th {
+    font-size: 1.5em;
+}
+
+.users-table tr td {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.users-table tr td a:link {
+    color: chartreuse;
+}
+
+.users-table tr td a:visited {
+    color: forestgreen;
+}
+
+/* END ADMIN CSS */
