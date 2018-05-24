@@ -31,3 +31,10 @@
         </div>
         <div class="option"><a href="includes/sessionDestroy.inc.php">Logout</a></div>
     </section>
+
+    <?php include_once "includes/footer.inc.php" ?>
+
+</body>
+
+
+</html>
