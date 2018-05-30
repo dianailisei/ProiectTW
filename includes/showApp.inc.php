@@ -75,7 +75,12 @@ function showName(){
 
 function showUploader(){
     global $row;
-    echo "<p>by ".$row["username"].", uploaded at ".$row["upload_date"]."</p>";
+    echo $row["username"];
+}
+
+function showUploadDate(){
+    global $row;
+    echo $row["upload_date"];
 }
 
 function showDownloadButton(){

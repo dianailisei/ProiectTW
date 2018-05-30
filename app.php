@@ -21,7 +21,12 @@
         <?php showIcon(); ?>
         <div id="app-name">
             <?php showName(); ?>
-            <?php showUploader(); ?>
+            <p>by
+                <a href="uploader.php?user=<?php showUploader(); ?>">
+                    <?php showUploader();?>
+                </a> uploaded at
+                <?php showUploadDate(); ?>
+            </p>
             <?php showRating(); ?>
         </div>
         <?php showDownloadButton() ?>
