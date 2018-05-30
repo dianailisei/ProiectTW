@@ -665,6 +665,15 @@ footer p {
     margin: 5px;
 }
 
+#app-list-index {
+    position: relative;
+    top: 20px;
+    right: 10px;
+    left: 10px;
+    bottom: 20px;
+    margin-bottom: 30px;    
+}
+
 .app-description-container {
     width: 100%;
     display: flex;
@@ -867,5 +876,6 @@ footer p {
 .input-box {
     width: 100%;
 }
+
 
 /* END SETTINGS CSS */

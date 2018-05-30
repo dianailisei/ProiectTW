@@ -1,4 +1,10 @@
 <?php 
+if($_SESSION["username"]=="admin"){
+    header("Location: ../admin.php");
+    exit();
+}
+
+
 include_once 'appsPreview.inc.php';
 
 

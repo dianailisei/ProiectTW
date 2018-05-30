@@ -384,6 +384,15 @@ footer p {
     -moz-column-gap: 5px;
 }
 
+#app-list-index {
+    position: relative;
+    top: 20px;
+    right: 10px;
+    left: 10px;
+    bottom: 20px;
+    margin-bottom: 30px;    
+}
+
 .delete-button {
     float: right;
     margin-right: 5px;

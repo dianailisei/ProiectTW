@@ -10,6 +10,7 @@ function showFilter(){
     $category2='';
     $category3='';
     $tags='';
+    $import='';
     
     if(isset($_GET["search"]))
         $search = $_GET["search"];
@@ -36,6 +37,9 @@ function showFilter(){
     if(isset($_GET["tags"]))
         $tags = $tags . 'value="' . $_GET["tags"] . '"';
     
+    if(isset($_GET["import"]))
+        $import="checked";
+    
     
     echo '<form method="GET" action="all.php" class="all-app-container" enctype="multipart/form-data">
         <h1>Order by</h1>
@@ -52,6 +56,11 @@ function showFilter(){
         <div><input type="radio" name="category" value="Office" '.$category2.'> Office</div><br>
         <div><input type="radio" name="category" value="Utility" '.$category3.'> Utility</div><br>
         </div>
+        <h1>Category</h1>
+        <div class="all-app-sub">
+        <div><input type="checkbox" name="import" value="true" '.$import.'>Import</div><br>
+        </div>
+        <br><br>
         <h1>Tags</h1>
         <input type="text" placeholder="Type tags here" name="tags" '.$tags.'>
         <input type="hidden" name="search" value='.$search.'><br>

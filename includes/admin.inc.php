@@ -1,5 +1,11 @@
 <?php
 
+if(!isset($_SESSION["username"])) {
+    if($_SESSION["username"]!="admin")
+    header("Location: ../login.php");
+    exit();
+}
+
 function showUsers()
 {
     include 'db.inc.php';

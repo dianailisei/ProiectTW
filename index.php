@@ -32,23 +32,23 @@
         </section>
         <aside>
             <br><br>
-            <h1>Statistics</h1><br><br>
-            <h2>Total Number of Downloads</h2><br><br>
+            <h1>Statistics</h1><br>
+            <h2>Total Number of Downloads</h2><br>
             <h1>
                 <?php echo getNumberOfDownloads(); ?>
-            </h1><br><br>
-            <h2>Total number of Apps</h2><br><br>
+            </h1><br>
+            <h2>Total number of Apps</h2><br>
             <h1>
                 <?php echo getNumberOfApps(); ?>
-            </h1><br><br>
-            <h2>Total number of Users</h2><br><br>
+            </h1><br>
+            <h2>Total number of Users</h2><br>
             <h1>
                 <?php echo getNumberOfUsers(); ?>
-            </h1><br><br>
-            <h2>Total number of Votes</h2><br><br>
+            </h1><br>
+            <h2>Total number of Votes</h2><br>
             <h1>
                 <?php echo getNumberOfVotes(); ?>
-            </h1>
+            </h1><br>
         </aside>
     </div>
 

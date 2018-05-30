@@ -73,6 +73,7 @@ header {
 
 .wrapper {
     width: 100%;
+    height: auto;
     margin: 0 auto;
     padding: 0;
 }
@@ -121,9 +122,10 @@ aside {
     margin-top: 15px;
     margin-left: 10px;
     display: inline-block;
-    height: 700px;
+    height: auto;
     margin-bottom: 15px;
     float: left;
+    padding-bottom: 10px;
 }
 
 #wrapper aside h2 {
